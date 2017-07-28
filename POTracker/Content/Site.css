@@ -1,0 +1,399 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+        max-width: 280px;
+    min-width: 110px;
+    min-height: 25px;
+}
+   .Table
+    {
+        display: table;
+    }
+    .Title
+    {
+        display: table-caption;
+        text-align: center;
+        font-weight: bold;
+        font-size: larger;
+    }
+    .Heading
+    {
+        display: table-row;
+        font-weight: bold;
+        text-align: center;
+     background-color: rgb(13, 22, 236);
+    color: #f3eded;
+    }
+    .Heading_orderbrief
+    {
+        display: table-row;
+        font-weight: bold;
+        text-align: center;
+       background-color:rgba(241, 81, 9, 0.88);
+    color: #f5f5f5;
+    }
+     .Heading_comment
+    {
+        display: table-row;
+        font-weight: bold;
+        text-align: center;
+       background-color:rgba(241, 81, 9, 0.88);
+    color: #f5f5f5;
+    cursor:pointer;
+    }
+     .Heading_comment:hover{
+         cursor:pointer;
+     }
+    .Row
+    {
+        
+        display: table-row;
+    }
+  .product{
+       display: table-row;
+        font-weight: bold;
+        text-align: center;
+       
+  }
+    .Cell
+    {
+        /*display: table-cell;
+        border: solid;
+        border-width: thin;
+        padding-left: 5px;
+        padding-right: 5px;*/
+        display: table-cell;
+        border: solid 1px;
+        /*border-width: thin;
+        padding-left: 5px;
+        padding-right: 5px;*/
+        width: 70px;
+    }  
+    .CellComment{
+        display: table-cell;
+        border: solid;
+        border-width: thin;
+        padding-left: 5px;
+        padding-right: 5px;
+    }    
+    /*.delete{
+         
+        display: table-cell;
+        border: solid;
+        border-width: thin;
+        padding-left: 5px;
+        padding-right: 5px;
+      
+    }*/
+    .comment{
+        display:table;
+        max-width:500px;
+    }                      
+    
+    
+    .rTableBody {   	display: table-row-group; }
+
+    a.selected {
+  background-color:#1F75CC;
+  color:white;
+  z-index:100;
+}
+
+.messagepop {
+  background-color:#FFFFFF;
+  border:1px solid #999999;
+  cursor:default;
+  display:none;
+  margin-top: 15px;
+  position:absolute;
+  text-align:left;
+  width:394px;
+  z-index:50;
+  padding: 25px 25px 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 3px;
+  padding-left: 15px;
+  text-indent: -15px;
+}
+
+.messagepop p, .messagepop.div {
+  border-bottom: 1px solid #EFEFEF;
+  margin: 8px 0;
+  padding-bottom: 8px;
+}
+/*---------------------------------------------*/
+#container {
+    display: table;
+    width:100%;
+    }
+#rowContainer{
+    margin-top:70px;
+    width:100%;
+    position:fixed;
+    height: 100%; 
+     overflow: auto;
+     border:1px solid;
+}
+  #row  {
+    display: table-row;
+   width:100%;
+   border:1px solid;
+  height: 100%;
+    overflow:auto;
+     border:1px solid;  
+
+  }
+  #mainRow:nth-of-type(odd) {
+    background: #e0e0e0;
+}
+#mainRow:hover{
+    background-color:#e9eb13;
+    color:#000;
+}
+ 
+  #mainRow{width:100%; height:auto; border:1px solid;}
+  #box {
+  float: left;
+  width: 100px;
+  height: 70px;
+  padding-top:5px;
+   border-right:1px solid rgba(241, 81, 9, 0.88);
+  line-height:100%;
+  text-align:center;
+}
+   #box2 {
+  float: left;
+  width: 103px;
+  height: 70px;
+  padding-top:5px;
+   border-right:1px solid rgba(241, 81, 9, 0.88);
+  line-height: 100%;
+
+  text-align:center;
+}
+
+  #box1{
+       float: left;
+  width: 610px;
+  height: 70px;
+/*  padding-top:5px;
+ border-right:1px solid rgba(241, 81, 9, 0.88);*/
+line-height: 100%;
+text-align:center;
+  }
+    #box3{
+      float: left;
+  width: 470px;
+  height: 70px;
+  padding-top:5px;
+   /*border-right:1px solid rgba(241, 81, 9, 0.88);*/
+line-height: 100%;
+text-align:center;
+
+  }
+  #boxContainer{
+      width:100%;
+  border:1px solid rgba(241, 81, 9, 0.88);
+      height:70px;
+      position:fixed;
+      background-color:#000000;
+      color:#f5f5f5;
+      font-weight:bold;
+    
+  }
+  /*#left {
+   float: left;
+  width: 100px;
+min-height:100px;
+  padding:5px;
+  border-right:1px solid rgba(241, 81, 9, 0.88);
+  line-height: 100%;
+  text-align:center;
+  font-weight:bold;
+    }*/
+   #left {
+   /*float: left;*/
+  width: 100px;
+  /*min-height: 50px;*/
+    display: table-cell;
+    height: 100%;
+    overflow: hidden;
+    border-collapse: collapse;
+  /*line-height: 100%;*/
+  text-align:center;
+  font-weight:bold;
+  border-left:1px solid rgba(241, 81, 9, 0.88);
+  padding-top:5px;
+  vertical-align:top;
+
+    }
+  #middle{
+            float: left;
+  width: 610px;
+  position: relative;
+  height: auto;
+  min-height: 100% !important;
+  padding:5px;
+  text-align:center;
+  /*border-left:1px solid rgba(241, 81, 9, 0.88);*/
+
+  }
+  /*#left, #right, #middle {
+        display: table-cell;
+
+}*/
+
+/*---------------------------------------------*/
+
+/*.table-container
+{
+    overflow: auto;
+    height:700px;
+    width:100%;
+    margin-top:40px;
+   
+    
+}*/
+
+
+/*.fixed_headers {
+   width: 100%;
+    height:auto;
+    table-layout: fixed;
+    border-collapse: collapse;
+    text-space-collapse:collapse;
+} 
+ .fixed_headers th { text-decoration: underline;  }
+ .fixed_headers th, td {
+    padding: 5px;
+    min-width: 80px;
+    max-width:500px;
+    text-align: center;
+    border-left: solid 1px;border-bottom:solid 1px;
+
+  }
+  
+ .fixed_headers td:nth-child(1) { min-width:680px;  }
+ .fixed_headers th:nth-child(1) { min-width:80px }
+ .fixed_headers td:nth-child(2), th:nth-child(2) { min-width: 80px }
+ .fixed_headers td:nth-child(3) {width:80px}
+ .fixed_headers th:nth-child(3) { width:  80px; }
+ .fixed_headers td:nth-child(4){min-width:50px; }
+  .fixed_headers th:nth-child(4) { width:  120px ;min-width:80px;}
+    .fixed_headers td:nth-child(5) { min-width:220px;}
+ .fixed_headers th:nth-child(5) { min-width: 82px; }
+ .fixed_headers td:nth-child(6){ width:776px;  } 
+   .fixed_headers th:nth-child(6) { min-width:176px;  }
+ .fixed_headers td:nth-child(7){min-width:500px;} 
+  .fixed_headers th:nth-child(7) { width: 579px; text-align:center; }
+    .fixed_headers td:nth-child(8) {
+        max-width:700px;
+    }
+ .fixed_headers  th:nth-child(8) { min-width: 580px; }
+
+thead {
+    background-color: #333;
+    color: #FDFDFD;      width:100%;
+
+}
+  thead  tr {
+      display: block;
+      position: relative;
+    }
+  
+tbody {
+    display: block;
+    overflow: auto;
+    width: 100%;
+    height: 700px;
+}
+ tbody   tr:nth-child(even) {
+      background-color: #DDD;
+    }
+  
+
+
+.old_ie_wrapper {
+  height: 300px;
+  width: 750px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  tbody { height: auto; }
+}*/
+/*table {
+  border-spacing: 0;
+  width:100%;
+}
+td + td {
+  border:1px solid black;
+}
+td, th {
+  border:1px solid black;
+  background: #ddd;
+  color: #000;
+  padding: 3px 15px;
+  vertical-align:top;
+}
+th {
+  height: 0;
+  line-height: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  color: transparent;
+  border: none;
+  white-space: nowrap;
+  background-color: rgb(13, 22, 236);
+}
+th div{
+position:absolute;
+width:100%;
+background-color: rgb(13, 22, 236);
+  color: #fff;
+  padding: 2px 15px;
+  top: 135px;
+  margin-left: -15px;
+  line-height: normal;
+  border-left: 1px solid #800;
+}*/
+th:first-child div{
+  border: none;
+}
+#row  {
+    display: table-row;
+    }
+
+  #left, #right, #middle {
+    display: table-cell;
+    padding-bottom:5px;
+    }
+  .Approved
+  {
+      width:99px;
+      font-size:small;
+      background-size:contain;
+      background-image:url('/images/Ok-48.png');
+      background-repeat:no-repeat;
+      text-align:right
+  }

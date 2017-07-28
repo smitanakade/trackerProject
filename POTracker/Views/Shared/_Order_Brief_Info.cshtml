@@ -1,0 +1,27 @@
+﻿@model POTracker.Models.AUPOTrackers
+    <div class="Table">
+        <div class="Heading_orderbrief">
+
+            <div class="Cell">Product Code</div>
+            <div class="Cell">Flag</div>
+            <div class="Cell">OS Qty</div>
+            <div class="Cell">Action Date</div>
+            <div class="Cell">SupplierStatus</div>
+            </div>
+            @{
+                var po = Convert.ToString(@ViewData["po"]);
+
+                var orderLines = Model.AUPOtrackerLines.Where(l => l.PO_order_no == po).ToList();
+                foreach (var orderLine in orderLines)
+                {
+                    <div class="Row">
+                        <div class="Cell">@Html.DisplayFor(m => orderLine.ProductCode)</div>
+                        <div class="Cell">@Html.DisplayFor(m => orderLine.Flag)	</div>
+                        <div class="Cell">@Html.DisplayFor(m => orderLine.OS_Qty)</div>
+                        <div class="Cell">	@Html.DisplayFor(m => orderLine.ActionDate)</div>
+                        <div class="Cell"> @Html.DisplayFor(m => orderLine.SupplierStatus)</div>
+
+                    </div>
+                }
+            }
+        </div>

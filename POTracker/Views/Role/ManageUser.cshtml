@@ -1,0 +1,48 @@
+﻿@model POTracker.Models.ShowLoginUser
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@using (Html.BeginForm("ManageUser", "Role", FormMethod.Post, new { id = "SupplierCode" }))
+{ 
+<div id="journeyPlannerPanel" class="resultPane minimised contentPad grey-gradient">
+    <br /><span style="font-size:24px; "> Edit Personal Detail</span><br />
+    <div id="container">
+
+        <div id="row">
+
+            <div id="left">
+                @Html.DisplayNameFor(modelItem => Model.UserList[0].UserName)
+            </div>
+            <div id="left">
+                @Html.EditorFor(modelItem => Model.UserList[0].UserName, new { htmlAttributes = new { @class = "editRepText", id = "UserName" } })
+                @Html.HiddenFor(modelItem => Model.UserList[0].UserName)
+                @Html.HiddenFor(modelItem => Model.UserList[0].UserId)
+                
+
+
+                @Html.ValidationMessage("UserName", "*")
+            </div>
+        </div>
+
+
+
+        <div id="row">
+            <div id="left">@Html.DisplayNameFor(modelItem => Model.UserList[0].UserInRole)</div>
+            <div id="right">
+                @Html.EditorFor(modelItem => Model.UserList[0].UserInRole, new { htmlAttributes = new { @class = "editRepText", id = "UserInRole" } })
+            </div>
+        </div>
+
+      
+  
+        <div class="No-item-text"></div>
+
+
+        <div id="row">
+            <div id="left"><input type="button" value="Delete" name="Delete" id="delete" class="btn btn-primary-red" /></div>
+            <div id="right"><input type="submit" value="Save" name="save" id="Save" onclick="return Check();" class="btn btn-primary" /></div>
+        </div>
+        @*<div id="row">@Html.ActionLink("Send Password to Rep", "/ResetPassword/" + Model.SupplierId, null, new { @class = "btn btn-primary-red" })</div>*@
+    </div>
+</div>
+}

@@ -1,0 +1,170 @@
+﻿@model IEnumerable<POTracker.Models.AUPurchaseOrder>
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "AU Home Page";
+}
+
+<div style="display:table;width:100%">
+    <div style="display:table-row">
+        <div style="display:table-cell;width:96%">
+            <div style="border: 0 none; font-size: 12px;border-radius: 10px 10px 10px 10px;box-shadow: 0 0 5px #000;max-height: 100px;position: relative; max-width:40%;margin:15px; padding:10px;">
+                Search By Country <select id="CountryBySearch" name="CountryBySearch">
+                <option value="">ALL</option>
+                <option value="AU">AU</option>
+                <option value="UK">UK</option>
+                </select>
+                Search By  <select id="SearchByCombo" name="SearchByCombo">
+                    <option value="">ALL</option>
+                    <option value="Stratum">Stratum</option>
+                    <option value="Purchase Order">Purchase Order</option>
+                    <option value="User">User</option>
+                    <option value="Supplier">Supplier</option>
+                    <option value="Whse Code">Whse Code</option>
+                </select>
+                Choose your values.
+                @*@Html.TextBox("SearchInput",(string)ViewBag.SearchInput)*@
+                <select id="SearchInputCombo" name="SearchInputCombo">
+                    <option value=""></option>
+                </select>
+                <button id="btnTrackerSearch" type="submit" style="width:92px;background-size:contain;background-image:url('/images/search_48.png');background-repeat:no-repeat;text-align:right" class="btn btn-primary-red">Search </button>
+
+            </div>
+        </div>
+
+        <div style="display:table-cell;width:2%;text-align:left;"><button id="btnRefresh" type="button" style="width:96px;background-size:contain;background-image:url('/images/refresh_49.png');background-repeat:no-repeat;text-align:right"class="btn btn-primary-red">Refresh</button></div>
+        <div style="display:table-cell;width:2%;text-align:left;"><button id="btnToggleComments" type="button" class="btn btn-primary-red">Expand / Collapse</button></div>
+    </div>
+</div>
+
+<div id="AUTrackerGrid" class="table-container">
+    @Html.Partial("_test", Model)
+</div>
+
+@if (IsPost)
+{
+    <div id="AddCommentView" class="table-container">
+        @Html.Partial("_AddComment", Model)
+    </div>
+}
+
+    @*<div class="Table">
+            <div class="Cell">@Html.DisplayName("Whse Code")</div>
+            <div class="Cell">@Html.DisplayName("PO No")</div>
+            <div class="Cell">@Html.DisplayName("PO No")</div>
+            <div class="Cell">@Html.DisplayName("Supplier Name")</div>
+            <div class="Cell">@Html.DisplayName("Order Date")</div>
+            <div class="Cell">@Html.DisplayName("Notes/Old PO No")</div>
+            <div class="Cell">@Html.DisplayName("Order Brief Info")</div>
+            <div class="Cell">@Html.DisplayName("Comments")</div>
+        </div>*@
+
+    @section scripts{
+        <script type="text/javascript">
+
+
+            $(document).ready(function () {
+                // $(".test3").hide();
+                $('#btnTrackerSearch').click(function () {
+                    var strSearchBy = $('#SearchByCombo').val();
+                    var CountryValue = $('#CountryBySearch').val();
+                    var strSearchValue = $('#SearchInputCombo').val();
+                    var url = '@Url.Action("GetAUTrackerGrid", "Home")';
+                    $.get(url, { searchBy: strSearchBy, searchValue: strSearchValue, country: CountryValue }, function (data) {
+                        $('#AUTrackerGrid').html(data);
+                        //$(".test3").hide();
+                        //$('.test').on('click', function () {
+                        //    var data = $(this).data("target");
+                        //    $(data).toggle();
+                        //});
+                    });
+                });
+                $('#btnToggleComments').click(function () {
+                    if ($(".test3").css("display") == "none") {
+                        $(".test3").show();
+                    } else {
+                        $(".test3").hide();
+                    }
+
+                });
+                $('#btnRefresh').click(function () {
+                    var url = '@Url.Action("RefreshPO", "Home")';
+                    $.get(url, function (data) {
+                        if (data != false) {
+                            //alert("Sucessfull!!");
+                            $('#AUTrackerGrid').html(data);
+                            //$(".test3").hide();
+                            $('.test').on('click', function () {
+                                var data = $(this).data("target");
+                                $(data).toggle();
+                            });
+                        }
+                    });
+                });
+                $(document).on("click", ".test", function () {
+                    var data = $(this).data("target");
+                    $(data).toggle();
+                });
+                $(document).on("click", ".deleteID", function () {
+                    var id = $(this).attr('id');
+                    var url = '@Url.Action("DeleteComment","Home")';
+                    $.post(url, { ID: id }, function (data) {
+                        if (data == true) {
+                            alert("Sucessfull!!");
+                            location.reload();
+
+                        }
+                        else {
+                            alert("Try again");
+                        }
+                    });
+
+                });
+
+                $(document).on("click", ".Approve", function () {
+                    var po = $(this).attr('po');
+                    var poSuffix = $(this).attr('posuffix');
+                    //alert(po.toString() + ' ' + poSuffix)
+                     var url = '@Url.Action("ApprovePO", "Home")';
+                    $.post(url, { po: po, poSuffix: poSuffix }, function (data) {
+                        if (data == true) {
+                            $('#'+ po + poSuffix).attr('disabled', 'disabled');
+                            $('#' + po + poSuffix).text('Approved');
+                            $('#' + po + poSuffix).removeClass('Approve');
+                            $('#' + po + poSuffix).addClass('Approved');
+
+                        }
+                        else {
+                            alert("Try again");
+                        }
+                    });
+
+                });
+                $(document).on("click", ".comment", function () {
+                    //var document = cb.parentElement;
+                    //var document1 = document.getElementsByTagName('input')[0].id;
+                    //var id = document1.replace("MainContent_GridView1_specialOrders_", "")
+                    var getValue = $(this).attr('id');
+                    var xmlhttp;
+                    if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
+                        xmlhttp = new XMLHttpRequest();
+                    }
+                    else {// code for IE6, IE5
+                        xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+                    }
+                    popupWindow = window.open("../Reports/commentsViewer.aspx?q=" + getValue, 'popUpWindow', 'height=650,width=500,left=500,top=300,resizable=No,scrollbars=Yes,toolbar=no,menubar=no,location=no,directories=no, status=No');
+
+                });
+                
+                $('#SearchByCombo').change(function () {
+                    var searchValue = $('#SearchByCombo').val();
+                    var CountryValue = $('#CountryBySearch').val();
+                    $.get('/Home/GetSearchValues/' + searchValue, CountryValue, function (data) {
+                        $('#SearchInputCombo').html(data);
+                    });
+
+                });
+            });
+
+        </script>
+    }

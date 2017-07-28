@@ -1,0 +1,177 @@
+﻿@model IEnumerable<POTracker.Models.AUPurchaseOrder>
+<div style="max-width:100%">
+    <table style="max-width:100%">
+        <thead class="fixed_headers">
+            <tr>
+                <th>
+                    Whse <br />Code
+                </th>
+                <th>
+                    @Html.DisplayName("PDF")
+                </th>
+                <th>
+                    @Html.DisplayName("PO No")
+                </th>
+                <th class="th1">
+                    Supplier<br /> Name
+                </th>
+                <th class="th1">
+                    Order<br /> Date
+                </th>
+                <th>
+                    @Html.DisplayName("Notes Old PO No")
+                </th>
+                <th>
+                    @*@Html.DisplayName("Order Brief Info")*@
+                    <div>
+                        <div class="Cell">Stratum</div>
+                        <div style="display: table-cell;border: solid 1px;min-width: 140px;">Product Code</div>
+                        <div style="display: table-cell;border: solid 1px;min-width: 40px;">Flag</div>
+                        <div style="display: table-cell;border: solid 1px;min-width: 60px;">OS Qty</div>
+                        <div style="display: table-cell;border: solid;min-width: 72px;">Action Date</div>
+                        <div class="Cell">Spex</div>
+                        <div class="Cell">Artwork</div>
+                        <div class="Cell">Supplier<br />Status</div>
+                    </div>
+                </th>
+                <th>
+                    @Html.DisplayName("Comments")
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr style="vertical-align:text-top">
+                    <td>
+                        @Html.DisplayFor(modelItem => item.po_whse_code)
+                    </td>
+                    <td>
+                        <a href="http://testpotracker.arlec.com.au:8082/Reports/ViewReport.aspx?po=@item.po_order_no&bosuffix=@item.po_backorder_flag" target="_blank"> <img src="~/images/PDFIcon.png" /></a>
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.po_order_no)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.cre_accountcode)
+                    </td>
+                    <td >
+                        @Html.DisplayFor(modelItem => item.OrderDate)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.po_notes)
+                    </td>
+                    <td>
+                        @*@Html.Partial("_AU_Order_Brief_Info", item.OrderLines)*@
+                        <div class="Table">
+
+                            <div class="product">
+
+                                @{
+                                    foreach (var orderLine in item.OrderLines)
+                                    {
+                                        <div class="Row">
+                                            <div class="Cell">@Html.DisplayFor(m => orderLine.stock_group)</div>
+                                            <div style="display: table-cell;border: solid 1px;border-width: thin;min-width: 140px;">@Html.DisplayFor(m => orderLine.stock_code)</div>
+                                            <div style="display: table-cell;border: solid 1px ;min-width: 40px;">@Html.DisplayFor(m => orderLine.po_backorder_flag)	</div>
+                                            <div class="Cell">@Html.DisplayFor(m => orderLine.po_order_qty)</div>
+                                            <div class="Cell">	@Html.DisplayFor(m => orderLine.ActionDate)</div>
+                                            <div class="Cell">
+                                                    @{
+                                                        if (orderLine.SpexStatus == "Active")
+                                                        {
+                                                            @*<a href='@~/Reports/ViewSpecifications.aspx?p=@orderLine.stock_code.Trim()&s=@item.cre_accountcode.Trim()' target="_blank"> Spex Link </a>*@
+                                                            @*<a href="http://localhost:50267/Reports/ViewSpecifications.aspx?p=@orderLine.stock_code.Trim()&s=@item.cre_accountcode.Trim()" target="_blank"> Spex Link </a>*@
+                                                        }
+                                                        else
+                                                        {
+                                                        <b>No Spex</b> 
+                                                        }
+                                                    }
+                                            </div>
+                                            <div class="Cell">
+                                                @{
+                                                    var ArtworkProducts = Session["ArtworkProducts"] as List<string>;
+                                                    if (ArtworkProducts != null && ArtworkProducts.Count > 0 && ArtworkProducts.Contains(orderLine.stock_code.Trim()))
+                                                    {
+                                                        <a href="http://localhost:50267/Reports/ViewArtwork.aspx?p=@orderLine.stock_code.Trim()" target="_blank"> Artwork Link</a>
+
+                                                    }
+                                                    else
+                                                    {
+                                                        <b>No Artwork</b>
+                                                    }
+
+                                                }
+                                            </div>
+                                            <div class="Cell"> @*@Html.DisplayFor(m => orderLine.SupplierStatus)*@N</div>
+                                        </div>
+                                    }
+
+                                }
+                            </div>
+                        </div>
+                    </td>
+                    <td data-toggle="collapse" data-target="#@item.po_order_no" class="accordion-toggle" style="cursor:pointer; min-width:560px;">
+
+                        Click Here To See Comment
+
+                        <div class="accordian-body collapse" id="@item.po_order_no">
+                            <div class="Table" style="position:relative">
+                                <div class="Heading_comment">
+                                    <div class="Cell"> User Name</div>
+                                    <div class="Cell"> Note</div>
+                                    <div class="Cell"> Date </div>
+                                    <div class="Cell">Delete</div>
+
+                                </div>
+                                @{
+                                    foreach (var comment in item.OrderComments)
+                                    {
+
+                                        <div class="Row">
+                                            <div class="Cell"> @Html.DisplayFor(m => comment.UserName)</div>
+                                            <div class="Cell"> @Html.TextAreaFor(m => comment.Comment, new { @readonly = "readonly", @cols = 30, @rows = 5 })</div>
+                                            <div class="Cell"> @Html.DisplayFor(m => comment.CommentDate)   </div>
+                                            @*<div class="Cell"  id="@Html.DisplayFor(m=>comment.commentId)">  @Html.ActionLink("Delete", "null", "null", new { id= comment.commentId }, htmlAttributes: new { @id = comment.commentId, @class = "DeleteId" })</div>*@
+
+                                            <div class="delete" id="@item.po_order_no"><a href="#" class="deleteID" id="@comment.CommentsId">delete</a></div>
+                                        </div>
+
+                                    }
+                                }
+                                <div class="Row">
+                                    <div><a href="#" id="AddComment">Add Comment</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+
+                                    }
+        </tbody>
+
+    </table>
+</div>
+
+@section scripts{
+    <script type="text/javascript">
+
+            $(document).ready(function () {
+                $('.accordion-toggle').click(function () {
+                    if ($(this).attr('aria-expanded') == "true") {
+                        $(this).children().css('background-color', '#FFF');
+
+                    } else {
+                        $(this).children().css('background-color', '#DDD');
+                    }
+                    SetTDWidth();
+                });
+            });
+
+            function SetTDWidth() {
+                alert('Col1:' + $('#col1').width());
+                alert('Col2:' + $('#col2').width());
+            }
+    </script>
+}

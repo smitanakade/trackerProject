@@ -1,0 +1,79 @@
+﻿@model POTracker.Models.ShowSupplier
+@{
+    ViewBag.Title = "EditSupplierDetails";
+
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h1> <u style="color:#1e901d;">@Model.ShowSuppList[0].suppliercode</u> Details </h1><br />
+@using (Html.BeginForm("EditSupplier", "SupplierManagment",  FormMethod.Post, new { id = "SupplierCode" }))
+{
+
+<div id="journeyPlannerPanel" class="resultPane minimised contentPad grey-gradient">
+    <br /><span style="font-size:24px; "> Edit Personal Detail</span><br />
+    <div id="container">
+
+        <div id="row">
+
+            <div id="left">
+                @Html.DisplayNameFor(modelItem => Model.ShowSuppList[0].suppliierName)
+            </div>
+            <div id="left">
+                @Html.EditorFor(modelItem => Model.ShowSuppList[0].suppliierName, new { htmlAttributes = new { @class = "editRepText", id = "SupplierName" } })
+                @Html.HiddenFor(modelItem => Model.ShowSuppList[0].suppliierName)
+                @Html.HiddenFor(modelItem => Model.ShowSuppList[0].suppliercode)
+                @Html.HiddenFor(modelItem => Model.ShowSuppList[0].country)
+
+
+                @Html.ValidationMessage("SupplierName", "*")
+            </div>
+        </div>
+      
+
+
+        <div id="row">
+            <div id="left">@Html.DisplayNameFor(modelItem => Model.ShowSuppList[0].Regester)</div>
+            <div id="right">
+               @* @Html.DropDownListFor(modelItem => Model.SupplierStatus, new SelectList(Model.StatusOfSupplier, "Text", "Value", Model.SupplierStatus), Model.SupplierStatus)*@
+            </div>
+        </div>
+       
+        <div id="row">
+            <div id="left">@Html.Label("System Access")</div>
+            @*<div id="right">
+                @Html.DropDownListFor(modelItem => Model.Register, new SelectList(Model.IsRegister, "Value", "Text", Model.Register), Model.Register)
+
+                @Html.HiddenFor(modelItem => Model.Designation)
+            </div>*@
+
+        </div>
+        <div id="row">
+            <div id="left">@Html.DisplayNameFor(modelItem => Model.ShowSuppList[0].country)</div>
+            <div id="right">
+                @Html.EditorFor(modelItem => Model.ShowSuppList[0].country, new { htmlAttributes = new { @class = "editRepText", id = "Country" } })
+                @Html.HiddenFor(modelItem => Model.ShowSuppList[0].country)
+                @Html.ValidationMessage("Country", "*")
+            </div>
+        </div>
+       <div id="row">
+           <div id="Left">@Html.Label("List Of InspectionTeam")</div>
+           <div id="Right">@Html.DropDownListFor(modelItem => Model.ShowSuppList[0].Inspector, new SelectList(Model.ListofInspectionTeam, "Value", "Text", "Select Inspection Team"), "Select Inspection Team")</div>
+       </div>
+        <div id="row" class="item-text">
+            @*@Html.HiddenFor(modelItem => Model.Access)*@
+
+            @*@foreach (var g in Model.StateGroup)
+            {
+
+                <input type="checkbox" name="SelectedGroups" value="@g.Name" id="@g.Id" @{ for (var i = 0; i < Model.RepDetail.Count; i++) { if (Model.RepDetail[i].State != null) { if (Model.RepDetail[i].State.Contains(g.Id)) { <text> checked='checked' </text>       } } }} /><label for="@g.Id">@g.Name</label>     }*@
+
+
+        </div>
+        <div class="No-item-text"></div>
+   
+
+        <div id="row"><div id="left"><input type="button" value="Delete" name="Delete" id="delete" class="btn btn-primary-red" /></div>
+        <div id="right"><input type="submit" value="Save" name="save" id="Save" onclick="return Check();" class="btn btn-primary" /></div></div>
+        @*<div id="row">@Html.ActionLink("Send Password to Rep", "/ResetPassword/" + Model.SupplierId, null, new { @class = "btn btn-primary-red" })</div>*@
+    </div>
+</div>
+}

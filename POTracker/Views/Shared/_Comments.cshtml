@@ -1,0 +1,30 @@
+﻿@model IEnumerable<POTracker.Models.AUPOtrackerComments>
+@{             var po = Convert.ToString(@ViewData["po"]);
+}
+<div class="comment" id="@po">
+    <div class="Table">
+        <div class="Heading_comment">
+            <div class="Cell"> User Name</div>
+            <div class="Cell"> Note</div>
+            <div class="Cell"> Date </div>
+            <div class="Cell">Delete</div>
+
+        </div>
+        @{
+            var Comments = Model.Where(c => c.OrderNumber == po).ToList();
+            foreach (var comment in Comments)
+            {
+                    <div class="Row">
+                        <div class="Cell"> @Html.DisplayFor(m => comment.user)</div>
+                        <div class="Cell"> @Html.TextAreaFor(m => comment.comment, new { @readonly = "readonly", @cols = 30, @rows = 5 })</div>
+                        <div class="Cell"> @Html.DisplayFor(m => comment.date)   </div>
+                        @*<div class="Cell"  id="@Html.DisplayFor(m=>comment.commentId)">  @Html.ActionLink("Delete", "null", "null", new { id= comment.commentId }, htmlAttributes: new { @id = comment.commentId, @class = "DeleteId" })</div>*@
+
+                        <div class="delete" id="@po"><a href="#" class="deleteID" id="@comment.commentId">delete</a></div>
+                    </div>
+
+            }
+        }
+    </div>
+</div>
+

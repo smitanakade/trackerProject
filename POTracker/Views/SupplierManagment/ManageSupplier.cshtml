@@ -1,0 +1,123 @@
+﻿@model POTracker.Models.SupplierManageModel
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<h1>Search,Edit & Link Rep</h1>
+
+<form action="~/RepManagment/ManageRep" method="post">
+    @*@Html.HiddenFor(m => m.SelectedTab)*@
+
+    @if (TempData["Success"] != null)
+    {
+        <div class="success">
+            <p><strong>Success:</strong> @TempData["Success"].ToString()</p>
+        </div>
+    }
+    @if (TempData["Error"] != null)
+    {
+        <div class="success">
+            <p><strong>Error:</strong> @TempData["Error"].ToString()</p>
+        </div>
+    }
+    <div id="JourneyPlanResults" class="searchOptions SearchBox">
+        <h3>Search</h3>
+        @Html.LabelFor(m => m.SupplierName)
+        @Html.TextBoxFor(m => m.SupplierName, new { id = "txtStoreNo" })
+
+        @Html.HiddenFor(m => m.SupplierName)
+
+       )
+
+        @Html.LabelFor(m => m.Designation)
+
+        <select id="ddlState" name="Designation">
+            <option value="Supplier">Supplier</option>
+            <option value="InspectionTeam">InspectionTeam</option>
+            
+        </select>
+        @Html.HiddenFor(m => m.Designation)
+
+        @Html.LabelFor(m => m.Country)
+        <select id="ddlCountry" name="Country">
+            <option value="AU">AU</option>
+            <option value="NZ">NZ</option>
+            <option value="UK">UK</option>
+        </select>
+        @Html.HiddenFor(m => m.Country)
+
+
+
+
+        <input id="btnScheduleSearch" type="submit" value="Search" class="btn btn-primary-red" />
+
+        @Html.ActionLink("To Excel", "ExcelExport", null, new { @class = "btn btn-primary" })
+    </div>
+
+    @{
+        TempData["StoreNo"] = Model.SupplierName;
+        TempData["Country"] = Model.Country;
+        @*@Html.Grid(Model.RepDetail).Columns(columns =>
+    {
+        columns.Add(c => c.RepId).Titled("Edit").Filterable(false).Sanitized(false).Encoded(false).RenderValueAs(r => Html.ActionLink("Edit", "EditRepDetails", new { id = r.RepId }, null).ToHtmlString());
+        columns.Add(c => c.StoreNo).Titled("Store No").Filterable(true);
+        columns.Add(c => c.StoreName).Titled("Store Name").Filterable(true);
+        columns.Add(c => c.RepName).Titled("Rep Name").Filterable(true);
+        columns.Add(c => c.RepCode).Titled("Rep Code").Filterable(true);
+        columns.Add(c => c.State).Titled("State").Filterable(true);
+        columns.Add(c => c.PhoneNum).Titled("Phone Number").Filterable(true);
+        columns.Add(c => c.EmailId).Titled("EmailId").Filterable(true);
+        columns.Add(c => c.Country).Titled("Country").Filterable(true);
+        columns.Add(c => c.Register).Titled("Web Access").Filterable(true);
+
+    }).WithPaging(20).Sortable(true)*@
+
+    }
+
+
+</form>
+<h1></h1>
+
+@section scripts{
+    <script>
+        $("#tabs").tabs();
+
+           var selectedTab = '#' + $("#SelectedTab").val();
+      //  alert(selectedTab);
+        $("#tabs").tabs("option", "active", $(selectedTab + "Selector").index());
+        $("#DateFrom").datepicker({
+            dateFormat: "dd/mm/yy"
+        });
+        $("#DateTo").datepicker({
+            dateFormat: "dd/mm/yy"
+        });
+        //var weekDayNum = new Date().getDay();
+        //if (weekDayNum < 6) {
+        //    $('#ddlSelectionDay').val(weekDayNum);
+        //}
+
+        $(".tabpage").click(function (e) {
+            var linkval = this.href;
+            var splitvals = linkval.split('#')
+            if (splitvals.length > 1) {
+                $("#SelectedTab").val(splitvals[1]);
+                //alert(splitvals[1]);
+            }
+        });
+        $("#ddlCountry").val($("#Country").val());
+        $("#ddlState").val($("#State").val());
+        $("#txtRep").val(this.value);
+        $("#txtStoreNo").val(this.value);
+
+
+
+        $("#ddlState").change(function () {
+            $("#State").val(this.value);
+        });
+        $("#ddlCountry").change(function () {
+            $("#Country").val(this.value);
+        });
+    </script>
+}

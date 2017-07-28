@@ -1,0 +1,86 @@
+﻿@model POTracker.Models.SupplierManageModel
+@{
+    ViewBag.Title = "Add New Supplier";
+    Layout = "~/Views/Shared/_Layout.cshtml";}
+
+<h1>Add New Supplier and Inspection Team</h1>
+@{
+    if (IsPost)
+    {
+        <div class="resultMesssage"> @ViewBag.Message</div>
+    }
+
+}
+@Html.ValidationSummary()
+
+
+<form id="Supplier" action="~/SupplierManagment/Index" method="post">
+    <div style="margin:10px; margin-top:20px; margin-left:20px; ">
+        <div id="container">
+
+            <div id="row">
+
+                <div id="left">
+                    @Html.LabelFor(m => m.SupplierName)
+                </div>
+                <div id="right">
+                    @Html.TextBoxFor(m => m.SupplierName, new { id = "txtRep" })
+                </div>
+
+
+            </div>
+
+            <div id="row">
+
+                <div id="left">
+                   @Html.Label("Title")
+                </div>
+                <div id="right">
+                    <select id="Designation" name="Designation">
+                        <option value="">Select</option>
+                        <option value="Supplier">Supplier</option>
+                        <option value="InspectionTeam">InspectionTeam</option>
+
+                    </select>
+
+                </div>
+            </div>
+        
+            <div id="row">
+                <div id="left">
+                    @Html.LabelFor(m => m.Email)
+                </div>
+                <div id="right">
+                    @Html.TextBoxFor(m => m.Email, new { id = "txtEmailId" })
+                </div>
+            </div>
+            
+
+            </div>
+            <div id="row">
+                <div id="left">@Html.LabelFor(m=>m.Country)</div>
+                <div id="right">
+                    <select id="Country" name="Country">
+                        <option value="">Select</option>
+                        <option value="AU">AU</option>
+                        <option value="NZ">NZ</option>
+                        <option value="UK">UK</option>
+                    </select>
+
+                </div>
+
+            </div>
+
+         
+
+            <div id="row">
+                <div id="left">
+                    <input id="Add" type="submit" value="ADD" class="btn btn-primary" />
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+@section scripts{
+  
+}

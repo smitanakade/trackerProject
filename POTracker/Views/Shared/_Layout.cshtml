@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/jqueryval")
+    @*@Scripts.Render("~/bundles/jqueryui")*@
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @if (System.Web.HttpContext.Current.User.Identity.IsAuthenticated)
+                {
+                    @Html.ActionLink("POTracker", "AUIndex", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                }
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+@*@if (System.Web.HttpContext.Current.User.Identity.IsAuthenticated)
+{
+                    <li>@Html.ActionLink("Home", "AUIndex", "Home")</li>
+}*@
+
+@if (System.Web.HttpContext.Current.User.IsInRole("Admin") == true)
+{
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">User<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                                                <li>@Html.ActionLink("Show User", "ShowUser", "Role", routeValues: null, htmlAttributes: new { id = "registerLink" })</li>
+
+                                            <li>@Html.ActionLink("Create User", "Register", "Account", routeValues: null, htmlAttributes: new { id = "registerLink" })</li>
+
+                                            <li>@Html.ActionLink("Role", "Index", "Role")</li>
+               
+                        </ul>
+
+
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">SupplierManagment<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>@Html.ActionLink("Assign Supplier", "AssignGroup", "SupplierManagment", routeValues: null, htmlAttributes: new { id = "registerLink" })</li>
+
+                            @*<li>@Html.ActionLink("Edit Supplier", "EditSupplier", "SupplierManagment", routeValues: null, htmlAttributes: new { id = "registerLink" })</li>*@
+
+                        </ul>
+                        </li>
+}
+                    </ul>
+                @*@Html.Partial("_LoginPartial")*@
+                @using Microsoft.AspNet.Identity
+                @if (Request.IsAuthenticated)
+                {
+                    using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm", @class = "navbar-right" }))
+                    {
+                        @Html.AntiForgeryToken()
+
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown"> @User.Identity.GetUserName() Manage Account<b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    @* @Html.ActionLink("Hello " + User.Identity.GetUserName() + "!", "Manage", "Account", routeValues: null, htmlAttributes: new { title = "Manage" })*@
+                                    <li>  @Html.ActionLink("Change Password", "ChangePassword", "Manage")</li>
+                                    <li><a href="javascript:document.getElementById('logoutForm').submit()">Log off</a></li>
+                                </ul>
+
+                            </li>
+
+
+                        </ul>
+                    }
+                }
+                else
+                {
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>@Html.ActionLink("Log in", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })</li>
+                    </ul>
+                }
+
+            </div>
+        </div>
+    </div>
+    @* <div class="container body-content">*@
+    <div style="max-width: 100%; ">
+        @RenderBody()
+        <hr />
+        <footer></footer>
+    </div>
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

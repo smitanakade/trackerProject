@@ -1,0 +1,2230 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="POTrackerDBModelStoreContainer" CdmEntityContainer="POTrackerDBEntities">
+    <EntitySetMapping Name="AUCreMasters">
+      <EntityTypeMapping TypeName="POTrackerDBModel.AUCreMaster">
+        <MappingFragment StoreEntitySet="AUCreMaster">
+          <ScalarProperty Name="CreMasterId" ColumnName="CreMasterId" />
+          <ScalarProperty Name="cre_accountcode" ColumnName="cre_accountcode" />
+          <ScalarProperty Name="cr_pay_to_code" ColumnName="cr_pay_to_code" />
+          <ScalarProperty Name="cr_shortname" ColumnName="cr_shortname" />
+          <ScalarProperty Name="cr_opening_bal" ColumnName="cr_opening_bal" />
+          <ScalarProperty Name="cr_balance" ColumnName="cr_balance" />
+          <ScalarProperty Name="cr_future_amt" ColumnName="cr_future_amt" />
+          <ScalarProperty Name="cr_purchase_ytd" ColumnName="cr_purchase_ytd" />
+          <ScalarProperty Name="cr_def_payment_terms" ColumnName="cr_def_payment_terms" />
+          <ScalarProperty Name="PaymentTermDesc" ColumnName="PaymentTermDesc" />
+          <ScalarProperty Name="cr_payment_selection" ColumnName="cr_payment_selection" />
+          <ScalarProperty Name="cr_auto_rq_flag" ColumnName="cr_auto_rq_flag" />
+          <ScalarProperty Name="cr_type" ColumnName="cr_type" />
+          <ScalarProperty Name="cr_chq_or_bankdraft" ColumnName="cr_chq_or_bankdraft" />
+          <ScalarProperty Name="cr_account_status" ColumnName="cr_account_status" />
+          <ScalarProperty Name="cr_clearing_flag" ColumnName="cr_clearing_flag" />
+          <ScalarProperty Name="cr_contact_name" ColumnName="cr_contact_name" />
+          <ScalarProperty Name="cr_default_gl_accountcode" ColumnName="cr_default_gl_accountcode" />
+          <ScalarProperty Name="cr_date_last_changed" ColumnName="cr_date_last_changed" />
+          <ScalarProperty Name="cr_curr_code" ColumnName="cr_curr_code" />
+          <ScalarProperty Name="cr_date_created" ColumnName="cr_date_created" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AUNameAndAddressMasters">
+      <EntityTypeMapping TypeName="POTrackerDBModel.AUNameAndAddressMaster">
+        <MappingFragment StoreEntitySet="AUNameAndAddressMaster">
+          <ScalarProperty Name="AddressId" ColumnName="AddressId" />
+          <ScalarProperty Name="accountcode" ColumnName="accountcode" />
+          <ScalarProperty Name="na_type" ColumnName="na_type" />
+          <ScalarProperty Name="na_name" ColumnName="na_name" />
+          <ScalarProperty Name="na_company" ColumnName="na_company" />
+          <ScalarProperty Name="na_street" ColumnName="na_street" />
+          <ScalarProperty Name="na_suburb" ColumnName="na_suburb" />
+          <ScalarProperty Name="na_country" ColumnName="na_country" />
+          <ScalarProperty Name="na_address_6" ColumnName="na_address_6" />
+          <ScalarProperty Name="na_address_7" ColumnName="na_address_7" />
+          <ScalarProperty Name="postcode" ColumnName="postcode" />
+          <ScalarProperty Name="na_country_code" ColumnName="na_country_code" />
+          <ScalarProperty Name="na_phone" ColumnName="na_phone" />
+          <ScalarProperty Name="na_mobile_phone" ColumnName="na_mobile_phone" />
+          <ScalarProperty Name="na_fax_no" ColumnName="na_fax_no" />
+          <ScalarProperty Name="na_company_id" ColumnName="na_company_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AUOrderTrackerComments">
+      <EntityTypeMapping TypeName="POTrackerDBModel.AUOrderTrackerComment">
+        <MappingFragment StoreEntitySet="AUOrderTrackerComments">
+          <ScalarProperty Name="CommentsId" ColumnName="CommentsId" />
+          <ScalarProperty Name="OrderNumber" ColumnName="OrderNumber" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="CommentDate" ColumnName="CommentDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AUPurchaseOrders">
+      <EntityTypeMapping TypeName="POTrackerDBModel.AUPurchaseOrder">
+        <MappingFragment StoreEntitySet="AUPurchaseOrder">
+          <ScalarProperty Name="PurchaseOrderId" ColumnName="PurchaseOrderId" />
+          <ScalarProperty Name="po_order_no" ColumnName="po_order_no" />
+          <ScalarProperty Name="po_backorder_flag" ColumnName="po_backorder_flag" />
+          <ScalarProperty Name="cre_accountcode" ColumnName="cre_accountcode" />
+          <ScalarProperty Name="po_order_date" ColumnName="po_order_date" />
+          <ScalarProperty Name="po_action_date" ColumnName="po_action_date" />
+          <ScalarProperty Name="po_arrival_date" ColumnName="po_arrival_date" />
+          <ScalarProperty Name="po_received_date" ColumnName="po_received_date" />
+          <ScalarProperty Name="po_order_status" ColumnName="po_order_status" />
+          <ScalarProperty Name="po_order_terms" ColumnName="po_order_terms" />
+          <ScalarProperty Name="po_inwards_no" ColumnName="po_inwards_no" />
+          <ScalarProperty Name="po_inwards_order_suffix" ColumnName="po_inwards_order_suffix" />
+          <ScalarProperty Name="po_whse_code" ColumnName="po_whse_code" />
+          <ScalarProperty Name="po_receiving_whse" ColumnName="po_receiving_whse" />
+          <ScalarProperty Name="po_currency_code" ColumnName="po_currency_code" />
+          <ScalarProperty Name="po_initial_currency_rate" ColumnName="po_initial_currency_rate" />
+          <ScalarProperty Name="po_final_currency_rate" ColumnName="po_final_currency_rate" />
+          <ScalarProperty Name="po_order_total" ColumnName="po_order_total" />
+          <ScalarProperty Name="po_received_total" ColumnName="po_received_total" />
+          <ScalarProperty Name="po_charges_total" ColumnName="po_charges_total" />
+          <ScalarProperty Name="po_ordered_tax_amt" ColumnName="po_ordered_tax_amt" />
+          <ScalarProperty Name="po_received_tax_amt" ColumnName="po_received_tax_amt" />
+          <ScalarProperty Name="po_invoice_no" ColumnName="po_invoice_no" />
+          <ScalarProperty Name="po_invoice_details" ColumnName="po_invoice_details" />
+          <ScalarProperty Name="po_invoice_date" ColumnName="po_invoice_date" />
+          <ScalarProperty Name="po_invoice_amount" ColumnName="po_invoice_amount" />
+          <ScalarProperty Name="po_invoice_tax_amount" ColumnName="po_invoice_tax_amount" />
+          <ScalarProperty Name="po_normal_provision_amount" ColumnName="po_normal_provision_amount" />
+          <ScalarProperty Name="po_specials_provision_amount" ColumnName="po_specials_provision_amount" />
+          <ScalarProperty Name="po_charges_provision_amount" ColumnName="po_charges_provision_amount" />
+          <ScalarProperty Name="po_vessel_name" ColumnName="po_vessel_name" />
+          <ScalarProperty Name="po_entry_port" ColumnName="po_entry_port" />
+          <ScalarProperty Name="po_voyage_no" ColumnName="po_voyage_no" />
+          <ScalarProperty Name="po_lc_number" ColumnName="po_lc_number" />
+          <ScalarProperty Name="po_shipment_no" ColumnName="po_shipment_no" />
+          <ScalarProperty Name="po_costing_date" ColumnName="po_costing_date" />
+          <ScalarProperty Name="po_notes" ColumnName="po_notes" />
+          <ScalarProperty Name="po_job_no" ColumnName="po_job_no" />
+          <ScalarProperty Name="po_job_cost_centre" ColumnName="po_job_cost_centre" />
+          <ScalarProperty Name="o_po_quote_tax_exemption" ColumnName="o_po_quote_tax_exemption" />
+          <ScalarProperty Name="po_job_retention_amount" ColumnName="po_job_retention_amount" />
+          <ScalarProperty Name="po_user_name" ColumnName="po_user_name" />
+          <ScalarProperty Name="po_date_stamp" ColumnName="po_date_stamp" />
+          <ScalarProperty Name="po_time_stamp" ColumnName="po_time_stamp" />
+          <ScalarProperty Name="po_carrier_code" ColumnName="po_carrier_code" />
+          <ScalarProperty Name="po_drop_sales_order_no" ColumnName="po_drop_sales_order_no" />
+          <ScalarProperty Name="po_revision_no" ColumnName="po_revision_no" />
+          <ScalarProperty Name="po_reason_code" ColumnName="po_reason_code" />
+          <ScalarProperty Name="po_order_type" ColumnName="po_order_type" />
+          <ScalarProperty Name="po_confirmation_flag" ColumnName="po_confirmation_flag" />
+          <ScalarProperty Name="po_batch_ref" ColumnName="po_batch_ref" />
+          <ScalarProperty Name="po_receiver_user_id" ColumnName="po_receiver_user_id" />
+          <ScalarProperty Name="po_country_code" ColumnName="po_country_code" />
+          <ScalarProperty Name="po_misc_code" ColumnName="po_misc_code" />
+          <ScalarProperty Name="po_tax_group" ColumnName="po_tax_group" />
+          <ScalarProperty Name="po_control_lock" ColumnName="po_control_lock" />
+          <ScalarProperty Name="po_control_user_lock" ColumnName="po_control_user_lock" />
+          <ScalarProperty Name="po_total_weight" ColumnName="po_total_weight" />
+          <ScalarProperty Name="po_total_qty" ColumnName="po_total_qty" />
+          <ScalarProperty Name="po_total_volume" ColumnName="po_total_volume" />
+          <ScalarProperty Name="po_original_edi_run" ColumnName="po_original_edi_run" />
+          <ScalarProperty Name="po_spare_date" ColumnName="po_spare_date" />
+          <ScalarProperty Name="po_catalog_no" ColumnName="po_catalog_no" />
+          <ScalarProperty Name="po_spare_num" ColumnName="po_spare_num" />
+          <ScalarProperty Name="po_spare_code" ColumnName="po_spare_code" />
+          <ScalarProperty Name="po_qa_released" ColumnName="po_qa_released" />
+          <ScalarProperty Name="po_user_only_alpha20_1" ColumnName="po_user_only_alpha20_1" />
+          <ScalarProperty Name="po_control_user_id_no" ColumnName="po_control_user_id_no" />
+          <ScalarProperty Name="po_header_tax_rate" ColumnName="po_header_tax_rate" />
+          <ScalarProperty Name="o_po_tax_classification_code" ColumnName="o_po_tax_classification_code" />
+          <ScalarProperty Name="po_max_retention_amount" ColumnName="po_max_retention_amount" />
+          <ScalarProperty Name="po_max_retention_percent" ColumnName="po_max_retention_percent" />
+          <ScalarProperty Name="po_max_retention_claim_percent" ColumnName="po_max_retention_claim_percent" />
+          <ScalarProperty Name="po_next_claim_no" ColumnName="po_next_claim_no" />
+          <ScalarProperty Name="po_line_format" ColumnName="po_line_format" />
+          <ScalarProperty Name="po_requisition_entry_user_name" ColumnName="po_requisition_entry_user_name" />
+          <ScalarProperty Name="po_requisition_approval_user" ColumnName="po_requisition_approval_user" />
+          <ScalarProperty Name="po_transit_total" ColumnName="po_transit_total" />
+          <ScalarProperty Name="po_transit_tax_amt" ColumnName="po_transit_tax_amt" />
+          <ScalarProperty Name="po_total_line_qty" ColumnName="po_total_line_qty" />
+          <ScalarProperty Name="po_dif_flag" ColumnName="po_dif_flag" />
+          <ScalarProperty Name="Flag" ColumnName="Flag" />
+          <ScalarProperty Name="ValidPO" ColumnName="ValidPO" />
+          <ScalarProperty Name="Archived" ColumnName="Archived" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AUPurchaseOrderDeliveries">
+      <EntityTypeMapping TypeName="POTrackerDBModel.AUPurchaseOrderDelivery">
+        <MappingFragment StoreEntitySet="AUPurchaseOrderDelivery">
+          <ScalarProperty Name="PODeliveryId" ColumnName="PODeliveryId" />
+          <ScalarProperty Name="po_order_no" ColumnName="po_order_no" />
+          <ScalarProperty Name="po_backorder_flag" ColumnName="po_backorder_flag" />
+          <ScalarProperty Name="po_dl_type" ColumnName="po_dl_type" />
+          <ScalarProperty Name="po_dl_text_1" ColumnName="po_dl_text#1" />
+          <ScalarProperty Name="po_dl_text_2" ColumnName="po_dl_text#2" />
+          <ScalarProperty Name="po_dl_text_3" ColumnName="po_dl_text#3" />
+          <ScalarProperty Name="po_dl_text_4" ColumnName="po_dl_text#4" />
+          <ScalarProperty Name="po_dl_text_5" ColumnName="po_dl_text#5" />
+          <ScalarProperty Name="po_dl_text_6" ColumnName="po_dl_text#6" />
+          <ScalarProperty Name="po_dl_text_7" ColumnName="po_dl_text#7" />
+          <ScalarProperty Name="po_dl_postcode" ColumnName="po_dl_postcode" />
+          <ScalarProperty Name="po_dl_country_code" ColumnName="po_dl_country_code" />
+          <ScalarProperty Name="po_dl_phone" ColumnName="po_dl_phone" />
+          <ScalarProperty Name="po_dl_fax" ColumnName="po_dl_fax" />
+          <ScalarProperty Name="po_dl_address_id" ColumnName="po_dl_address_id" />
+          <ScalarProperty Name="po_dl_ausbar_code" ColumnName="po_dl_ausbar_code" />
+          <ScalarProperty Name="po_dl_mobile_phone" ColumnName="po_dl_mobile_phone" />
+          <ScalarProperty Name="po_dl_email" ColumnName="po_dl_email" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AUPurchaseOrderDeliveryArchives">
+      <EntityTypeMapping TypeName="POTrackerDBModel.AUPurchaseOrderDeliveryArchive">
+        <MappingFragment StoreEntitySet="AUPurchaseOrderDeliveryArchive">
+          <ScalarProperty Name="PODeliveryId" ColumnName="PODeliveryId" />
+          <ScalarProperty Name="po_order_no" ColumnName="po_order_no" />
+          <ScalarProperty Name="po_backorder_flag" ColumnName="po_backorder_flag" />
+          <ScalarProperty Name="po_dl_type" ColumnName="po_dl_type" />
+          <ScalarProperty Name="po_dl_text_1" ColumnName="po_dl_text#1" />
+          <ScalarProperty Name="po_dl_text_2" ColumnName="po_dl_text#2" />
+          <ScalarProperty Name="po_dl_text_3" ColumnName="po_dl_text#3" />
+          <ScalarProperty Name="po_dl_text_4" ColumnName="po_dl_text#4" />
+          <ScalarProperty Name="po_dl_text_5" ColumnName="po_dl_text#5" />
+          <ScalarProperty Name="po_dl_text_6" ColumnName="po_dl_text#6" />
+          <ScalarProperty Name="po_dl_text_7" ColumnName="po_dl_text#7" />
+          <ScalarProperty Name="po_dl_postcode" ColumnName="po_dl_postcode" />
+          <ScalarProperty Name="po_dl_country_code" ColumnName="po_dl_country_code" />
+          <ScalarProperty Name="po_dl_phone" ColumnName="po_dl_phone" />
+          <ScalarProperty Name="po_dl_fax" ColumnName="po_dl_fax" />
+          <ScalarProperty Name="po_dl_address_id" ColumnName="po_dl_address_id" />
+          <ScalarProperty Name="po_dl_ausbar_code" ColumnName="po_dl_ausbar_code" />
+          <ScalarProperty Name="po_dl_mobile_phone" ColumnName="po_dl_mobile_phone" />
+          <ScalarProperty Name="po_dl_email" ColumnName="po_dl_email" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AUPurchaseOrderNotes">
+      <EntityTypeMapping TypeName="POTrackerDBModel.AUPurchaseOrderNote">
+        <MappingFragment StoreEntitySet="AUPurchaseOrderNotes">
+          <ScalarProperty Name="PONotesId" ColumnName="PONotesId" />
+          <ScalarProperty Name="po_order_no" ColumnName="po_order_no" />
+          <ScalarProperty Name="po_backorder_flag" ColumnName="po_backorder_flag" />
+          <ScalarProperty Name="po_l_seq" ColumnName="po_l_seq" />
+          <ScalarProperty Name="po_note_type" ColumnName="po_note_type" />
+          <ScalarProperty Name="po_note_seq" ColumnName="po_note_seq" />
+          <ScalarProperty Name="po_note_text" ColumnName="po_note_text" />
+          <ScalarProperty Name="Archived" ColumnName="Archived" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AUPurchaseOrderNotesArchives">
+      <EntityTypeMapping TypeName="POTrackerDBModel.AUPurchaseOrderNotesArchive">
+        <MappingFragment StoreEntitySet="AUPurchaseOrderNotesArchive">
+          <ScalarProperty Name="PONotesId" ColumnName="PONotesId" />
+          <ScalarProperty Name="po_order_no" ColumnName="po_order_no" />
+          <ScalarProperty Name="po_backorder_flag" ColumnName="po_backorder_flag" />
+          <ScalarProperty Name="po_l_seq" ColumnName="po_l_seq" />
+          <ScalarProperty Name="po_note_type" ColumnName="po_note_type" />
+          <ScalarProperty Name="po_note_seq" ColumnName="po_note_seq" />
+          <ScalarProperty Name="po_note_text" ColumnName="po_note_text" />
+          <ScalarProperty Name="Archived" ColumnName="Archived" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AUStockMasters">
+      <EntityTypeMapping TypeName="POTrackerDBModel.AUStockMaster">
+        <MappingFragment StoreEntitySet="AUStockMaster">
+          <ScalarProperty Name="StockId" ColumnName="StockId" />
+          <ScalarProperty Name="stock_code" ColumnName="stock_code" />
+          <ScalarProperty Name="stock_group" ColumnName="stock_group" />
+          <ScalarProperty Name="stk_abc_class" ColumnName="stk_abc_class" />
+          <ScalarProperty Name="stk_stock_status" ColumnName="stk_stock_status" />
+          <ScalarProperty Name="stk_issue_control_code" ColumnName="stk_issue_control_code" />
+          <ScalarProperty Name="stk_condition_code" ColumnName="stk_condition_code" />
+          <ScalarProperty Name="stk_indicator" ColumnName="stk_indicator" />
+          <ScalarProperty Name="stk_cyclic_code" ColumnName="stk_cyclic_code" />
+          <ScalarProperty Name="stk_user_group_1" ColumnName="stk_user_group#1" />
+          <ScalarProperty Name="stk_user_group_2" ColumnName="stk_user_group#2" />
+          <ScalarProperty Name="stk_description" ColumnName="stk_description" />
+          <ScalarProperty Name="stk_desc_line_2" ColumnName="stk_desc_line_2" />
+          <ScalarProperty Name="stk_desc_line_3" ColumnName="stk_desc_line_3" />
+          <ScalarProperty Name="stk_unit_desc" ColumnName="stk_unit_desc" />
+          <ScalarProperty Name="stk_pack_weight" ColumnName="stk_pack_weight" />
+          <ScalarProperty Name="stk_pack_desc" ColumnName="stk_pack_desc" />
+          <ScalarProperty Name="stk_pack_qty" ColumnName="stk_pack_qty" />
+          <ScalarProperty Name="stk_pack_cubic_size" ColumnName="stk_pack_cubic_size" />
+          <ScalarProperty Name="stk_conversion_factor" ColumnName="stk_conversion_factor" />
+          <ScalarProperty Name="stk_alt_unit_desc" ColumnName="stk_alt_unit_desc" />
+          <ScalarProperty Name="stk_apn_number" ColumnName="stk_apn_number" />
+          <ScalarProperty Name="stk_import_tariff_code" ColumnName="stk_import_tariff_code" />
+          <ScalarProperty Name="stk_serialized_flag" ColumnName="stk_serialized_flag" />
+          <ScalarProperty Name="stk_storage_type_flag" ColumnName="stk_storage_type_flag" />
+          <ScalarProperty Name="stk_std_cost" ColumnName="stk_std_cost" />
+          <ScalarProperty Name="stk_replacement_cost" ColumnName="stk_replacement_cost" />
+          <ScalarProperty Name="stk_sales_cost" ColumnName="stk_sales_cost" />
+          <ScalarProperty Name="stk_duty_paid_cost" ColumnName="stk_duty_paid_cost" />
+          <ScalarProperty Name="stk_info_cost" ColumnName="stk_info_cost" />
+          <ScalarProperty Name="stk_shelf_life_days" ColumnName="stk_shelf_life_days" />
+          <ScalarProperty Name="stk_warranty_type_flag" ColumnName="stk_warranty_type_flag" />
+          <ScalarProperty Name="stk_date_last_change" ColumnName="stk_date_last_change" />
+          <ScalarProperty Name="stk_price_per" ColumnName="stk_price_per" />
+          <ScalarProperty Name="stk_reorder_policy" ColumnName="stk_reorder_policy" />
+          <ScalarProperty Name="stk_reorder_review" ColumnName="stk_reorder_review" />
+          <ScalarProperty Name="stk_reorder_buyer" ColumnName="stk_reorder_buyer" />
+          <ScalarProperty Name="stk_creation_date" ColumnName="stk_creation_date" />
+          <ScalarProperty Name="stk_movement_code" ColumnName="stk_movement_code" />
+          <ScalarProperty Name="stk_sales_type_code" ColumnName="stk_sales_type_code" />
+          <ScalarProperty Name="stk_sales_tax_paid_rate" ColumnName="stk_sales_tax_paid_rate" />
+          <ScalarProperty Name="stk_sort_analysis_code" ColumnName="stk_sort_analysis_code" />
+          <ScalarProperty Name="stk_exise_qty" ColumnName="stk_exise_qty" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CacheRefreshSettings">
+      <EntityTypeMapping TypeName="POTrackerDBModel.CacheRefreshSetting">
+        <MappingFragment StoreEntitySet="CacheRefreshSettings">
+          <ScalarProperty Name="RefreshId" ColumnName="RefreshId" />
+          <ScalarProperty Name="RefreshSPName" ColumnName="RefreshSPName" />
+          <ScalarProperty Name="RefreshDateTime" ColumnName="RefreshDateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NZCreMasters">
+      <EntityTypeMapping TypeName="POTrackerDBModel.NZCreMaster">
+        <MappingFragment StoreEntitySet="NZCreMaster">
+          <ScalarProperty Name="CreMasterId" ColumnName="CreMasterId" />
+          <ScalarProperty Name="cre_accountcode" ColumnName="cre_accountcode" />
+          <ScalarProperty Name="cr_pay_to_code" ColumnName="cr_pay_to_code" />
+          <ScalarProperty Name="cr_shortname" ColumnName="cr_shortname" />
+          <ScalarProperty Name="cr_opening_bal" ColumnName="cr_opening_bal" />
+          <ScalarProperty Name="cr_balance" ColumnName="cr_balance" />
+          <ScalarProperty Name="cr_future_amt" ColumnName="cr_future_amt" />
+          <ScalarProperty Name="cr_purchase_ytd" ColumnName="cr_purchase_ytd" />
+          <ScalarProperty Name="cr_def_payment_terms" ColumnName="cr_def_payment_terms" />
+          <ScalarProperty Name="PaymentTermDesc" ColumnName="PaymentTermDesc" />
+          <ScalarProperty Name="cr_payment_selection" ColumnName="cr_payment_selection" />
+          <ScalarProperty Name="cr_auto_rq_flag" ColumnName="cr_auto_rq_flag" />
+          <ScalarProperty Name="cr_type" ColumnName="cr_type" />
+          <ScalarProperty Name="cr_chq_or_bankdraft" ColumnName="cr_chq_or_bankdraft" />
+          <ScalarProperty Name="cr_account_status" ColumnName="cr_account_status" />
+          <ScalarProperty Name="cr_clearing_flag" ColumnName="cr_clearing_flag" />
+          <ScalarProperty Name="cr_contact_name" ColumnName="cr_contact_name" />
+          <ScalarProperty Name="cr_default_gl_accountcode" ColumnName="cr_default_gl_accountcode" />
+          <ScalarProperty Name="cr_date_last_changed" ColumnName="cr_date_last_changed" />
+          <ScalarProperty Name="cr_curr_code" ColumnName="cr_curr_code" />
+          <ScalarProperty Name="cr_date_created" ColumnName="cr_date_created" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NZNameAndAddressMasters">
+      <EntityTypeMapping TypeName="POTrackerDBModel.NZNameAndAddressMaster">
+        <MappingFragment StoreEntitySet="NZNameAndAddressMaster">
+          <ScalarProperty Name="AddressId" ColumnName="AddressId" />
+          <ScalarProperty Name="accountcode" ColumnName="accountcode" />
+          <ScalarProperty Name="na_type" ColumnName="na_type" />
+          <ScalarProperty Name="na_name" ColumnName="na_name" />
+          <ScalarProperty Name="na_company" ColumnName="na_company" />
+          <ScalarProperty Name="na_street" ColumnName="na_street" />
+          <ScalarProperty Name="na_suburb" ColumnName="na_suburb" />
+          <ScalarProperty Name="na_country" ColumnName="na_country" />
+          <ScalarProperty Name="na_address_6" ColumnName="na_address_6" />
+          <ScalarProperty Name="na_address_7" ColumnName="na_address_7" />
+          <ScalarProperty Name="postcode" ColumnName="postcode" />
+          <ScalarProperty Name="na_country_code" ColumnName="na_country_code" />
+          <ScalarProperty Name="na_phone" ColumnName="na_phone" />
+          <ScalarProperty Name="na_mobile_phone" ColumnName="na_mobile_phone" />
+          <ScalarProperty Name="na_fax_no" ColumnName="na_fax_no" />
+          <ScalarProperty Name="na_company_id" ColumnName="na_company_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NZOrderTrackerComments">
+      <EntityTypeMapping TypeName="POTrackerDBModel.NZOrderTrackerComment">
+        <MappingFragment StoreEntitySet="NZOrderTrackerComments">
+          <ScalarProperty Name="CommentsId" ColumnName="CommentsId" />
+          <ScalarProperty Name="OrderNumber" ColumnName="OrderNumber" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="CommentDate" ColumnName="CommentDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NZPurchaseOrders">
+      <EntityTypeMapping TypeName="POTrackerDBModel.NZPurchaseOrder">
+        <MappingFragment StoreEntitySet="NZPurchaseOrder">
+          <ScalarProperty Name="PurchaseOrderId" ColumnName="PurchaseOrderId" />
+          <ScalarProperty Name="po_order_no" ColumnName="po_order_no" />
+          <ScalarProperty Name="po_backorder_flag" ColumnName="po_backorder_flag" />
+          <ScalarProperty Name="cre_accountcode" ColumnName="cre_accountcode" />
+          <ScalarProperty Name="po_order_date" ColumnName="po_order_date" />
+          <ScalarProperty Name="po_action_date" ColumnName="po_action_date" />
+          <ScalarProperty Name="po_arrival_date" ColumnName="po_arrival_date" />
+          <ScalarProperty Name="po_received_date" ColumnName="po_received_date" />
+          <ScalarProperty Name="po_order_status" ColumnName="po_order_status" />
+          <ScalarProperty Name="po_order_terms" ColumnName="po_order_terms" />
+          <ScalarProperty Name="po_inwards_no" ColumnName="po_inwards_no" />
+          <ScalarProperty Name="po_inwards_order_suffix" ColumnName="po_inwards_order_suffix" />
+          <ScalarProperty Name="po_whse_code" ColumnName="po_whse_code" />
+          <ScalarProperty Name="po_receiving_whse" ColumnName="po_receiving_whse" />
+          <ScalarProperty Name="po_currency_code" ColumnName="po_currency_code" />
+          <ScalarProperty Name="po_initial_currency_rate" ColumnName="po_initial_currency_rate" />
+          <ScalarProperty Name="po_final_currency_rate" ColumnName="po_final_currency_rate" />
+          <ScalarProperty Name="po_order_total" ColumnName="po_order_total" />
+          <ScalarProperty Name="po_received_total" ColumnName="po_received_total" />
+          <ScalarProperty Name="po_charges_total" ColumnName="po_charges_total" />
+          <ScalarProperty Name="po_ordered_tax_amt" ColumnName="po_ordered_tax_amt" />
+          <ScalarProperty Name="po_received_tax_amt" ColumnName="po_received_tax_amt" />
+          <ScalarProperty Name="po_invoice_no" ColumnName="po_invoice_no" />
+          <ScalarProperty Name="po_invoice_details" ColumnName="po_invoice_details" />
+          <ScalarProperty Name="po_invoice_date" ColumnName="po_invoice_date" />
+          <ScalarProperty Name="po_invoice_amount" ColumnName="po_invoice_amount" />
+          <ScalarProperty Name="po_invoice_tax_amount" ColumnName="po_invoice_tax_amount" />
+          <ScalarProperty Name="po_normal_provision_amount" ColumnName="po_normal_provision_amount" />
+          <ScalarProperty Name="po_specials_provision_amount" ColumnName="po_specials_provision_amount" />
+          <ScalarProperty Name="po_charges_provision_amount" ColumnName="po_charges_provision_amount" />
+          <ScalarProperty Name="po_vessel_name" ColumnName="po_vessel_name" />
+          <ScalarProperty Name="po_entry_port" ColumnName="po_entry_port" />
+          <ScalarProperty Name="po_voyage_no" ColumnName="po_voyage_no" />
+          <ScalarProperty Name="po_lc_number" ColumnName="po_lc_number" />
+          <ScalarProperty Name="po_shipment_no" ColumnName="po_shipment_no" />
+          <ScalarProperty Name="po_costing_date" ColumnName="po_costing_date" />
+          <ScalarProperty Name="po_notes" ColumnName="po_notes" />
+          <ScalarProperty Name="po_job_no" ColumnName="po_job_no" />
+          <ScalarProperty Name="po_job_cost_centre" ColumnName="po_job_cost_centre" />
+          <ScalarProperty Name="o_po_quote_tax_exemption" ColumnName="o_po_quote_tax_exemption" />
+          <ScalarProperty Name="po_job_retention_amount" ColumnName="po_job_retention_amount" />
+          <ScalarProperty Name="po_user_name" ColumnName="po_user_name" />
+          <ScalarProperty Name="po_date_stamp" ColumnName="po_date_stamp" />
+          <ScalarProperty Name="po_time_stamp" ColumnName="po_time_stamp" />
+          <ScalarProperty Name="po_carrier_code" ColumnName="po_carrier_code" />
+          <ScalarProperty Name="po_drop_sales_order_no" ColumnName="po_drop_sales_order_no" />
+          <ScalarProperty Name="po_revision_no" ColumnName="po_revision_no" />
+          <ScalarProperty Name="po_reason_code" ColumnName="po_reason_code" />
+          <ScalarProperty Name="po_order_type" ColumnName="po_order_type" />
+          <ScalarProperty Name="po_confirmation_flag" ColumnName="po_confirmation_flag" />
+          <ScalarProperty Name="po_batch_ref" ColumnName="po_batch_ref" />
+          <ScalarProperty Name="po_receiver_user_id" ColumnName="po_receiver_user_id" />
+          <ScalarProperty Name="po_country_code" ColumnName="po_country_code" />
+          <ScalarProperty Name="po_misc_code" ColumnName="po_misc_code" />
+          <ScalarProperty Name="po_tax_group" ColumnName="po_tax_group" />
+          <ScalarProperty Name="po_control_lock" ColumnName="po_control_lock" />
+          <ScalarProperty Name="po_control_user_lock" ColumnName="po_control_user_lock" />
+          <ScalarProperty Name="po_total_weight" ColumnName="po_total_weight" />
+          <ScalarProperty Name="po_total_qty" ColumnName="po_total_qty" />
+          <ScalarProperty Name="po_total_volume" ColumnName="po_total_volume" />
+          <ScalarProperty Name="po_original_edi_run" ColumnName="po_original_edi_run" />
+          <ScalarProperty Name="po_spare_date" ColumnName="po_spare_date" />
+          <ScalarProperty Name="po_catalog_no" ColumnName="po_catalog_no" />
+          <ScalarProperty Name="po_spare_num" ColumnName="po_spare_num" />
+          <ScalarProperty Name="po_spare_code" ColumnName="po_spare_code" />
+          <ScalarProperty Name="po_qa_released" ColumnName="po_qa_released" />
+          <ScalarProperty Name="po_user_only_alpha20_1" ColumnName="po_user_only_alpha20_1" />
+          <ScalarProperty Name="po_control_user_id_no" ColumnName="po_control_user_id_no" />
+          <ScalarProperty Name="po_header_tax_rate" ColumnName="po_header_tax_rate" />
+          <ScalarProperty Name="o_po_tax_classification_code" ColumnName="o_po_tax_classification_code" />
+          <ScalarProperty Name="po_max_retention_amount" ColumnName="po_max_retention_amount" />
+          <ScalarProperty Name="po_max_retention_percent" ColumnName="po_max_retention_percent" />
+          <ScalarProperty Name="po_max_retention_claim_percent" ColumnName="po_max_retention_claim_percent" />
+          <ScalarProperty Name="po_next_claim_no" ColumnName="po_next_claim_no" />
+          <ScalarProperty Name="po_line_format" ColumnName="po_line_format" />
+          <ScalarProperty Name="po_requisition_entry_user_name" ColumnName="po_requisition_entry_user_name" />
+          <ScalarProperty Name="po_requisition_approval_user" ColumnName="po_requisition_approval_user" />
+          <ScalarProperty Name="po_transit_total" ColumnName="po_transit_total" />
+          <ScalarProperty Name="po_transit_tax_amt" ColumnName="po_transit_tax_amt" />
+          <ScalarProperty Name="po_total_line_qty" ColumnName="po_total_line_qty" />
+          <ScalarProperty Name="po_dif_flag" ColumnName="po_dif_flag" />
+          <ScalarProperty Name="Flag" ColumnName="Flag" />
+          <ScalarProperty Name="ValidPO" ColumnName="ValidPO" />
+          <ScalarProperty Name="Archived" ColumnName="Archived" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NZPurchaseOrderArchives">
+      <EntityTypeMapping TypeName="POTrackerDBModel.NZPurchaseOrderArchive">
+        <MappingFragment StoreEntitySet="NZPurchaseOrderArchive">
+          <ScalarProperty Name="PurchaseOrderId" ColumnName="PurchaseOrderId" />
+          <ScalarProperty Name="po_order_no" ColumnName="po_order_no" />
+          <ScalarProperty Name="po_backorder_flag" ColumnName="po_backorder_flag" />
+          <ScalarProperty Name="cre_accountcode" ColumnName="cre_accountcode" />
+          <ScalarProperty Name="po_order_date" ColumnName="po_order_date" />
+          <ScalarProperty Name="po_action_date" ColumnName="po_action_date" />
+          <ScalarProperty Name="po_arrival_date" ColumnName="po_arrival_date" />
+          <ScalarProperty Name="po_received_date" ColumnName="po_received_date" />
+          <ScalarProperty Name="po_order_status" ColumnName="po_order_status" />
+          <ScalarProperty Name="po_order_terms" ColumnName="po_order_terms" />
+          <ScalarProperty Name="po_inwards_no" ColumnName="po_inwards_no" />
+          <ScalarProperty Name="po_inwards_order_suffix" ColumnName="po_inwards_order_suffix" />
+          <ScalarProperty Name="po_whse_code" ColumnName="po_whse_code" />
+          <ScalarProperty Name="po_receiving_whse" ColumnName="po_receiving_whse" />
+          <ScalarProperty Name="po_currency_code" ColumnName="po_currency_code" />
+          <ScalarProperty Name="po_initial_currency_rate" ColumnName="po_initial_currency_rate" />
+          <ScalarProperty Name="po_final_currency_rate" ColumnName="po_final_currency_rate" />
+          <ScalarProperty Name="po_order_total" ColumnName="po_order_total" />
+          <ScalarProperty Name="po_received_total" ColumnName="po_received_total" />
+          <ScalarProperty Name="po_charges_total" ColumnName="po_charges_total" />
+          <ScalarProperty Name="po_ordered_tax_amt" ColumnName="po_ordered_tax_amt" />
+          <ScalarProperty Name="po_received_tax_amt" ColumnName="po_received_tax_amt" />
+          <ScalarProperty Name="po_invoice_no" ColumnName="po_invoice_no" />
+          <ScalarProperty Name="po_invoice_details" ColumnName="po_invoice_details" />
+          <ScalarProperty Name="po_invoice_date" ColumnName="po_invoice_date" />
+          <ScalarProperty Name="po_invoice_amount" ColumnName="po_invoice_amount" />
+          <ScalarProperty Name="po_invoice_tax_amount" ColumnName="po_invoice_tax_amount" />
+          <ScalarProperty Name="po_normal_provision_amount" ColumnName="po_normal_provision_amount" />
+          <ScalarProperty Name="po_specials_provision_amount" ColumnName="po_specials_provision_amount" />
+          <ScalarProperty Name="po_charges_provision_amount" ColumnName="po_charges_provision_amount" />
+          <ScalarProperty Name="po_vessel_name" ColumnName="po_vessel_name" />
+          <ScalarProperty Name="po_entry_port" ColumnName="po_entry_port" />
+          <ScalarProperty Name="po_voyage_no" ColumnName="po_voyage_no" />
+          <ScalarProperty Name="po_lc_number" ColumnName="po_lc_number" />
+          <ScalarProperty Name="po_shipment_no" ColumnName="po_shipment_no" />
+          <ScalarProperty Name="po_costing_date" ColumnName="po_costing_date" />
+          <ScalarProperty Name="po_notes" ColumnName="po_notes" />
+          <ScalarProperty Name="po_job_no" ColumnName="po_job_no" />
+          <ScalarProperty Name="po_job_cost_centre" ColumnName="po_job_cost_centre" />
+          <ScalarProperty Name="o_po_quote_tax_exemption" ColumnName="o_po_quote_tax_exemption" />
+          <ScalarProperty Name="po_job_retention_amount" ColumnName="po_job_retention_amount" />
+          <ScalarProperty Name="po_user_name" ColumnName="po_user_name" />
+          <ScalarProperty Name="po_date_stamp" ColumnName="po_date_stamp" />
+          <ScalarProperty Name="po_time_stamp" ColumnName="po_time_stamp" />
+          <ScalarProperty Name="po_carrier_code" ColumnName="po_carrier_code" />
+          <ScalarProperty Name="po_drop_sales_order_no" ColumnName="po_drop_sales_order_no" />
+          <ScalarProperty Name="po_revision_no" ColumnName="po_revision_no" />
+          <ScalarProperty Name="po_reason_code" ColumnName="po_reason_code" />
+          <ScalarProperty Name="po_order_type" ColumnName="po_order_type" />
+          <ScalarProperty Name="po_confirmation_flag" ColumnName="po_confirmation_flag" />
+          <ScalarProperty Name="po_batch_ref" ColumnName="po_batch_ref" />
+          <ScalarProperty Name="po_receiver_user_id" ColumnName="po_receiver_user_id" />
+          <ScalarProperty Name="po_country_code" ColumnName="po_country_code" />
+          <ScalarProperty Name="po_misc_code" ColumnName="po_misc_code" />
+          <ScalarProperty Name="po_tax_group" ColumnName="po_tax_group" />
+          <ScalarProperty Name="po_control_lock" ColumnName="po_control_lock" />
+          <ScalarProperty Name="po_control_user_lock" ColumnName="po_control_user_lock" />
+          <ScalarProperty Name="po_total_weight" ColumnName="po_total_weight" />
+          <ScalarProperty Name="po_total_qty" ColumnName="po_total_qty" />
+          <ScalarProperty Name="po_total_volume" ColumnName="po_total_volume" />
+          <ScalarProperty Name="po_original_edi_run" ColumnName="po_original_edi_run" />
+          <ScalarProperty Name="po_spare_date" ColumnName="po_spare_date" />
+          <ScalarProperty Name="po_catalog_no" ColumnName="po_catalog_no" />
+          <ScalarProperty Name="po_spare_num" ColumnName="po_spare_num" />
+          <ScalarProperty Name="po_spare_code" ColumnName="po_spare_code" />
+          <ScalarProperty Name="po_qa_released" ColumnName="po_qa_released" />
+          <ScalarProperty Name="po_user_only_alpha20_1" ColumnName="po_user_only_alpha20_1" />
+          <ScalarProperty Name="po_control_user_id_no" ColumnName="po_control_user_id_no" />
+          <ScalarProperty Name="po_header_tax_rate" ColumnName="po_header_tax_rate" />
+          <ScalarProperty Name="o_po_tax_classification_code" ColumnName="o_po_tax_classification_code" />
+          <ScalarProperty Name="po_max_retention_amount" ColumnName="po_max_retention_amount" />
+          <ScalarProperty Name="po_max_retention_percent" ColumnName="po_max_retention_percent" />
+          <ScalarProperty Name="po_max_retention_claim_percent" ColumnName="po_max_retention_claim_percent" />
+          <ScalarProperty Name="po_next_claim_no" ColumnName="po_next_claim_no" />
+          <ScalarProperty Name="po_line_format" ColumnName="po_line_format" />
+          <ScalarProperty Name="po_requisition_entry_user_name" ColumnName="po_requisition_entry_user_name" />
+          <ScalarProperty Name="po_requisition_approval_user" ColumnName="po_requisition_approval_user" />
+          <ScalarProperty Name="po_transit_total" ColumnName="po_transit_total" />
+          <ScalarProperty Name="po_transit_tax_amt" ColumnName="po_transit_tax_amt" />
+          <ScalarProperty Name="po_total_line_qty" ColumnName="po_total_line_qty" />
+          <ScalarProperty Name="po_dif_flag" ColumnName="po_dif_flag" />
+          <ScalarProperty Name="Flag" ColumnName="Flag" />
+          <ScalarProperty Name="ValidPO" ColumnName="ValidPO" />
+          <ScalarProperty Name="Archived" ColumnName="Archived" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NZPurchaseOrderDeliveries">
+      <EntityTypeMapping TypeName="POTrackerDBModel.NZPurchaseOrderDelivery">
+        <MappingFragment StoreEntitySet="NZPurchaseOrderDelivery">
+          <ScalarProperty Name="PODeliveryId" ColumnName="PODeliveryId" />
+          <ScalarProperty Name="po_order_no" ColumnName="po_order_no" />
+          <ScalarProperty Name="po_backorder_flag" ColumnName="po_backorder_flag" />
+          <ScalarProperty Name="po_dl_type" ColumnName="po_dl_type" />
+          <ScalarProperty Name="po_dl_text_1" ColumnName="po_dl_text#1" />
+          <ScalarProperty Name="po_dl_text_2" ColumnName="po_dl_text#2" />
+          <ScalarProperty Name="po_dl_text_3" ColumnName="po_dl_text#3" />
+          <ScalarProperty Name="po_dl_text_4" ColumnName="po_dl_text#4" />
+          <ScalarProperty Name="po_dl_text_5" ColumnName="po_dl_text#5" />
+          <ScalarProperty Name="po_dl_text_6" ColumnName="po_dl_text#6" />
+          <ScalarProperty Name="po_dl_text_7" ColumnName="po_dl_text#7" />
+          <ScalarProperty Name="po_dl_postcode" ColumnName="po_dl_postcode" />
+          <ScalarProperty Name="po_dl_country_code" ColumnName="po_dl_country_code" />
+          <ScalarProperty Name="po_dl_phone" ColumnName="po_dl_phone" />
+          <ScalarProperty Name="po_dl_fax" ColumnName="po_dl_fax" />
+          <ScalarProperty Name="po_dl_address_id" ColumnName="po_dl_address_id" />
+          <ScalarProperty Name="po_dl_ausbar_code" ColumnName="po_dl_ausbar_code" />
+          <ScalarProperty Name="po_dl_mobile_phone" ColumnName="po_dl_mobile_phone" />
+          <ScalarProperty Name="po_dl_email" ColumnName="po_dl_email" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NZPurchaseOrderDeliveryArchives">
+      <EntityTypeMapping TypeName="POTrackerDBModel.NZPurchaseOrderDeliveryArchive">
+        <MappingFragment StoreEntitySet="NZPurchaseOrderDeliveryArchive">
+          <ScalarProperty Name="PODeliveryId" ColumnName="PODeliveryId" />
+          <ScalarProperty Name="po_order_no" ColumnName="po_order_no" />
+          <ScalarProperty Name="po_backorder_flag" ColumnName="po_backorder_flag" />
+          <ScalarProperty Name="po_dl_type" ColumnName="po_dl_type" />
+          <ScalarProperty Name="po_dl_text_1" ColumnName="po_dl_text#1" />
+          <ScalarProperty Name="po_dl_text_2" ColumnName="po_dl_text#2" />
+          <ScalarProperty Name="po_dl_text_3" ColumnName="po_dl_text#3" />
+          <ScalarProperty Name="po_dl_text_4" ColumnName="po_dl_text#4" />
+          <ScalarProperty Name="po_dl_text_5" ColumnName="po_dl_text#5" />
+          <ScalarProperty Name="po_dl_text_6" ColumnName="po_dl_text#6" />
+          <ScalarProperty Name="po_dl_text_7" ColumnName="po_dl_text#7" />
+          <ScalarProperty Name="po_dl_postcode" ColumnName="po_dl_postcode" />
+          <ScalarProperty Name="po_dl_country_code" ColumnName="po_dl_country_code" />
+          <ScalarProperty Name="po_dl_phone" ColumnName="po_dl_phone" />
+          <ScalarProperty Name="po_dl_fax" ColumnName="po_dl_fax" />
+          <ScalarProperty Name="po_dl_address_id" ColumnName="po_dl_address_id" />
+          <ScalarProperty Name="po_dl_ausbar_code" ColumnName="po_dl_ausbar_code" />
+          <ScalarProperty Name="po_dl_mobile_phone" ColumnName="po_dl_mobile_phone" />
+          <ScalarProperty Name="po_dl_email" ColumnName="po_dl_email" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NZPurchaseOrderNotes">
+      <EntityTypeMapping TypeName="POTrackerDBModel.NZPurchaseOrderNote">
+        <MappingFragment StoreEntitySet="NZPurchaseOrderNotes">
+          <ScalarProperty Name="PONotesId" ColumnName="PONotesId" />
+          <ScalarProperty Name="po_order_no" ColumnName="po_order_no" />
+          <ScalarProperty Name="po_backorder_flag" ColumnName="po_backorder_flag" />
+          <ScalarProperty Name="po_l_seq" ColumnName="po_l_seq" />
+          <ScalarProperty Name="po_note_type" ColumnName="po_note_type" />
+          <ScalarProperty Name="po_note_seq" ColumnName="po_note_seq" />
+          <ScalarProperty Name="po_note_text" ColumnName="po_note_text" />
+          <ScalarProperty Name="Archived" ColumnName="Archived" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NZPurchaseOrderNotesArchives">
+      <EntityTypeMapping TypeName="POTrackerDBModel.NZPurchaseOrderNotesArchive">
+        <MappingFragment StoreEntitySet="NZPurchaseOrderNotesArchive">
+          <ScalarProperty Name="PONotesId" ColumnName="PONotesId" />
+          <ScalarProperty Name="po_order_no" ColumnName="po_order_no" />
+          <ScalarProperty Name="po_backorder_flag" ColumnName="po_backorder_flag" />
+          <ScalarProperty Name="po_l_seq" ColumnName="po_l_seq" />
+          <ScalarProperty Name="po_note_type" ColumnName="po_note_type" />
+          <ScalarProperty Name="po_note_seq" ColumnName="po_note_seq" />
+          <ScalarProperty Name="po_note_text" ColumnName="po_note_text" />
+          <ScalarProperty Name="Archived" ColumnName="Archived" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NZStockMasters">
+      <EntityTypeMapping TypeName="POTrackerDBModel.NZStockMaster">
+        <MappingFragment StoreEntitySet="NZStockMaster">
+          <ScalarProperty Name="StockId" ColumnName="StockId" />
+          <ScalarProperty Name="stock_code" ColumnName="stock_code" />
+          <ScalarProperty Name="stock_group" ColumnName="stock_group" />
+          <ScalarProperty Name="stk_abc_class" ColumnName="stk_abc_class" />
+          <ScalarProperty Name="stk_stock_status" ColumnName="stk_stock_status" />
+          <ScalarProperty Name="stk_issue_control_code" ColumnName="stk_issue_control_code" />
+          <ScalarProperty Name="stk_condition_code" ColumnName="stk_condition_code" />
+          <ScalarProperty Name="stk_indicator" ColumnName="stk_indicator" />
+          <ScalarProperty Name="stk_cyclic_code" ColumnName="stk_cyclic_code" />
+          <ScalarProperty Name="stk_user_group_1" ColumnName="stk_user_group#1" />
+          <ScalarProperty Name="stk_user_group_2" ColumnName="stk_user_group#2" />
+          <ScalarProperty Name="stk_description" ColumnName="stk_description" />
+          <ScalarProperty Name="stk_desc_line_2" ColumnName="stk_desc_line_2" />
+          <ScalarProperty Name="stk_desc_line_3" ColumnName="stk_desc_line_3" />
+          <ScalarProperty Name="stk_unit_desc" ColumnName="stk_unit_desc" />
+          <ScalarProperty Name="stk_pack_weight" ColumnName="stk_pack_weight" />
+          <ScalarProperty Name="stk_pack_desc" ColumnName="stk_pack_desc" />
+          <ScalarProperty Name="stk_pack_qty" ColumnName="stk_pack_qty" />
+          <ScalarProperty Name="stk_pack_cubic_size" ColumnName="stk_pack_cubic_size" />
+          <ScalarProperty Name="stk_conversion_factor" ColumnName="stk_conversion_factor" />
+          <ScalarProperty Name="stk_alt_unit_desc" ColumnName="stk_alt_unit_desc" />
+          <ScalarProperty Name="stk_apn_number" ColumnName="stk_apn_number" />
+          <ScalarProperty Name="stk_import_tariff_code" ColumnName="stk_import_tariff_code" />
+          <ScalarProperty Name="stk_serialized_flag" ColumnName="stk_serialized_flag" />
+          <ScalarProperty Name="stk_storage_type_flag" ColumnName="stk_storage_type_flag" />
+          <ScalarProperty Name="stk_std_cost" ColumnName="stk_std_cost" />
+          <ScalarProperty Name="stk_replacement_cost" ColumnName="stk_replacement_cost" />
+          <ScalarProperty Name="stk_sales_cost" ColumnName="stk_sales_cost" />
+          <ScalarProperty Name="stk_duty_paid_cost" ColumnName="stk_duty_paid_cost" />
+          <ScalarProperty Name="stk_info_cost" ColumnName="stk_info_cost" />
+          <ScalarProperty Name="stk_shelf_life_days" ColumnName="stk_shelf_life_days" />
+          <ScalarProperty Name="stk_warranty_type_flag" ColumnName="stk_warranty_type_flag" />
+          <ScalarProperty Name="stk_date_last_change" ColumnName="stk_date_last_change" />
+          <ScalarProperty Name="stk_price_per" ColumnName="stk_price_per" />
+          <ScalarProperty Name="stk_reorder_policy" ColumnName="stk_reorder_policy" />
+          <ScalarProperty Name="stk_reorder_review" ColumnName="stk_reorder_review" />
+          <ScalarProperty Name="stk_reorder_buyer" ColumnName="stk_reorder_buyer" />
+          <ScalarProperty Name="stk_creation_date" ColumnName="stk_creation_date" />
+          <ScalarProperty Name="stk_movement_code" ColumnName="stk_movement_code" />
+          <ScalarProperty Name="stk_sales_type_code" ColumnName="stk_sales_type_code" />
+          <ScalarProperty Name="stk_sales_tax_paid_rate" ColumnName="stk_sales_tax_paid_rate" />
+          <ScalarProperty Name="stk_sort_analysis_code" ColumnName="stk_sort_analysis_code" />
+          <ScalarProperty Name="stk_exise_qty" ColumnName="stk_exise_qty" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PurchaseOrderBORankings">
+      <EntityTypeMapping TypeName="POTrackerDBModel.PurchaseOrderBORanking">
+        <MappingFragment StoreEntitySet="PurchaseOrderBORanking">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Letter" ColumnName="Letter" />
+          <ScalarProperty Name="Number" ColumnName="Number" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PurchaseOrderStatusDescs">
+      <EntityTypeMapping TypeName="POTrackerDBModel.PurchaseOrderStatusDesc">
+        <MappingFragment StoreEntitySet="PurchaseOrderStatusDesc">
+          <ScalarProperty Name="POStatusDescID" ColumnName="POStatusDescID" />
+          <ScalarProperty Name="posd_status" ColumnName="posd_status" />
+          <ScalarProperty Name="posd_language" ColumnName="posd_language" />
+          <ScalarProperty Name="posd_description" ColumnName="posd_description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UKCreMasters">
+      <EntityTypeMapping TypeName="POTrackerDBModel.UKCreMaster">
+        <MappingFragment StoreEntitySet="UKCreMaster">
+          <ScalarProperty Name="CreMasterId" ColumnName="CreMasterId" />
+          <ScalarProperty Name="cre_accountcode" ColumnName="cre_accountcode" />
+          <ScalarProperty Name="cr_pay_to_code" ColumnName="cr_pay_to_code" />
+          <ScalarProperty Name="cr_shortname" ColumnName="cr_shortname" />
+          <ScalarProperty Name="cr_opening_bal" ColumnName="cr_opening_bal" />
+          <ScalarProperty Name="cr_balance" ColumnName="cr_balance" />
+          <ScalarProperty Name="cr_future_amt" ColumnName="cr_future_amt" />
+          <ScalarProperty Name="cr_purchase_ytd" ColumnName="cr_purchase_ytd" />
+          <ScalarProperty Name="cr_def_payment_terms" ColumnName="cr_def_payment_terms" />
+          <ScalarProperty Name="PaymentTermDesc" ColumnName="PaymentTermDesc" />
+          <ScalarProperty Name="cr_payment_selection" ColumnName="cr_payment_selection" />
+          <ScalarProperty Name="cr_auto_rq_flag" ColumnName="cr_auto_rq_flag" />
+          <ScalarProperty Name="cr_type" ColumnName="cr_type" />
+          <ScalarProperty Name="cr_chq_or_bankdraft" ColumnName="cr_chq_or_bankdraft" />
+          <ScalarProperty Name="cr_account_status" ColumnName="cr_account_status" />
+          <ScalarProperty Name="cr_clearing_flag" ColumnName="cr_clearing_flag" />
+          <ScalarProperty Name="cr_contact_name" ColumnName="cr_contact_name" />
+          <ScalarProperty Name="cr_default_gl_accountcode" ColumnName="cr_default_gl_accountcode" />
+          <ScalarProperty Name="cr_date_last_changed" ColumnName="cr_date_last_changed" />
+          <ScalarProperty Name="cr_curr_code" ColumnName="cr_curr_code" />
+          <ScalarProperty Name="cr_date_created" ColumnName="cr_date_created" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UKNameAndAddressMasters">
+      <EntityTypeMapping TypeName="POTrackerDBModel.UKNameAndAddressMaster">
+        <MappingFragment StoreEntitySet="UKNameAndAddressMaster">
+          <ScalarProperty Name="AddressId" ColumnName="AddressId" />
+          <ScalarProperty Name="accountcode" ColumnName="accountcode" />
+          <ScalarProperty Name="na_type" ColumnName="na_type" />
+          <ScalarProperty Name="na_name" ColumnName="na_name" />
+          <ScalarProperty Name="na_company" ColumnName="na_company" />
+          <ScalarProperty Name="na_street" ColumnName="na_street" />
+          <ScalarProperty Name="na_suburb" ColumnName="na_suburb" />
+          <ScalarProperty Name="na_country" ColumnName="na_country" />
+          <ScalarProperty Name="na_address_6" ColumnName="na_address_6" />
+          <ScalarProperty Name="na_address_7" ColumnName="na_address_7" />
+          <ScalarProperty Name="postcode" ColumnName="postcode" />
+          <ScalarProperty Name="na_country_code" ColumnName="na_country_code" />
+          <ScalarProperty Name="na_phone" ColumnName="na_phone" />
+          <ScalarProperty Name="na_mobile_phone" ColumnName="na_mobile_phone" />
+          <ScalarProperty Name="na_fax_no" ColumnName="na_fax_no" />
+          <ScalarProperty Name="na_company_id" ColumnName="na_company_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UKOrderTrackerComments">
+      <EntityTypeMapping TypeName="POTrackerDBModel.UKOrderTrackerComment">
+        <MappingFragment StoreEntitySet="UKOrderTrackerComments">
+          <ScalarProperty Name="CommentsId" ColumnName="CommentsId" />
+          <ScalarProperty Name="OrderNumber" ColumnName="OrderNumber" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="CommentDate" ColumnName="CommentDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UKPurchaseOrders">
+      <EntityTypeMapping TypeName="POTrackerDBModel.UKPurchaseOrder">
+        <MappingFragment StoreEntitySet="UKPurchaseOrder">
+          <ScalarProperty Name="PurchaseOrderId" ColumnName="PurchaseOrderId" />
+          <ScalarProperty Name="po_order_no" ColumnName="po_order_no" />
+          <ScalarProperty Name="po_backorder_flag" ColumnName="po_backorder_flag" />
+          <ScalarProperty Name="cre_accountcode" ColumnName="cre_accountcode" />
+          <ScalarProperty Name="po_order_date" ColumnName="po_order_date" />
+          <ScalarProperty Name="po_action_date" ColumnName="po_action_date" />
+          <ScalarProperty Name="po_arrival_date" ColumnName="po_arrival_date" />
+          <ScalarProperty Name="po_received_date" ColumnName="po_received_date" />
+          <ScalarProperty Name="po_order_status" ColumnName="po_order_status" />
+          <ScalarProperty Name="po_order_terms" ColumnName="po_order_terms" />
+          <ScalarProperty Name="po_inwards_no" ColumnName="po_inwards_no" />
+          <ScalarProperty Name="po_inwards_order_suffix" ColumnName="po_inwards_order_suffix" />
+          <ScalarProperty Name="po_whse_code" ColumnName="po_whse_code" />
+          <ScalarProperty Name="po_receiving_whse" ColumnName="po_receiving_whse" />
+          <ScalarProperty Name="po_currency_code" ColumnName="po_currency_code" />
+          <ScalarProperty Name="po_initial_currency_rate" ColumnName="po_initial_currency_rate" />
+          <ScalarProperty Name="po_final_currency_rate" ColumnName="po_final_currency_rate" />
+          <ScalarProperty Name="po_order_total" ColumnName="po_order_total" />
+          <ScalarProperty Name="po_received_total" ColumnName="po_received_total" />
+          <ScalarProperty Name="po_charges_total" ColumnName="po_charges_total" />
+          <ScalarProperty Name="po_ordered_tax_amt" ColumnName="po_ordered_tax_amt" />
+          <ScalarProperty Name="po_received_tax_amt" ColumnName="po_received_tax_amt" />
+          <ScalarProperty Name="po_invoice_no" ColumnName="po_invoice_no" />
+          <ScalarProperty Name="po_invoice_details" ColumnName="po_invoice_details" />
+          <ScalarProperty Name="po_invoice_date" ColumnName="po_invoice_date" />
+          <ScalarProperty Name="po_invoice_amount" ColumnName="po_invoice_amount" />
+          <ScalarProperty Name="po_invoice_tax_amount" ColumnName="po_invoice_tax_amount" />
+          <ScalarProperty Name="po_normal_provision_amount" ColumnName="po_normal_provision_amount" />
+          <ScalarProperty Name="po_specials_provision_amount" ColumnName="po_specials_provision_amount" />
+          <ScalarProperty Name="po_charges_provision_amount" ColumnName="po_charges_provision_amount" />
+          <ScalarProperty Name="po_vessel_name" ColumnName="po_vessel_name" />
+          <ScalarProperty Name="po_entry_port" ColumnName="po_entry_port" />
+          <ScalarProperty Name="po_voyage_no" ColumnName="po_voyage_no" />
+          <ScalarProperty Name="po_lc_number" ColumnName="po_lc_number" />
+          <ScalarProperty Name="po_shipment_no" ColumnName="po_shipment_no" />
+          <ScalarProperty Name="po_costing_date" ColumnName="po_costing_date" />
+          <ScalarProperty Name="po_notes" ColumnName="po_notes" />
+          <ScalarProperty Name="po_job_no" ColumnName="po_job_no" />
+          <ScalarProperty Name="po_job_cost_centre" ColumnName="po_job_cost_centre" />
+          <ScalarProperty Name="o_po_quote_tax_exemption" ColumnName="o_po_quote_tax_exemption" />
+          <ScalarProperty Name="po_job_retention_amount" ColumnName="po_job_retention_amount" />
+          <ScalarProperty Name="po_user_name" ColumnName="po_user_name" />
+          <ScalarProperty Name="po_date_stamp" ColumnName="po_date_stamp" />
+          <ScalarProperty Name="po_time_stamp" ColumnName="po_time_stamp" />
+          <ScalarProperty Name="po_carrier_code" ColumnName="po_carrier_code" />
+          <ScalarProperty Name="po_drop_sales_order_no" ColumnName="po_drop_sales_order_no" />
+          <ScalarProperty Name="po_revision_no" ColumnName="po_revision_no" />
+          <ScalarProperty Name="po_reason_code" ColumnName="po_reason_code" />
+          <ScalarProperty Name="po_order_type" ColumnName="po_order_type" />
+          <ScalarProperty Name="po_confirmation_flag" ColumnName="po_confirmation_flag" />
+          <ScalarProperty Name="po_batch_ref" ColumnName="po_batch_ref" />
+          <ScalarProperty Name="po_receiver_user_id" ColumnName="po_receiver_user_id" />
+          <ScalarProperty Name="po_country_code" ColumnName="po_country_code" />
+          <ScalarProperty Name="po_misc_code" ColumnName="po_misc_code" />
+          <ScalarProperty Name="po_tax_group" ColumnName="po_tax_group" />
+          <ScalarProperty Name="po_control_lock" ColumnName="po_control_lock" />
+          <ScalarProperty Name="po_control_user_lock" ColumnName="po_control_user_lock" />
+          <ScalarProperty Name="po_total_weight" ColumnName="po_total_weight" />
+          <ScalarProperty Name="po_total_qty" ColumnName="po_total_qty" />
+          <ScalarProperty Name="po_total_volume" ColumnName="po_total_volume" />
+          <ScalarProperty Name="po_original_edi_run" ColumnName="po_original_edi_run" />
+          <ScalarProperty Name="po_spare_date" ColumnName="po_spare_date" />
+          <ScalarProperty Name="po_catalog_no" ColumnName="po_catalog_no" />
+          <ScalarProperty Name="po_spare_num" ColumnName="po_spare_num" />
+          <ScalarProperty Name="po_spare_code" ColumnName="po_spare_code" />
+          <ScalarProperty Name="po_qa_released" ColumnName="po_qa_released" />
+          <ScalarProperty Name="po_user_only_alpha20_1" ColumnName="po_user_only_alpha20_1" />
+          <ScalarProperty Name="po_control_user_id_no" ColumnName="po_control_user_id_no" />
+          <ScalarProperty Name="po_header_tax_rate" ColumnName="po_header_tax_rate" />
+          <ScalarProperty Name="o_po_tax_classification_code" ColumnName="o_po_tax_classification_code" />
+          <ScalarProperty Name="po_max_retention_amount" ColumnName="po_max_retention_amount" />
+          <ScalarProperty Name="po_max_retention_percent" ColumnName="po_max_retention_percent" />
+          <ScalarProperty Name="po_max_retention_claim_percent" ColumnName="po_max_retention_claim_percent" />
+          <ScalarProperty Name="po_next_claim_no" ColumnName="po_next_claim_no" />
+          <ScalarProperty Name="po_line_format" ColumnName="po_line_format" />
+          <ScalarProperty Name="po_requisition_entry_user_name" ColumnName="po_requisition_entry_user_name" />
+          <ScalarProperty Name="po_requisition_approval_user" ColumnName="po_requisition_approval_user" />
+          <ScalarProperty Name="po_transit_total" ColumnName="po_transit_total" />
+          <ScalarProperty Name="po_transit_tax_amt" ColumnName="po_transit_tax_amt" />
+          <ScalarProperty Name="po_total_line_qty" ColumnName="po_total_line_qty" />
+          <ScalarProperty Name="po_dif_flag" ColumnName="po_dif_flag" />
+          <ScalarProperty Name="Flag" ColumnName="Flag" />
+          <ScalarProperty Name="ValidPO" ColumnName="ValidPO" />
+          <ScalarProperty Name="Archived" ColumnName="Archived" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UKPurchaseOrderArchives">
+      <EntityTypeMapping TypeName="POTrackerDBModel.UKPurchaseOrderArchive">
+        <MappingFragment StoreEntitySet="UKPurchaseOrderArchive">
+          <ScalarProperty Name="PurchaseOrderId" ColumnName="PurchaseOrderId" />
+          <ScalarProperty Name="po_order_no" ColumnName="po_order_no" />
+          <ScalarProperty Name="po_backorder_flag" ColumnName="po_backorder_flag" />
+          <ScalarProperty Name="cre_accountcode" ColumnName="cre_accountcode" />
+          <ScalarProperty Name="po_order_date" ColumnName="po_order_date" />
+          <ScalarProperty Name="po_action_date" ColumnName="po_action_date" />
+          <ScalarProperty Name="po_arrival_date" ColumnName="po_arrival_date" />
+          <ScalarProperty Name="po_received_date" ColumnName="po_received_date" />
+          <ScalarProperty Name="po_order_status" ColumnName="po_order_status" />
+          <ScalarProperty Name="po_order_terms" ColumnName="po_order_terms" />
+          <ScalarProperty Name="po_inwards_no" ColumnName="po_inwards_no" />
+          <ScalarProperty Name="po_inwards_order_suffix" ColumnName="po_inwards_order_suffix" />
+          <ScalarProperty Name="po_whse_code" ColumnName="po_whse_code" />
+          <ScalarProperty Name="po_receiving_whse" ColumnName="po_receiving_whse" />
+          <ScalarProperty Name="po_currency_code" ColumnName="po_currency_code" />
+          <ScalarProperty Name="po_initial_currency_rate" ColumnName="po_initial_currency_rate" />
+          <ScalarProperty Name="po_final_currency_rate" ColumnName="po_final_currency_rate" />
+          <ScalarProperty Name="po_order_total" ColumnName="po_order_total" />
+          <ScalarProperty Name="po_received_total" ColumnName="po_received_total" />
+          <ScalarProperty Name="po_charges_total" ColumnName="po_charges_total" />
+          <ScalarProperty Name="po_ordered_tax_amt" ColumnName="po_ordered_tax_amt" />
+          <ScalarProperty Name="po_received_tax_amt" ColumnName="po_received_tax_amt" />
+          <ScalarProperty Name="po_invoice_no" ColumnName="po_invoice_no" />
+          <ScalarProperty Name="po_invoice_details" ColumnName="po_invoice_details" />
+          <ScalarProperty Name="po_invoice_date" ColumnName="po_invoice_date" />
+          <ScalarProperty Name="po_invoice_amount" ColumnName="po_invoice_amount" />
+          <ScalarProperty Name="po_invoice_tax_amount" ColumnName="po_invoice_tax_amount" />
+          <ScalarProperty Name="po_normal_provision_amount" ColumnName="po_normal_provision_amount" />
+          <ScalarProperty Name="po_specials_provision_amount" ColumnName="po_specials_provision_amount" />
+          <ScalarProperty Name="po_charges_provision_amount" ColumnName="po_charges_provision_amount" />
+          <ScalarProperty Name="po_vessel_name" ColumnName="po_vessel_name" />
+          <ScalarProperty Name="po_entry_port" ColumnName="po_entry_port" />
+          <ScalarProperty Name="po_voyage_no" ColumnName="po_voyage_no" />
+          <ScalarProperty Name="po_lc_number" ColumnName="po_lc_number" />
+          <ScalarProperty Name="po_shipment_no" ColumnName="po_shipment_no" />
+          <ScalarProperty Name="po_costing_date" ColumnName="po_costing_date" />
+          <ScalarProperty Name="po_notes" ColumnName="po_notes" />
+          <ScalarProperty Name="po_job_no" ColumnName="po_job_no" />
+          <ScalarProperty Name="po_job_cost_centre" ColumnName="po_job_cost_centre" />
+          <ScalarProperty Name="o_po_quote_tax_exemption" ColumnName="o_po_quote_tax_exemption" />
+          <ScalarProperty Name="po_job_retention_amount" ColumnName="po_job_retention_amount" />
+          <ScalarProperty Name="po_user_name" ColumnName="po_user_name" />
+          <ScalarProperty Name="po_date_stamp" ColumnName="po_date_stamp" />
+          <ScalarProperty Name="po_time_stamp" ColumnName="po_time_stamp" />
+          <ScalarProperty Name="po_carrier_code" ColumnName="po_carrier_code" />
+          <ScalarProperty Name="po_drop_sales_order_no" ColumnName="po_drop_sales_order_no" />
+          <ScalarProperty Name="po_revision_no" ColumnName="po_revision_no" />
+          <ScalarProperty Name="po_reason_code" ColumnName="po_reason_code" />
+          <ScalarProperty Name="po_order_type" ColumnName="po_order_type" />
+          <ScalarProperty Name="po_confirmation_flag" ColumnName="po_confirmation_flag" />
+          <ScalarProperty Name="po_batch_ref" ColumnName="po_batch_ref" />
+          <ScalarProperty Name="po_receiver_user_id" ColumnName="po_receiver_user_id" />
+          <ScalarProperty Name="po_country_code" ColumnName="po_country_code" />
+          <ScalarProperty Name="po_misc_code" ColumnName="po_misc_code" />
+          <ScalarProperty Name="po_tax_group" ColumnName="po_tax_group" />
+          <ScalarProperty Name="po_control_lock" ColumnName="po_control_lock" />
+          <ScalarProperty Name="po_control_user_lock" ColumnName="po_control_user_lock" />
+          <ScalarProperty Name="po_total_weight" ColumnName="po_total_weight" />
+          <ScalarProperty Name="po_total_qty" ColumnName="po_total_qty" />
+          <ScalarProperty Name="po_total_volume" ColumnName="po_total_volume" />
+          <ScalarProperty Name="po_original_edi_run" ColumnName="po_original_edi_run" />
+          <ScalarProperty Name="po_spare_date" ColumnName="po_spare_date" />
+          <ScalarProperty Name="po_catalog_no" ColumnName="po_catalog_no" />
+          <ScalarProperty Name="po_spare_num" ColumnName="po_spare_num" />
+          <ScalarProperty Name="po_spare_code" ColumnName="po_spare_code" />
+          <ScalarProperty Name="po_qa_released" ColumnName="po_qa_released" />
+          <ScalarProperty Name="po_user_only_alpha20_1" ColumnName="po_user_only_alpha20_1" />
+          <ScalarProperty Name="po_control_user_id_no" ColumnName="po_control_user_id_no" />
+          <ScalarProperty Name="po_header_tax_rate" ColumnName="po_header_tax_rate" />
+          <ScalarProperty Name="o_po_tax_classification_code" ColumnName="o_po_tax_classification_code" />
+          <ScalarProperty Name="po_max_retention_amount" ColumnName="po_max_retention_amount" />
+          <ScalarProperty Name="po_max_retention_percent" ColumnName="po_max_retention_percent" />
+          <ScalarProperty Name="po_max_retention_claim_percent" ColumnName="po_max_retention_claim_percent" />
+          <ScalarProperty Name="po_next_claim_no" ColumnName="po_next_claim_no" />
+          <ScalarProperty Name="po_line_format" ColumnName="po_line_format" />
+          <ScalarProperty Name="po_requisition_entry_user_name" ColumnName="po_requisition_entry_user_name" />
+          <ScalarProperty Name="po_requisition_approval_user" ColumnName="po_requisition_approval_user" />
+          <ScalarProperty Name="po_transit_total" ColumnName="po_transit_total" />
+          <ScalarProperty Name="po_transit_tax_amt" ColumnName="po_transit_tax_amt" />
+          <ScalarProperty Name="po_total_line_qty" ColumnName="po_total_line_qty" />
+          <ScalarProperty Name="po_dif_flag" ColumnName="po_dif_flag" />
+          <ScalarProperty Name="Flag" ColumnName="Flag" />
+          <ScalarProperty Name="ValidPO" ColumnName="ValidPO" />
+          <ScalarProperty Name="Archived" ColumnName="Archived" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UKPurchaseOrderDeliveries">
+      <EntityTypeMapping TypeName="POTrackerDBModel.UKPurchaseOrderDelivery">
+        <MappingFragment StoreEntitySet="UKPurchaseOrderDelivery">
+          <ScalarProperty Name="PODeliveryId" ColumnName="PODeliveryId" />
+          <ScalarProperty Name="po_order_no" ColumnName="po_order_no" />
+          <ScalarProperty Name="po_backorder_flag" ColumnName="po_backorder_flag" />
+          <ScalarProperty Name="po_dl_type" ColumnName="po_dl_type" />
+          <ScalarProperty Name="po_dl_text_1" ColumnName="po_dl_text#1" />
+          <ScalarProperty Name="po_dl_text_2" ColumnName="po_dl_text#2" />
+          <ScalarProperty Name="po_dl_text_3" ColumnName="po_dl_text#3" />
+          <ScalarProperty Name="po_dl_text_4" ColumnName="po_dl_text#4" />
+          <ScalarProperty Name="po_dl_text_5" ColumnName="po_dl_text#5" />
+          <ScalarProperty Name="po_dl_text_6" ColumnName="po_dl_text#6" />
+          <ScalarProperty Name="po_dl_text_7" ColumnName="po_dl_text#7" />
+          <ScalarProperty Name="po_dl_postcode" ColumnName="po_dl_postcode" />
+          <ScalarProperty Name="po_dl_country_code" ColumnName="po_dl_country_code" />
+          <ScalarProperty Name="po_dl_phone" ColumnName="po_dl_phone" />
+          <ScalarProperty Name="po_dl_fax" ColumnName="po_dl_fax" />
+          <ScalarProperty Name="po_dl_address_id" ColumnName="po_dl_address_id" />
+          <ScalarProperty Name="po_dl_ausbar_code" ColumnName="po_dl_ausbar_code" />
+          <ScalarProperty Name="po_dl_mobile_phone" ColumnName="po_dl_mobile_phone" />
+          <ScalarProperty Name="po_dl_email" ColumnName="po_dl_email" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UKPurchaseOrderDeliveryArchives">
+      <EntityTypeMapping TypeName="POTrackerDBModel.UKPurchaseOrderDeliveryArchive">
+        <MappingFragment StoreEntitySet="UKPurchaseOrderDeliveryArchive">
+          <ScalarProperty Name="PODeliveryId" ColumnName="PODeliveryId" />
+          <ScalarProperty Name="po_order_no" ColumnName="po_order_no" />
+          <ScalarProperty Name="po_backorder_flag" ColumnName="po_backorder_flag" />
+          <ScalarProperty Name="po_dl_type" ColumnName="po_dl_type" />
+          <ScalarProperty Name="po_dl_text_1" ColumnName="po_dl_text#1" />
+          <ScalarProperty Name="po_dl_text_2" ColumnName="po_dl_text#2" />
+          <ScalarProperty Name="po_dl_text_3" ColumnName="po_dl_text#3" />
+          <ScalarProperty Name="po_dl_text_4" ColumnName="po_dl_text#4" />
+          <ScalarProperty Name="po_dl_text_5" ColumnName="po_dl_text#5" />
+          <ScalarProperty Name="po_dl_text_6" ColumnName="po_dl_text#6" />
+          <ScalarProperty Name="po_dl_text_7" ColumnName="po_dl_text#7" />
+          <ScalarProperty Name="po_dl_postcode" ColumnName="po_dl_postcode" />
+          <ScalarProperty Name="po_dl_country_code" ColumnName="po_dl_country_code" />
+          <ScalarProperty Name="po_dl_phone" ColumnName="po_dl_phone" />
+          <ScalarProperty Name="po_dl_fax" ColumnName="po_dl_fax" />
+          <ScalarProperty Name="po_dl_address_id" ColumnName="po_dl_address_id" />
+          <ScalarProperty Name="po_dl_ausbar_code" ColumnName="po_dl_ausbar_code" />
+          <ScalarProperty Name="po_dl_mobile_phone" ColumnName="po_dl_mobile_phone" />
+          <ScalarProperty Name="po_dl_email" ColumnName="po_dl_email" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UKPurchaseOrderNotes">
+      <EntityTypeMapping TypeName="POTrackerDBModel.UKPurchaseOrderNote">
+        <MappingFragment StoreEntitySet="UKPurchaseOrderNotes">
+          <ScalarProperty Name="PONotesId" ColumnName="PONotesId" />
+          <ScalarProperty Name="po_order_no" ColumnName="po_order_no" />
+          <ScalarProperty Name="po_backorder_flag" ColumnName="po_backorder_flag" />
+          <ScalarProperty Name="po_l_seq" ColumnName="po_l_seq" />
+          <ScalarProperty Name="po_note_type" ColumnName="po_note_type" />
+          <ScalarProperty Name="po_note_seq" ColumnName="po_note_seq" />
+          <ScalarProperty Name="po_note_text" ColumnName="po_note_text" />
+          <ScalarProperty Name="Archived" ColumnName="Archived" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UKPurchaseOrderNotesArchives">
+      <EntityTypeMapping TypeName="POTrackerDBModel.UKPurchaseOrderNotesArchive">
+        <MappingFragment StoreEntitySet="UKPurchaseOrderNotesArchive">
+          <ScalarProperty Name="PONotesId" ColumnName="PONotesId" />
+          <ScalarProperty Name="po_order_no" ColumnName="po_order_no" />
+          <ScalarProperty Name="po_backorder_flag" ColumnName="po_backorder_flag" />
+          <ScalarProperty Name="po_l_seq" ColumnName="po_l_seq" />
+          <ScalarProperty Name="po_note_type" ColumnName="po_note_type" />
+          <ScalarProperty Name="po_note_seq" ColumnName="po_note_seq" />
+          <ScalarProperty Name="po_note_text" ColumnName="po_note_text" />
+          <ScalarProperty Name="Archived" ColumnName="Archived" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UKStockMasters">
+      <EntityTypeMapping TypeName="POTrackerDBModel.UKStockMaster">
+        <MappingFragment StoreEntitySet="UKStockMaster">
+          <ScalarProperty Name="StockId" ColumnName="StockId" />
+          <ScalarProperty Name="stock_code" ColumnName="stock_code" />
+          <ScalarProperty Name="stock_group" ColumnName="stock_group" />
+          <ScalarProperty Name="stk_abc_class" ColumnName="stk_abc_class" />
+          <ScalarProperty Name="stk_stock_status" ColumnName="stk_stock_status" />
+          <ScalarProperty Name="stk_issue_control_code" ColumnName="stk_issue_control_code" />
+          <ScalarProperty Name="stk_condition_code" ColumnName="stk_condition_code" />
+          <ScalarProperty Name="stk_indicator" ColumnName="stk_indicator" />
+          <ScalarProperty Name="stk_cyclic_code" ColumnName="stk_cyclic_code" />
+          <ScalarProperty Name="stk_user_group_1" ColumnName="stk_user_group#1" />
+          <ScalarProperty Name="stk_user_group_2" ColumnName="stk_user_group#2" />
+          <ScalarProperty Name="stk_description" ColumnName="stk_description" />
+          <ScalarProperty Name="stk_desc_line_2" ColumnName="stk_desc_line_2" />
+          <ScalarProperty Name="stk_desc_line_3" ColumnName="stk_desc_line_3" />
+          <ScalarProperty Name="stk_unit_desc" ColumnName="stk_unit_desc" />
+          <ScalarProperty Name="stk_pack_weight" ColumnName="stk_pack_weight" />
+          <ScalarProperty Name="stk_pack_desc" ColumnName="stk_pack_desc" />
+          <ScalarProperty Name="stk_pack_qty" ColumnName="stk_pack_qty" />
+          <ScalarProperty Name="stk_pack_cubic_size" ColumnName="stk_pack_cubic_size" />
+          <ScalarProperty Name="stk_conversion_factor" ColumnName="stk_conversion_factor" />
+          <ScalarProperty Name="stk_alt_unit_desc" ColumnName="stk_alt_unit_desc" />
+          <ScalarProperty Name="stk_apn_number" ColumnName="stk_apn_number" />
+          <ScalarProperty Name="stk_import_tariff_code" ColumnName="stk_import_tariff_code" />
+          <ScalarProperty Name="stk_serialized_flag" ColumnName="stk_serialized_flag" />
+          <ScalarProperty Name="stk_storage_type_flag" ColumnName="stk_storage_type_flag" />
+          <ScalarProperty Name="stk_std_cost" ColumnName="stk_std_cost" />
+          <ScalarProperty Name="stk_replacement_cost" ColumnName="stk_replacement_cost" />
+          <ScalarProperty Name="stk_sales_cost" ColumnName="stk_sales_cost" />
+          <ScalarProperty Name="stk_duty_paid_cost" ColumnName="stk_duty_paid_cost" />
+          <ScalarProperty Name="stk_info_cost" ColumnName="stk_info_cost" />
+          <ScalarProperty Name="stk_shelf_life_days" ColumnName="stk_shelf_life_days" />
+          <ScalarProperty Name="stk_warranty_type_flag" ColumnName="stk_warranty_type_flag" />
+          <ScalarProperty Name="stk_date_last_change" ColumnName="stk_date_last_change" />
+          <ScalarProperty Name="stk_price_per" ColumnName="stk_price_per" />
+          <ScalarProperty Name="stk_reorder_policy" ColumnName="stk_reorder_policy" />
+          <ScalarProperty Name="stk_reorder_review" ColumnName="stk_reorder_review" />
+          <ScalarProperty Name="stk_reorder_buyer" ColumnName="stk_reorder_buyer" />
+          <ScalarProperty Name="stk_creation_date" ColumnName="stk_creation_date" />
+          <ScalarProperty Name="stk_movement_code" ColumnName="stk_movement_code" />
+          <ScalarProperty Name="stk_sales_type_code" ColumnName="stk_sales_type_code" />
+          <ScalarProperty Name="stk_sales_tax_paid_rate" ColumnName="stk_sales_tax_paid_rate" />
+          <ScalarProperty Name="stk_sort_analysis_code" ColumnName="stk_sort_analysis_code" />
+          <ScalarProperty Name="stk_exise_qty" ColumnName="stk_exise_qty" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="RefreshCreditMasterByCountry" FunctionName="POTrackerDBModel.Store.RefreshCreditMasterByCountry" />
+    <FunctionImportMapping FunctionImportName="RefreshPurchaseOrderCache" FunctionName="POTrackerDBModel.Store.RefreshPurchaseOrderCache" />
+    <FunctionImportMapping FunctionImportName="RefreshStockMasterByCountry" FunctionName="POTrackerDBModel.Store.RefreshStockMasterByCountry" />
+    <FunctionImportMapping FunctionImportName="UpdateValidPurchaseOrderByCountry" FunctionName="POTrackerDBModel.Store.UpdateValidPurchaseOrderByCountry" />
+    <EntitySetMapping Name="VProductSpecifications">
+      <EntityTypeMapping TypeName="POTrackerDBModel.VProductSpecification">
+        <MappingFragment StoreEntitySet="VProductSpecification">
+          <ScalarProperty Name="Series_NO" ColumnName="Series_NO" />
+          <ScalarProperty Name="sid" ColumnName="sid" />
+          <ScalarProperty Name="excel_suppliername" ColumnName="excel_suppliername" />
+          <ScalarProperty Name="Spec_Status" ColumnName="Spec_Status" />
+          <ScalarProperty Name="Revision_No" ColumnName="Revision_No" />
+          <ScalarProperty Name="Specification_No" ColumnName="Specification_No" />
+          <ScalarProperty Name="Prod_Desc" ColumnName="Prod_Desc" />
+          <ScalarProperty Name="ProductCode" ColumnName="ProductCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="aspnet_Membership">
+      <EntityTypeMapping TypeName="POTrackerDBModel.aspnet_Membership">
+        <MappingFragment StoreEntitySet="aspnet_Membership">
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="FailedPasswordAnswerAttemptWindowStart" ColumnName="FailedPasswordAnswerAttemptWindowStart" />
+          <ScalarProperty Name="FailedPasswordAnswerAttemptCount" ColumnName="FailedPasswordAnswerAttemptCount" />
+          <ScalarProperty Name="FailedPasswordAttemptWindowStart" ColumnName="FailedPasswordAttemptWindowStart" />
+          <ScalarProperty Name="FailedPasswordAttemptCount" ColumnName="FailedPasswordAttemptCount" />
+          <ScalarProperty Name="LastLockoutDate" ColumnName="LastLockoutDate" />
+          <ScalarProperty Name="LastPasswordChangedDate" ColumnName="LastPasswordChangedDate" />
+          <ScalarProperty Name="LastLoginDate" ColumnName="LastLoginDate" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="IsLockedOut" ColumnName="IsLockedOut" />
+          <ScalarProperty Name="IsApproved" ColumnName="IsApproved" />
+          <ScalarProperty Name="PasswordAnswer" ColumnName="PasswordAnswer" />
+          <ScalarProperty Name="PasswordQuestion" ColumnName="PasswordQuestion" />
+          <ScalarProperty Name="LoweredEmail" ColumnName="LoweredEmail" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="MobilePIN" ColumnName="MobilePIN" />
+          <ScalarProperty Name="PasswordSalt" ColumnName="PasswordSalt" />
+          <ScalarProperty Name="PasswordFormat" ColumnName="PasswordFormat" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="ApplicationId" ColumnName="ApplicationId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="aspnet_Paths">
+      <EntityTypeMapping TypeName="POTrackerDBModel.aspnet_Paths">
+        <MappingFragment StoreEntitySet="aspnet_Paths">
+          <ScalarProperty Name="LoweredPath" ColumnName="LoweredPath" />
+          <ScalarProperty Name="Path" ColumnName="Path" />
+          <ScalarProperty Name="PathId" ColumnName="PathId" />
+          <ScalarProperty Name="ApplicationId" ColumnName="ApplicationId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="aspnet_Users">
+      <EntityTypeMapping TypeName="POTrackerDBModel.aspnet_Users">
+        <MappingFragment StoreEntitySet="aspnet_Users">
+          <ScalarProperty Name="LastActivityDate" ColumnName="LastActivityDate" />
+          <ScalarProperty Name="IsAnonymous" ColumnName="IsAnonymous" />
+          <ScalarProperty Name="MobileAlias" ColumnName="MobileAlias" />
+          <ScalarProperty Name="LoweredUserName" ColumnName="LoweredUserName" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="ApplicationId" ColumnName="ApplicationId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="aspnet_UsersInRoles">
+      <EntityTypeMapping TypeName="POTrackerDBModel.aspnet_UsersInRoles">
+        <MappingFragment StoreEntitySet="aspnet_UsersInRoles">
+          <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AspNetRoles">
+      <EntityTypeMapping TypeName="POTrackerDBModel.AspNetRoles">
+        <MappingFragment StoreEntitySet="AspNetRoles">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AspNetUserClaims">
+      <EntityTypeMapping TypeName="POTrackerDBModel.AspNetUserClaims">
+        <MappingFragment StoreEntitySet="AspNetUserClaims">
+          <ScalarProperty Name="ClaimValue" ColumnName="ClaimValue" />
+          <ScalarProperty Name="ClaimType" ColumnName="ClaimType" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AspNetUserLogins">
+      <EntityTypeMapping TypeName="POTrackerDBModel.AspNetUserLogins">
+        <MappingFragment StoreEntitySet="AspNetUserLogins">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="ProviderKey" ColumnName="ProviderKey" />
+          <ScalarProperty Name="LoginProvider" ColumnName="LoginProvider" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AspNetUserRoles">
+      <EntityTypeMapping TypeName="POTrackerDBModel.AspNetUserRoles">
+        <MappingFragment StoreEntitySet="AspNetUserRoles">
+          <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ManageSupplierLogin">
+      <EntityTypeMapping TypeName="POTrackerDBModel.ManageSupplierLogin">
+        <MappingFragment StoreEntitySet="ManageSupplierLogin">
+          <ScalarProperty Name="Country" ColumnName="Country" />
+          <ScalarProperty Name="SupplierCompanyName" ColumnName="SupplierCompanyName" />
+          <ScalarProperty Name="Suppliercode" ColumnName="Suppliercode" />
+          <ScalarProperty Name="SupplierLoginId" ColumnName="SupplierLoginId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SupplierInspectionRelation">
+      <EntityTypeMapping TypeName="POTrackerDBModel.SupplierInspectionRelation">
+        <MappingFragment StoreEntitySet="SupplierInspectionRelation">
+          <ScalarProperty Name="Country" ColumnName="Country" />
+          <ScalarProperty Name="InspectionTeam" ColumnName="InspectionTeam" />
+          <ScalarProperty Name="SupplierCode" ColumnName="SupplierCode" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="aspnet_Applications">
+      <EntityTypeMapping TypeName="POTrackerDBModel.aspnet_Applications">
+        <MappingFragment StoreEntitySet="aspnet_Applications">
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="ApplicationId" ColumnName="ApplicationId" />
+          <ScalarProperty Name="LoweredApplicationName" ColumnName="LoweredApplicationName" />
+          <ScalarProperty Name="ApplicationName" ColumnName="ApplicationName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AspNetUsers">
+      <EntityTypeMapping TypeName="POTrackerDBModel.AspNetUsers">
+        <MappingFragment StoreEntitySet="AspNetUsers">
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="AccessFailedCount" ColumnName="AccessFailedCount" />
+          <ScalarProperty Name="LockoutEnabled" ColumnName="LockoutEnabled" />
+          <ScalarProperty Name="LockoutEndDateUtc" ColumnName="LockoutEndDateUtc" />
+          <ScalarProperty Name="TwoFactorEnabled" ColumnName="TwoFactorEnabled" />
+          <ScalarProperty Name="PhoneNumberConfirmed" ColumnName="PhoneNumberConfirmed" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="SecurityStamp" ColumnName="SecurityStamp" />
+          <ScalarProperty Name="PasswordHash" ColumnName="PasswordHash" />
+          <ScalarProperty Name="EmailConfirmed" ColumnName="EmailConfirmed" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VSupplierByCountry">
+      <EntityTypeMapping TypeName="POTrackerDBModel.VSupplierByCountry">
+        <MappingFragment StoreEntitySet="VSupplierByCountry">
+          <ScalarProperty Name="Country" ColumnName="Country" />
+          <ScalarProperty Name="cr_shortname" ColumnName="cr_shortname" />
+          <ScalarProperty Name="cre_accountcode" ColumnName="cre_accountcode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VListOfAllSupplier">
+      <EntityTypeMapping TypeName="POTrackerDBModel.VListOfAllSupplier">
+        <MappingFragment StoreEntitySet="VListOfAllSupplier">
+          <ScalarProperty Name="cr_shortname" ColumnName="cr_shortname" />
+          <ScalarProperty Name="cre_accountcode" ColumnName="cre_accountcode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AUPurchaseOrderArchive">
+      <EntityTypeMapping TypeName="POTrackerDBModel.AUPurchaseOrderArchive">
+        <MappingFragment StoreEntitySet="AUPurchaseOrderArchive">
+          <ScalarProperty Name="Archived" ColumnName="Archived" />
+          <ScalarProperty Name="ValidPO" ColumnName="ValidPO" />
+          <ScalarProperty Name="Flag" ColumnName="Flag" />
+          <ScalarProperty Name="po_dif_flag" ColumnName="po_dif_flag" />
+          <ScalarProperty Name="po_total_line_qty" ColumnName="po_total_line_qty" />
+          <ScalarProperty Name="po_transit_tax_amt" ColumnName="po_transit_tax_amt" />
+          <ScalarProperty Name="po_transit_total" ColumnName="po_transit_total" />
+          <ScalarProperty Name="po_requisition_approval_user" ColumnName="po_requisition_approval_user" />
+          <ScalarProperty Name="po_requisition_entry_user_name" ColumnName="po_requisition_entry_user_name" />
+          <ScalarProperty Name="po_line_format" ColumnName="po_line_format" />
+          <ScalarProperty Name="po_next_claim_no" ColumnName="po_next_claim_no" />
+          <ScalarProperty Name="po_max_retention_claim_percent" ColumnName="po_max_retention_claim_percent" />
+          <ScalarProperty Name="po_max_retention_percent" ColumnName="po_max_retention_percent" />
+          <ScalarProperty Name="po_max_retention_amount" ColumnName="po_max_retention_amount" />
+          <ScalarProperty Name="o_po_tax_classification_code" ColumnName="o_po_tax_classification_code" />
+          <ScalarProperty Name="po_header_tax_rate" ColumnName="po_header_tax_rate" />
+          <ScalarProperty Name="po_control_user_id_no" ColumnName="po_control_user_id_no" />
+          <ScalarProperty Name="po_user_only_alpha20_1" ColumnName="po_user_only_alpha20_1" />
+          <ScalarProperty Name="po_qa_released" ColumnName="po_qa_released" />
+          <ScalarProperty Name="po_spare_code" ColumnName="po_spare_code" />
+          <ScalarProperty Name="po_spare_num" ColumnName="po_spare_num" />
+          <ScalarProperty Name="po_catalog_no" ColumnName="po_catalog_no" />
+          <ScalarProperty Name="po_spare_date" ColumnName="po_spare_date" />
+          <ScalarProperty Name="po_original_edi_run" ColumnName="po_original_edi_run" />
+          <ScalarProperty Name="po_total_volume" ColumnName="po_total_volume" />
+          <ScalarProperty Name="po_total_qty" ColumnName="po_total_qty" />
+          <ScalarProperty Name="po_total_weight" ColumnName="po_total_weight" />
+          <ScalarProperty Name="po_control_user_lock" ColumnName="po_control_user_lock" />
+          <ScalarProperty Name="po_control_lock" ColumnName="po_control_lock" />
+          <ScalarProperty Name="po_tax_group" ColumnName="po_tax_group" />
+          <ScalarProperty Name="po_misc_code" ColumnName="po_misc_code" />
+          <ScalarProperty Name="po_country_code" ColumnName="po_country_code" />
+          <ScalarProperty Name="po_receiver_user_id" ColumnName="po_receiver_user_id" />
+          <ScalarProperty Name="po_batch_ref" ColumnName="po_batch_ref" />
+          <ScalarProperty Name="po_confirmation_flag" ColumnName="po_confirmation_flag" />
+          <ScalarProperty Name="po_order_type" ColumnName="po_order_type" />
+          <ScalarProperty Name="po_reason_code" ColumnName="po_reason_code" />
+          <ScalarProperty Name="po_revision_no" ColumnName="po_revision_no" />
+          <ScalarProperty Name="po_drop_sales_order_no" ColumnName="po_drop_sales_order_no" />
+          <ScalarProperty Name="po_carrier_code" ColumnName="po_carrier_code" />
+          <ScalarProperty Name="po_time_stamp" ColumnName="po_time_stamp" />
+          <ScalarProperty Name="po_date_stamp" ColumnName="po_date_stamp" />
+          <ScalarProperty Name="po_user_name" ColumnName="po_user_name" />
+          <ScalarProperty Name="po_job_retention_amount" ColumnName="po_job_retention_amount" />
+          <ScalarProperty Name="o_po_quote_tax_exemption" ColumnName="o_po_quote_tax_exemption" />
+          <ScalarProperty Name="po_job_cost_centre" ColumnName="po_job_cost_centre" />
+          <ScalarProperty Name="po_job_no" ColumnName="po_job_no" />
+          <ScalarProperty Name="po_notes" ColumnName="po_notes" />
+          <ScalarProperty Name="po_costing_date" ColumnName="po_costing_date" />
+          <ScalarProperty Name="po_shipment_no" ColumnName="po_shipment_no" />
+          <ScalarProperty Name="po_lc_number" ColumnName="po_lc_number" />
+          <ScalarProperty Name="po_voyage_no" ColumnName="po_voyage_no" />
+          <ScalarProperty Name="po_entry_port" ColumnName="po_entry_port" />
+          <ScalarProperty Name="po_vessel_name" ColumnName="po_vessel_name" />
+          <ScalarProperty Name="po_charges_provision_amount" ColumnName="po_charges_provision_amount" />
+          <ScalarProperty Name="po_specials_provision_amount" ColumnName="po_specials_provision_amount" />
+          <ScalarProperty Name="po_normal_provision_amount" ColumnName="po_normal_provision_amount" />
+          <ScalarProperty Name="po_invoice_tax_amount" ColumnName="po_invoice_tax_amount" />
+          <ScalarProperty Name="po_invoice_amount" ColumnName="po_invoice_amount" />
+          <ScalarProperty Name="po_invoice_date" ColumnName="po_invoice_date" />
+          <ScalarProperty Name="po_invoice_details" ColumnName="po_invoice_details" />
+          <ScalarProperty Name="po_invoice_no" ColumnName="po_invoice_no" />
+          <ScalarProperty Name="po_received_tax_amt" ColumnName="po_received_tax_amt" />
+          <ScalarProperty Name="po_ordered_tax_amt" ColumnName="po_ordered_tax_amt" />
+          <ScalarProperty Name="po_charges_total" ColumnName="po_charges_total" />
+          <ScalarProperty Name="po_received_total" ColumnName="po_received_total" />
+          <ScalarProperty Name="po_order_total" ColumnName="po_order_total" />
+          <ScalarProperty Name="po_final_currency_rate" ColumnName="po_final_currency_rate" />
+          <ScalarProperty Name="po_initial_currency_rate" ColumnName="po_initial_currency_rate" />
+          <ScalarProperty Name="po_currency_code" ColumnName="po_currency_code" />
+          <ScalarProperty Name="po_receiving_whse" ColumnName="po_receiving_whse" />
+          <ScalarProperty Name="po_whse_code" ColumnName="po_whse_code" />
+          <ScalarProperty Name="po_inwards_order_suffix" ColumnName="po_inwards_order_suffix" />
+          <ScalarProperty Name="po_inwards_no" ColumnName="po_inwards_no" />
+          <ScalarProperty Name="po_order_terms" ColumnName="po_order_terms" />
+          <ScalarProperty Name="po_order_status" ColumnName="po_order_status" />
+          <ScalarProperty Name="po_received_date" ColumnName="po_received_date" />
+          <ScalarProperty Name="po_arrival_date" ColumnName="po_arrival_date" />
+          <ScalarProperty Name="po_action_date" ColumnName="po_action_date" />
+          <ScalarProperty Name="po_order_date" ColumnName="po_order_date" />
+          <ScalarProperty Name="cre_accountcode" ColumnName="cre_accountcode" />
+          <ScalarProperty Name="po_backorder_flag" ColumnName="po_backorder_flag" />
+          <ScalarProperty Name="po_order_no" ColumnName="po_order_no" />
+          <ScalarProperty Name="PurchaseOrderId" ColumnName="PurchaseOrderId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AUPurchaseOrderLine">
+      <EntityTypeMapping TypeName="POTrackerDBModel.AUPurchaseOrderLine">
+        <MappingFragment StoreEntitySet="AUPurchaseOrderLine">
+          <ScalarProperty Name="Archived" ColumnName="Archived" />
+          <ScalarProperty Name="ValidPOL" ColumnName="ValidPOL" />
+          <ScalarProperty Name="Flag" ColumnName="Flag" />
+          <ScalarProperty Name="ArtworkStatus" ColumnName="ArtworkStatus" />
+          <ScalarProperty Name="ArtworkLink" ColumnName="ArtworkLink" />
+          <ScalarProperty Name="SpexStatus" ColumnName="SpexStatus" />
+          <ScalarProperty Name="SpexLink" ColumnName="SpexLink" />
+          <ScalarProperty Name="pol_received_tax_inc_in_cost" ColumnName="pol_received_tax_inc_in_cost" />
+          <ScalarProperty Name="pol_non_stk_tax_code" ColumnName="pol_non_stk_tax_code" />
+          <ScalarProperty Name="pol_transit_tax_amt" ColumnName="pol_transit_tax_amt" />
+          <ScalarProperty Name="pol_in_transit_total" ColumnName="pol_in_transit_total" />
+          <ScalarProperty Name="pol_in_transit_qty" ColumnName="pol_in_transit_qty" />
+          <ScalarProperty Name="pol_user_only_num2" ColumnName="pol_user_only_num2" />
+          <ScalarProperty Name="pol_user_only_num1" ColumnName="pol_user_only_num1" />
+          <ScalarProperty Name="pol_user_only_alpha4_2" ColumnName="pol_user_only_alpha4_2" />
+          <ScalarProperty Name="pol_user_only_alpha4_1" ColumnName="pol_user_only_alpha4_1" />
+          <ScalarProperty Name="pol_user_only_date1" ColumnName="pol_user_only_date1" />
+          <ScalarProperty Name="pol_tax_rate_included_in_cost" ColumnName="pol_tax_rate_included_in_cost" />
+          <ScalarProperty Name="pol_spare_num" ColumnName="pol_spare_num" />
+          <ScalarProperty Name="o_pol_tax_exemptions" ColumnName="o_pol_tax_exemptions" />
+          <ScalarProperty Name="pol_link_to_seq_no" ColumnName="pol_link_to_seq_no" />
+          <ScalarProperty Name="pol_received_tax_amt" ColumnName="pol_received_tax_amt" />
+          <ScalarProperty Name="pol_tax_rate" ColumnName="pol_tax_rate" />
+          <ScalarProperty Name="o_pol_tax_rate_code" ColumnName="o_pol_tax_rate_code" />
+          <ScalarProperty Name="requisition_no" ColumnName="requisition_no" />
+          <ScalarProperty Name="po_line_time_stamp" ColumnName="po_line_time_stamp" />
+          <ScalarProperty Name="po_line_date_stamp" ColumnName="po_line_date_stamp" />
+          <ScalarProperty Name="pol_time_expected" ColumnName="pol_time_expected" />
+          <ScalarProperty Name="po_line_date_expected" ColumnName="po_line_date_expected" />
+          <ScalarProperty Name="pol_gl_accountcode" ColumnName="pol_gl_accountcode" />
+          <ScalarProperty Name="po_order_line_total" ColumnName="po_order_line_total" />
+          <ScalarProperty Name="po_received_total_amount" ColumnName="po_received_total_amount" />
+          <ScalarProperty Name="pol_previous_line_cost" ColumnName="pol_previous_line_cost" />
+          <ScalarProperty Name="po_backorder_qty" ColumnName="po_backorder_qty" />
+          <ScalarProperty Name="po_received_qty" ColumnName="po_received_qty" />
+          <ScalarProperty Name="po_order_qty" ColumnName="po_order_qty" />
+          <ScalarProperty Name="po_supplier_unit_conversion" ColumnName="po_supplier_unit_conversion" />
+          <ScalarProperty Name="po_supplier_unit_description" ColumnName="po_supplier_unit_description" />
+          <ScalarProperty Name="po_supplier_unit_of_measure" ColumnName="po_supplier_unit_of_measure" />
+          <ScalarProperty Name="pol_spare_no_1" ColumnName="pol_spare_no_1" />
+          <ScalarProperty Name="po_disc_rate" ColumnName="po_disc_rate" />
+          <ScalarProperty Name="pol_ordered_tax_amt" ColumnName="pol_ordered_tax_amt" />
+          <ScalarProperty Name="po_item_price" ColumnName="po_item_price" />
+          <ScalarProperty Name="po_line_description" ColumnName="po_line_description" />
+          <ScalarProperty Name="po_supplier_stock_code" ColumnName="po_supplier_stock_code" />
+          <ScalarProperty Name="stock_code" ColumnName="stock_code" />
+          <ScalarProperty Name="po_price_override_flag" ColumnName="po_price_override_flag" />
+          <ScalarProperty Name="po_charge_type" ColumnName="po_charge_type" />
+          <ScalarProperty Name="po_line_type" ColumnName="po_line_type" />
+          <ScalarProperty Name="po_l_seq" ColumnName="po_l_seq" />
+          <ScalarProperty Name="po_backorder_flag" ColumnName="po_backorder_flag" />
+          <ScalarProperty Name="po_order_no" ColumnName="po_order_no" />
+          <ScalarProperty Name="PurchaseOrderLineId" ColumnName="PurchaseOrderLineId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AUPurchaseOrderLineArchive">
+      <EntityTypeMapping TypeName="POTrackerDBModel.AUPurchaseOrderLineArchive">
+        <MappingFragment StoreEntitySet="AUPurchaseOrderLineArchive">
+          <ScalarProperty Name="Archived" ColumnName="Archived" />
+          <ScalarProperty Name="ValidPOL" ColumnName="ValidPOL" />
+          <ScalarProperty Name="Flag" ColumnName="Flag" />
+          <ScalarProperty Name="ArtworkStatus" ColumnName="ArtworkStatus" />
+          <ScalarProperty Name="ArtworkLink" ColumnName="ArtworkLink" />
+          <ScalarProperty Name="SpexStatus" ColumnName="SpexStatus" />
+          <ScalarProperty Name="SpexLink" ColumnName="SpexLink" />
+          <ScalarProperty Name="pol_received_tax_inc_in_cost" ColumnName="pol_received_tax_inc_in_cost" />
+          <ScalarProperty Name="pol_non_stk_tax_code" ColumnName="pol_non_stk_tax_code" />
+          <ScalarProperty Name="pol_transit_tax_amt" ColumnName="pol_transit_tax_amt" />
+          <ScalarProperty Name="pol_in_transit_total" ColumnName="pol_in_transit_total" />
+          <ScalarProperty Name="pol_in_transit_qty" ColumnName="pol_in_transit_qty" />
+          <ScalarProperty Name="pol_user_only_num2" ColumnName="pol_user_only_num2" />
+          <ScalarProperty Name="pol_user_only_num1" ColumnName="pol_user_only_num1" />
+          <ScalarProperty Name="pol_user_only_alpha4_2" ColumnName="pol_user_only_alpha4_2" />
+          <ScalarProperty Name="pol_user_only_alpha4_1" ColumnName="pol_user_only_alpha4_1" />
+          <ScalarProperty Name="pol_user_only_date1" ColumnName="pol_user_only_date1" />
+          <ScalarProperty Name="pol_tax_rate_included_in_cost" ColumnName="pol_tax_rate_included_in_cost" />
+          <ScalarProperty Name="pol_spare_num" ColumnName="pol_spare_num" />
+          <ScalarProperty Name="o_pol_tax_exemptions" ColumnName="o_pol_tax_exemptions" />
+          <ScalarProperty Name="pol_link_to_seq_no" ColumnName="pol_link_to_seq_no" />
+          <ScalarProperty Name="pol_received_tax_amt" ColumnName="pol_received_tax_amt" />
+          <ScalarProperty Name="pol_tax_rate" ColumnName="pol_tax_rate" />
+          <ScalarProperty Name="o_pol_tax_rate_code" ColumnName="o_pol_tax_rate_code" />
+          <ScalarProperty Name="requisition_no" ColumnName="requisition_no" />
+          <ScalarProperty Name="po_line_time_stamp" ColumnName="po_line_time_stamp" />
+          <ScalarProperty Name="po_line_date_stamp" ColumnName="po_line_date_stamp" />
+          <ScalarProperty Name="pol_time_expected" ColumnName="pol_time_expected" />
+          <ScalarProperty Name="po_line_date_expected" ColumnName="po_line_date_expected" />
+          <ScalarProperty Name="pol_gl_accountcode" ColumnName="pol_gl_accountcode" />
+          <ScalarProperty Name="po_order_line_total" ColumnName="po_order_line_total" />
+          <ScalarProperty Name="po_received_total_amount" ColumnName="po_received_total_amount" />
+          <ScalarProperty Name="pol_previous_line_cost" ColumnName="pol_previous_line_cost" />
+          <ScalarProperty Name="po_backorder_qty" ColumnName="po_backorder_qty" />
+          <ScalarProperty Name="po_received_qty" ColumnName="po_received_qty" />
+          <ScalarProperty Name="po_order_qty" ColumnName="po_order_qty" />
+          <ScalarProperty Name="po_supplier_unit_conversion" ColumnName="po_supplier_unit_conversion" />
+          <ScalarProperty Name="po_supplier_unit_description" ColumnName="po_supplier_unit_description" />
+          <ScalarProperty Name="po_supplier_unit_of_measure" ColumnName="po_supplier_unit_of_measure" />
+          <ScalarProperty Name="pol_spare_no_1" ColumnName="pol_spare_no_1" />
+          <ScalarProperty Name="po_disc_rate" ColumnName="po_disc_rate" />
+          <ScalarProperty Name="pol_ordered_tax_amt" ColumnName="pol_ordered_tax_amt" />
+          <ScalarProperty Name="po_item_price" ColumnName="po_item_price" />
+          <ScalarProperty Name="po_line_description" ColumnName="po_line_description" />
+          <ScalarProperty Name="po_supplier_stock_code" ColumnName="po_supplier_stock_code" />
+          <ScalarProperty Name="stock_code" ColumnName="stock_code" />
+          <ScalarProperty Name="po_price_override_flag" ColumnName="po_price_override_flag" />
+          <ScalarProperty Name="po_charge_type" ColumnName="po_charge_type" />
+          <ScalarProperty Name="po_line_type" ColumnName="po_line_type" />
+          <ScalarProperty Name="po_l_seq" ColumnName="po_l_seq" />
+          <ScalarProperty Name="po_backorder_flag" ColumnName="po_backorder_flag" />
+          <ScalarProperty Name="po_order_no" ColumnName="po_order_no" />
+          <ScalarProperty Name="PurchaseOrderLineId" ColumnName="PurchaseOrderLineId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NZPurchaseOrderLine">
+      <EntityTypeMapping TypeName="POTrackerDBModel.NZPurchaseOrderLine">
+        <MappingFragment StoreEntitySet="NZPurchaseOrderLine">
+          <ScalarProperty Name="Archived" ColumnName="Archived" />
+          <ScalarProperty Name="ValidPOL" ColumnName="ValidPOL" />
+          <ScalarProperty Name="Flag" ColumnName="Flag" />
+          <ScalarProperty Name="ArtworkStatus" ColumnName="ArtworkStatus" />
+          <ScalarProperty Name="ArtworkLink" ColumnName="ArtworkLink" />
+          <ScalarProperty Name="SpexStatus" ColumnName="SpexStatus" />
+          <ScalarProperty Name="SpexLink" ColumnName="SpexLink" />
+          <ScalarProperty Name="pol_received_tax_inc_in_cost" ColumnName="pol_received_tax_inc_in_cost" />
+          <ScalarProperty Name="pol_non_stk_tax_code" ColumnName="pol_non_stk_tax_code" />
+          <ScalarProperty Name="pol_transit_tax_amt" ColumnName="pol_transit_tax_amt" />
+          <ScalarProperty Name="pol_in_transit_total" ColumnName="pol_in_transit_total" />
+          <ScalarProperty Name="pol_in_transit_qty" ColumnName="pol_in_transit_qty" />
+          <ScalarProperty Name="pol_user_only_num2" ColumnName="pol_user_only_num2" />
+          <ScalarProperty Name="pol_user_only_num1" ColumnName="pol_user_only_num1" />
+          <ScalarProperty Name="pol_user_only_alpha4_2" ColumnName="pol_user_only_alpha4_2" />
+          <ScalarProperty Name="pol_user_only_alpha4_1" ColumnName="pol_user_only_alpha4_1" />
+          <ScalarProperty Name="pol_user_only_date1" ColumnName="pol_user_only_date1" />
+          <ScalarProperty Name="pol_tax_rate_included_in_cost" ColumnName="pol_tax_rate_included_in_cost" />
+          <ScalarProperty Name="pol_spare_num" ColumnName="pol_spare_num" />
+          <ScalarProperty Name="o_pol_tax_exemptions" ColumnName="o_pol_tax_exemptions" />
+          <ScalarProperty Name="pol_link_to_seq_no" ColumnName="pol_link_to_seq_no" />
+          <ScalarProperty Name="pol_received_tax_amt" ColumnName="pol_received_tax_amt" />
+          <ScalarProperty Name="pol_tax_rate" ColumnName="pol_tax_rate" />
+          <ScalarProperty Name="o_pol_tax_rate_code" ColumnName="o_pol_tax_rate_code" />
+          <ScalarProperty Name="requisition_no" ColumnName="requisition_no" />
+          <ScalarProperty Name="po_line_time_stamp" ColumnName="po_line_time_stamp" />
+          <ScalarProperty Name="po_line_date_stamp" ColumnName="po_line_date_stamp" />
+          <ScalarProperty Name="pol_time_expected" ColumnName="pol_time_expected" />
+          <ScalarProperty Name="po_line_date_expected" ColumnName="po_line_date_expected" />
+          <ScalarProperty Name="pol_gl_accountcode" ColumnName="pol_gl_accountcode" />
+          <ScalarProperty Name="po_order_line_total" ColumnName="po_order_line_total" />
+          <ScalarProperty Name="po_received_total_amount" ColumnName="po_received_total_amount" />
+          <ScalarProperty Name="pol_previous_line_cost" ColumnName="pol_previous_line_cost" />
+          <ScalarProperty Name="po_backorder_qty" ColumnName="po_backorder_qty" />
+          <ScalarProperty Name="po_received_qty" ColumnName="po_received_qty" />
+          <ScalarProperty Name="po_order_qty" ColumnName="po_order_qty" />
+          <ScalarProperty Name="po_supplier_unit_conversion" ColumnName="po_supplier_unit_conversion" />
+          <ScalarProperty Name="po_supplier_unit_description" ColumnName="po_supplier_unit_description" />
+          <ScalarProperty Name="po_supplier_unit_of_measure" ColumnName="po_supplier_unit_of_measure" />
+          <ScalarProperty Name="pol_spare_no_1" ColumnName="pol_spare_no_1" />
+          <ScalarProperty Name="po_disc_rate" ColumnName="po_disc_rate" />
+          <ScalarProperty Name="pol_ordered_tax_amt" ColumnName="pol_ordered_tax_amt" />
+          <ScalarProperty Name="po_item_price" ColumnName="po_item_price" />
+          <ScalarProperty Name="po_line_description" ColumnName="po_line_description" />
+          <ScalarProperty Name="po_supplier_stock_code" ColumnName="po_supplier_stock_code" />
+          <ScalarProperty Name="stock_code" ColumnName="stock_code" />
+          <ScalarProperty Name="po_price_override_flag" ColumnName="po_price_override_flag" />
+          <ScalarProperty Name="po_charge_type" ColumnName="po_charge_type" />
+          <ScalarProperty Name="po_line_type" ColumnName="po_line_type" />
+          <ScalarProperty Name="po_l_seq" ColumnName="po_l_seq" />
+          <ScalarProperty Name="po_backorder_flag" ColumnName="po_backorder_flag" />
+          <ScalarProperty Name="po_order_no" ColumnName="po_order_no" />
+          <ScalarProperty Name="PurchaseOrderLineId" ColumnName="PurchaseOrderLineId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NZPurchaseOrderLineArchive">
+      <EntityTypeMapping TypeName="POTrackerDBModel.NZPurchaseOrderLineArchive">
+        <MappingFragment StoreEntitySet="NZPurchaseOrderLineArchive">
+          <ScalarProperty Name="Archived" ColumnName="Archived" />
+          <ScalarProperty Name="ValidPOL" ColumnName="ValidPOL" />
+          <ScalarProperty Name="Flag" ColumnName="Flag" />
+          <ScalarProperty Name="ArtworkStatus" ColumnName="ArtworkStatus" />
+          <ScalarProperty Name="ArtworkLink" ColumnName="ArtworkLink" />
+          <ScalarProperty Name="SpexStatus" ColumnName="SpexStatus" />
+          <ScalarProperty Name="SpexLink" ColumnName="SpexLink" />
+          <ScalarProperty Name="pol_received_tax_inc_in_cost" ColumnName="pol_received_tax_inc_in_cost" />
+          <ScalarProperty Name="pol_non_stk_tax_code" ColumnName="pol_non_stk_tax_code" />
+          <ScalarProperty Name="pol_transit_tax_amt" ColumnName="pol_transit_tax_amt" />
+          <ScalarProperty Name="pol_in_transit_total" ColumnName="pol_in_transit_total" />
+          <ScalarProperty Name="pol_in_transit_qty" ColumnName="pol_in_transit_qty" />
+          <ScalarProperty Name="pol_user_only_num2" ColumnName="pol_user_only_num2" />
+          <ScalarProperty Name="pol_user_only_num1" ColumnName="pol_user_only_num1" />
+          <ScalarProperty Name="pol_user_only_alpha4_2" ColumnName="pol_user_only_alpha4_2" />
+          <ScalarProperty Name="pol_user_only_alpha4_1" ColumnName="pol_user_only_alpha4_1" />
+          <ScalarProperty Name="pol_user_only_date1" ColumnName="pol_user_only_date1" />
+          <ScalarProperty Name="pol_tax_rate_included_in_cost" ColumnName="pol_tax_rate_included_in_cost" />
+          <ScalarProperty Name="pol_spare_num" ColumnName="pol_spare_num" />
+          <ScalarProperty Name="o_pol_tax_exemptions" ColumnName="o_pol_tax_exemptions" />
+          <ScalarProperty Name="pol_link_to_seq_no" ColumnName="pol_link_to_seq_no" />
+          <ScalarProperty Name="pol_received_tax_amt" ColumnName="pol_received_tax_amt" />
+          <ScalarProperty Name="pol_tax_rate" ColumnName="pol_tax_rate" />
+          <ScalarProperty Name="o_pol_tax_rate_code" ColumnName="o_pol_tax_rate_code" />
+          <ScalarProperty Name="requisition_no" ColumnName="requisition_no" />
+          <ScalarProperty Name="po_line_time_stamp" ColumnName="po_line_time_stamp" />
+          <ScalarProperty Name="po_line_date_stamp" ColumnName="po_line_date_stamp" />
+          <ScalarProperty Name="pol_time_expected" ColumnName="pol_time_expected" />
+          <ScalarProperty Name="po_line_date_expected" ColumnName="po_line_date_expected" />
+          <ScalarProperty Name="pol_gl_accountcode" ColumnName="pol_gl_accountcode" />
+          <ScalarProperty Name="po_order_line_total" ColumnName="po_order_line_total" />
+          <ScalarProperty Name="po_received_total_amount" ColumnName="po_received_total_amount" />
+          <ScalarProperty Name="pol_previous_line_cost" ColumnName="pol_previous_line_cost" />
+          <ScalarProperty Name="po_backorder_qty" ColumnName="po_backorder_qty" />
+          <ScalarProperty Name="po_received_qty" ColumnName="po_received_qty" />
+          <ScalarProperty Name="po_order_qty" ColumnName="po_order_qty" />
+          <ScalarProperty Name="po_supplier_unit_conversion" ColumnName="po_supplier_unit_conversion" />
+          <ScalarProperty Name="po_supplier_unit_description" ColumnName="po_supplier_unit_description" />
+          <ScalarProperty Name="po_supplier_unit_of_measure" ColumnName="po_supplier_unit_of_measure" />
+          <ScalarProperty Name="pol_spare_no_1" ColumnName="pol_spare_no_1" />
+          <ScalarProperty Name="po_disc_rate" ColumnName="po_disc_rate" />
+          <ScalarProperty Name="pol_ordered_tax_amt" ColumnName="pol_ordered_tax_amt" />
+          <ScalarProperty Name="po_item_price" ColumnName="po_item_price" />
+          <ScalarProperty Name="po_line_description" ColumnName="po_line_description" />
+          <ScalarProperty Name="po_supplier_stock_code" ColumnName="po_supplier_stock_code" />
+          <ScalarProperty Name="stock_code" ColumnName="stock_code" />
+          <ScalarProperty Name="po_price_override_flag" ColumnName="po_price_override_flag" />
+          <ScalarProperty Name="po_charge_type" ColumnName="po_charge_type" />
+          <ScalarProperty Name="po_line_type" ColumnName="po_line_type" />
+          <ScalarProperty Name="po_l_seq" ColumnName="po_l_seq" />
+          <ScalarProperty Name="po_backorder_flag" ColumnName="po_backorder_flag" />
+          <ScalarProperty Name="po_order_no" ColumnName="po_order_no" />
+          <ScalarProperty Name="PurchaseOrderLineId" ColumnName="PurchaseOrderLineId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UKPurchaseOrderLine">
+      <EntityTypeMapping TypeName="POTrackerDBModel.UKPurchaseOrderLine">
+        <MappingFragment StoreEntitySet="UKPurchaseOrderLine">
+          <ScalarProperty Name="Archived" ColumnName="Archived" />
+          <ScalarProperty Name="ValidPOL" ColumnName="ValidPOL" />
+          <ScalarProperty Name="Flag" ColumnName="Flag" />
+          <ScalarProperty Name="ArtworkStatus" ColumnName="ArtworkStatus" />
+          <ScalarProperty Name="ArtworkLink" ColumnName="ArtworkLink" />
+          <ScalarProperty Name="SpexStatus" ColumnName="SpexStatus" />
+          <ScalarProperty Name="SpexLink" ColumnName="SpexLink" />
+          <ScalarProperty Name="pol_received_tax_inc_in_cost" ColumnName="pol_received_tax_inc_in_cost" />
+          <ScalarProperty Name="pol_non_stk_tax_code" ColumnName="pol_non_stk_tax_code" />
+          <ScalarProperty Name="pol_transit_tax_amt" ColumnName="pol_transit_tax_amt" />
+          <ScalarProperty Name="pol_in_transit_total" ColumnName="pol_in_transit_total" />
+          <ScalarProperty Name="pol_in_transit_qty" ColumnName="pol_in_transit_qty" />
+          <ScalarProperty Name="pol_user_only_num2" ColumnName="pol_user_only_num2" />
+          <ScalarProperty Name="pol_user_only_num1" ColumnName="pol_user_only_num1" />
+          <ScalarProperty Name="pol_user_only_alpha4_2" ColumnName="pol_user_only_alpha4_2" />
+          <ScalarProperty Name="pol_user_only_alpha4_1" ColumnName="pol_user_only_alpha4_1" />
+          <ScalarProperty Name="pol_user_only_date1" ColumnName="pol_user_only_date1" />
+          <ScalarProperty Name="pol_tax_rate_included_in_cost" ColumnName="pol_tax_rate_included_in_cost" />
+          <ScalarProperty Name="pol_spare_num" ColumnName="pol_spare_num" />
+          <ScalarProperty Name="o_pol_tax_exemptions" ColumnName="o_pol_tax_exemptions" />
+          <ScalarProperty Name="pol_link_to_seq_no" ColumnName="pol_link_to_seq_no" />
+          <ScalarProperty Name="pol_received_tax_amt" ColumnName="pol_received_tax_amt" />
+          <ScalarProperty Name="pol_tax_rate" ColumnName="pol_tax_rate" />
+          <ScalarProperty Name="o_pol_tax_rate_code" ColumnName="o_pol_tax_rate_code" />
+          <ScalarProperty Name="requisition_no" ColumnName="requisition_no" />
+          <ScalarProperty Name="po_line_time_stamp" ColumnName="po_line_time_stamp" />
+          <ScalarProperty Name="po_line_date_stamp" ColumnName="po_line_date_stamp" />
+          <ScalarProperty Name="pol_time_expected" ColumnName="pol_time_expected" />
+          <ScalarProperty Name="po_line_date_expected" ColumnName="po_line_date_expected" />
+          <ScalarProperty Name="pol_gl_accountcode" ColumnName="pol_gl_accountcode" />
+          <ScalarProperty Name="po_order_line_total" ColumnName="po_order_line_total" />
+          <ScalarProperty Name="po_received_total_amount" ColumnName="po_received_total_amount" />
+          <ScalarProperty Name="pol_previous_line_cost" ColumnName="pol_previous_line_cost" />
+          <ScalarProperty Name="po_backorder_qty" ColumnName="po_backorder_qty" />
+          <ScalarProperty Name="po_received_qty" ColumnName="po_received_qty" />
+          <ScalarProperty Name="po_order_qty" ColumnName="po_order_qty" />
+          <ScalarProperty Name="po_supplier_unit_conversion" ColumnName="po_supplier_unit_conversion" />
+          <ScalarProperty Name="po_supplier_unit_description" ColumnName="po_supplier_unit_description" />
+          <ScalarProperty Name="po_supplier_unit_of_measure" ColumnName="po_supplier_unit_of_measure" />
+          <ScalarProperty Name="pol_spare_no_1" ColumnName="pol_spare_no_1" />
+          <ScalarProperty Name="po_disc_rate" ColumnName="po_disc_rate" />
+          <ScalarProperty Name="pol_ordered_tax_amt" ColumnName="pol_ordered_tax_amt" />
+          <ScalarProperty Name="po_item_price" ColumnName="po_item_price" />
+          <ScalarProperty Name="po_line_description" ColumnName="po_line_description" />
+          <ScalarProperty Name="po_supplier_stock_code" ColumnName="po_supplier_stock_code" />
+          <ScalarProperty Name="stock_code" ColumnName="stock_code" />
+          <ScalarProperty Name="po_price_override_flag" ColumnName="po_price_override_flag" />
+          <ScalarProperty Name="po_charge_type" ColumnName="po_charge_type" />
+          <ScalarProperty Name="po_line_type" ColumnName="po_line_type" />
+          <ScalarProperty Name="po_l_seq" ColumnName="po_l_seq" />
+          <ScalarProperty Name="po_backorder_flag" ColumnName="po_backorder_flag" />
+          <ScalarProperty Name="po_order_no" ColumnName="po_order_no" />
+          <ScalarProperty Name="PurchaseOrderLineId" ColumnName="PurchaseOrderLineId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UKPurchaseOrderLineArchive">
+      <EntityTypeMapping TypeName="POTrackerDBModel.UKPurchaseOrderLineArchive">
+        <MappingFragment StoreEntitySet="UKPurchaseOrderLineArchive">
+          <ScalarProperty Name="Archived" ColumnName="Archived" />
+          <ScalarProperty Name="ValidPOL" ColumnName="ValidPOL" />
+          <ScalarProperty Name="Flag" ColumnName="Flag" />
+          <ScalarProperty Name="ArtworkStatus" ColumnName="ArtworkStatus" />
+          <ScalarProperty Name="ArtworkLink" ColumnName="ArtworkLink" />
+          <ScalarProperty Name="SpexStatus" ColumnName="SpexStatus" />
+          <ScalarProperty Name="SpexLink" ColumnName="SpexLink" />
+          <ScalarProperty Name="pol_received_tax_inc_in_cost" ColumnName="pol_received_tax_inc_in_cost" />
+          <ScalarProperty Name="pol_non_stk_tax_code" ColumnName="pol_non_stk_tax_code" />
+          <ScalarProperty Name="pol_transit_tax_amt" ColumnName="pol_transit_tax_amt" />
+          <ScalarProperty Name="pol_in_transit_total" ColumnName="pol_in_transit_total" />
+          <ScalarProperty Name="pol_in_transit_qty" ColumnName="pol_in_transit_qty" />
+          <ScalarProperty Name="pol_user_only_num2" ColumnName="pol_user_only_num2" />
+          <ScalarProperty Name="pol_user_only_num1" ColumnName="pol_user_only_num1" />
+          <ScalarProperty Name="pol_user_only_alpha4_2" ColumnName="pol_user_only_alpha4_2" />
+          <ScalarProperty Name="pol_user_only_alpha4_1" ColumnName="pol_user_only_alpha4_1" />
+          <ScalarProperty Name="pol_user_only_date1" ColumnName="pol_user_only_date1" />
+          <ScalarProperty Name="pol_tax_rate_included_in_cost" ColumnName="pol_tax_rate_included_in_cost" />
+          <ScalarProperty Name="pol_spare_num" ColumnName="pol_spare_num" />
+          <ScalarProperty Name="o_pol_tax_exemptions" ColumnName="o_pol_tax_exemptions" />
+          <ScalarProperty Name="pol_link_to_seq_no" ColumnName="pol_link_to_seq_no" />
+          <ScalarProperty Name="pol_received_tax_amt" ColumnName="pol_received_tax_amt" />
+          <ScalarProperty Name="pol_tax_rate" ColumnName="pol_tax_rate" />
+          <ScalarProperty Name="o_pol_tax_rate_code" ColumnName="o_pol_tax_rate_code" />
+          <ScalarProperty Name="requisition_no" ColumnName="requisition_no" />
+          <ScalarProperty Name="po_line_time_stamp" ColumnName="po_line_time_stamp" />
+          <ScalarProperty Name="po_line_date_stamp" ColumnName="po_line_date_stamp" />
+          <ScalarProperty Name="pol_time_expected" ColumnName="pol_time_expected" />
+          <ScalarProperty Name="po_line_date_expected" ColumnName="po_line_date_expected" />
+          <ScalarProperty Name="pol_gl_accountcode" ColumnName="pol_gl_accountcode" />
+          <ScalarProperty Name="po_order_line_total" ColumnName="po_order_line_total" />
+          <ScalarProperty Name="po_received_total_amount" ColumnName="po_received_total_amount" />
+          <ScalarProperty Name="pol_previous_line_cost" ColumnName="pol_previous_line_cost" />
+          <ScalarProperty Name="po_backorder_qty" ColumnName="po_backorder_qty" />
+          <ScalarProperty Name="po_received_qty" ColumnName="po_received_qty" />
+          <ScalarProperty Name="po_order_qty" ColumnName="po_order_qty" />
+          <ScalarProperty Name="po_supplier_unit_conversion" ColumnName="po_supplier_unit_conversion" />
+          <ScalarProperty Name="po_supplier_unit_description" ColumnName="po_supplier_unit_description" />
+          <ScalarProperty Name="po_supplier_unit_of_measure" ColumnName="po_supplier_unit_of_measure" />
+          <ScalarProperty Name="pol_spare_no_1" ColumnName="pol_spare_no_1" />
+          <ScalarProperty Name="po_disc_rate" ColumnName="po_disc_rate" />
+          <ScalarProperty Name="pol_ordered_tax_amt" ColumnName="pol_ordered_tax_amt" />
+          <ScalarProperty Name="po_item_price" ColumnName="po_item_price" />
+          <ScalarProperty Name="po_line_description" ColumnName="po_line_description" />
+          <ScalarProperty Name="po_supplier_stock_code" ColumnName="po_supplier_stock_code" />
+          <ScalarProperty Name="stock_code" ColumnName="stock_code" />
+          <ScalarProperty Name="po_price_override_flag" ColumnName="po_price_override_flag" />
+          <ScalarProperty Name="po_charge_type" ColumnName="po_charge_type" />
+          <ScalarProperty Name="po_line_type" ColumnName="po_line_type" />
+          <ScalarProperty Name="po_l_seq" ColumnName="po_l_seq" />
+          <ScalarProperty Name="po_backorder_flag" ColumnName="po_backorder_flag" />
+          <ScalarProperty Name="po_order_no" ColumnName="po_order_no" />
+          <ScalarProperty Name="PurchaseOrderLineId" ColumnName="PurchaseOrderLineId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VNZPurchaseOrderLines">
+      <EntityTypeMapping TypeName="POTrackerDBModel.VNZPurchaseOrderLine">
+        <MappingFragment StoreEntitySet="VNZPurchaseOrderLine">
+          <ScalarProperty Name="SpexStatus" ColumnName="SpexStatus" />
+          <ScalarProperty Name="Archived" ColumnName="Archived" />
+          <ScalarProperty Name="ValidPOL" ColumnName="ValidPOL" />
+          <ScalarProperty Name="Flag" ColumnName="Flag" />
+          <ScalarProperty Name="ArtworkStatus" ColumnName="ArtworkStatus" />
+          <ScalarProperty Name="ArtworkLink" ColumnName="ArtworkLink" />
+          <ScalarProperty Name="SpexLink" ColumnName="SpexLink" />
+          <ScalarProperty Name="pol_received_tax_inc_in_cost" ColumnName="pol_received_tax_inc_in_cost" />
+          <ScalarProperty Name="pol_non_stk_tax_code" ColumnName="pol_non_stk_tax_code" />
+          <ScalarProperty Name="pol_transit_tax_amt" ColumnName="pol_transit_tax_amt" />
+          <ScalarProperty Name="pol_in_transit_total" ColumnName="pol_in_transit_total" />
+          <ScalarProperty Name="pol_in_transit_qty" ColumnName="pol_in_transit_qty" />
+          <ScalarProperty Name="pol_user_only_num2" ColumnName="pol_user_only_num2" />
+          <ScalarProperty Name="pol_user_only_num1" ColumnName="pol_user_only_num1" />
+          <ScalarProperty Name="pol_user_only_alpha4_2" ColumnName="pol_user_only_alpha4_2" />
+          <ScalarProperty Name="pol_user_only_alpha4_1" ColumnName="pol_user_only_alpha4_1" />
+          <ScalarProperty Name="pol_user_only_date1" ColumnName="pol_user_only_date1" />
+          <ScalarProperty Name="pol_tax_rate_included_in_cost" ColumnName="pol_tax_rate_included_in_cost" />
+          <ScalarProperty Name="pol_spare_num" ColumnName="pol_spare_num" />
+          <ScalarProperty Name="o_pol_tax_exemptions" ColumnName="o_pol_tax_exemptions" />
+          <ScalarProperty Name="pol_link_to_seq_no" ColumnName="pol_link_to_seq_no" />
+          <ScalarProperty Name="pol_received_tax_amt" ColumnName="pol_received_tax_amt" />
+          <ScalarProperty Name="pol_tax_rate" ColumnName="pol_tax_rate" />
+          <ScalarProperty Name="o_pol_tax_rate_code" ColumnName="o_pol_tax_rate_code" />
+          <ScalarProperty Name="requisition_no" ColumnName="requisition_no" />
+          <ScalarProperty Name="po_line_time_stamp" ColumnName="po_line_time_stamp" />
+          <ScalarProperty Name="po_line_date_stamp" ColumnName="po_line_date_stamp" />
+          <ScalarProperty Name="pol_time_expected" ColumnName="pol_time_expected" />
+          <ScalarProperty Name="po_line_date_expected" ColumnName="po_line_date_expected" />
+          <ScalarProperty Name="pol_gl_accountcode" ColumnName="pol_gl_accountcode" />
+          <ScalarProperty Name="po_order_line_total" ColumnName="po_order_line_total" />
+          <ScalarProperty Name="po_received_total_amount" ColumnName="po_received_total_amount" />
+          <ScalarProperty Name="pol_previous_line_cost" ColumnName="pol_previous_line_cost" />
+          <ScalarProperty Name="po_backorder_qty" ColumnName="po_backorder_qty" />
+          <ScalarProperty Name="po_received_qty" ColumnName="po_received_qty" />
+          <ScalarProperty Name="po_order_qty" ColumnName="po_order_qty" />
+          <ScalarProperty Name="po_supplier_unit_conversion" ColumnName="po_supplier_unit_conversion" />
+          <ScalarProperty Name="po_supplier_unit_description" ColumnName="po_supplier_unit_description" />
+          <ScalarProperty Name="po_supplier_unit_of_measure" ColumnName="po_supplier_unit_of_measure" />
+          <ScalarProperty Name="pol_spare_no_1" ColumnName="pol_spare_no_1" />
+          <ScalarProperty Name="po_disc_rate" ColumnName="po_disc_rate" />
+          <ScalarProperty Name="pol_ordered_tax_amt" ColumnName="pol_ordered_tax_amt" />
+          <ScalarProperty Name="po_item_price" ColumnName="po_item_price" />
+          <ScalarProperty Name="po_line_description" ColumnName="po_line_description" />
+          <ScalarProperty Name="stock_group" ColumnName="stock_group" />
+          <ScalarProperty Name="po_supplier_stock_code" ColumnName="po_supplier_stock_code" />
+          <ScalarProperty Name="stock_code" ColumnName="stock_code" />
+          <ScalarProperty Name="po_price_override_flag" ColumnName="po_price_override_flag" />
+          <ScalarProperty Name="po_charge_type" ColumnName="po_charge_type" />
+          <ScalarProperty Name="po_line_type" ColumnName="po_line_type" />
+          <ScalarProperty Name="po_l_seq" ColumnName="po_l_seq" />
+          <ScalarProperty Name="po_backorder_flag" ColumnName="po_backorder_flag" />
+          <ScalarProperty Name="po_order_no" ColumnName="po_order_no" />
+          <ScalarProperty Name="PurchaseOrderLineId" ColumnName="PurchaseOrderLineId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VUKPurchaseOrderLines">
+      <EntityTypeMapping TypeName="POTrackerDBModel.VUKPurchaseOrderLine">
+        <MappingFragment StoreEntitySet="VUKPurchaseOrderLine">
+          <ScalarProperty Name="SpexStatus" ColumnName="SpexStatus" />
+          <ScalarProperty Name="Archived" ColumnName="Archived" />
+          <ScalarProperty Name="ValidPOL" ColumnName="ValidPOL" />
+          <ScalarProperty Name="Flag" ColumnName="Flag" />
+          <ScalarProperty Name="ArtworkStatus" ColumnName="ArtworkStatus" />
+          <ScalarProperty Name="ArtworkLink" ColumnName="ArtworkLink" />
+          <ScalarProperty Name="SpexLink" ColumnName="SpexLink" />
+          <ScalarProperty Name="pol_received_tax_inc_in_cost" ColumnName="pol_received_tax_inc_in_cost" />
+          <ScalarProperty Name="pol_non_stk_tax_code" ColumnName="pol_non_stk_tax_code" />
+          <ScalarProperty Name="pol_transit_tax_amt" ColumnName="pol_transit_tax_amt" />
+          <ScalarProperty Name="pol_in_transit_total" ColumnName="pol_in_transit_total" />
+          <ScalarProperty Name="pol_in_transit_qty" ColumnName="pol_in_transit_qty" />
+          <ScalarProperty Name="pol_user_only_num2" ColumnName="pol_user_only_num2" />
+          <ScalarProperty Name="pol_user_only_num1" ColumnName="pol_user_only_num1" />
+          <ScalarProperty Name="pol_user_only_alpha4_2" ColumnName="pol_user_only_alpha4_2" />
+          <ScalarProperty Name="pol_user_only_alpha4_1" ColumnName="pol_user_only_alpha4_1" />
+          <ScalarProperty Name="pol_user_only_date1" ColumnName="pol_user_only_date1" />
+          <ScalarProperty Name="pol_tax_rate_included_in_cost" ColumnName="pol_tax_rate_included_in_cost" />
+          <ScalarProperty Name="pol_spare_num" ColumnName="pol_spare_num" />
+          <ScalarProperty Name="o_pol_tax_exemptions" ColumnName="o_pol_tax_exemptions" />
+          <ScalarProperty Name="pol_link_to_seq_no" ColumnName="pol_link_to_seq_no" />
+          <ScalarProperty Name="pol_received_tax_amt" ColumnName="pol_received_tax_amt" />
+          <ScalarProperty Name="pol_tax_rate" ColumnName="pol_tax_rate" />
+          <ScalarProperty Name="o_pol_tax_rate_code" ColumnName="o_pol_tax_rate_code" />
+          <ScalarProperty Name="requisition_no" ColumnName="requisition_no" />
+          <ScalarProperty Name="po_line_time_stamp" ColumnName="po_line_time_stamp" />
+          <ScalarProperty Name="po_line_date_stamp" ColumnName="po_line_date_stamp" />
+          <ScalarProperty Name="pol_time_expected" ColumnName="pol_time_expected" />
+          <ScalarProperty Name="po_line_date_expected" ColumnName="po_line_date_expected" />
+          <ScalarProperty Name="pol_gl_accountcode" ColumnName="pol_gl_accountcode" />
+          <ScalarProperty Name="po_order_line_total" ColumnName="po_order_line_total" />
+          <ScalarProperty Name="po_received_total_amount" ColumnName="po_received_total_amount" />
+          <ScalarProperty Name="pol_previous_line_cost" ColumnName="pol_previous_line_cost" />
+          <ScalarProperty Name="po_backorder_qty" ColumnName="po_backorder_qty" />
+          <ScalarProperty Name="po_received_qty" ColumnName="po_received_qty" />
+          <ScalarProperty Name="po_order_qty" ColumnName="po_order_qty" />
+          <ScalarProperty Name="po_supplier_unit_conversion" ColumnName="po_supplier_unit_conversion" />
+          <ScalarProperty Name="po_supplier_unit_description" ColumnName="po_supplier_unit_description" />
+          <ScalarProperty Name="po_supplier_unit_of_measure" ColumnName="po_supplier_unit_of_measure" />
+          <ScalarProperty Name="pol_spare_no_1" ColumnName="pol_spare_no_1" />
+          <ScalarProperty Name="po_disc_rate" ColumnName="po_disc_rate" />
+          <ScalarProperty Name="pol_ordered_tax_amt" ColumnName="pol_ordered_tax_amt" />
+          <ScalarProperty Name="po_item_price" ColumnName="po_item_price" />
+          <ScalarProperty Name="po_line_description" ColumnName="po_line_description" />
+          <ScalarProperty Name="stock_group" ColumnName="stock_group" />
+          <ScalarProperty Name="po_supplier_stock_code" ColumnName="po_supplier_stock_code" />
+          <ScalarProperty Name="stock_code" ColumnName="stock_code" />
+          <ScalarProperty Name="po_price_override_flag" ColumnName="po_price_override_flag" />
+          <ScalarProperty Name="po_charge_type" ColumnName="po_charge_type" />
+          <ScalarProperty Name="po_line_type" ColumnName="po_line_type" />
+          <ScalarProperty Name="po_l_seq" ColumnName="po_l_seq" />
+          <ScalarProperty Name="po_backorder_flag" ColumnName="po_backorder_flag" />
+          <ScalarProperty Name="po_order_no" ColumnName="po_order_no" />
+          <ScalarProperty Name="PurchaseOrderLineId" ColumnName="PurchaseOrderLineId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VAUPurchaseOrderLines">
+      <EntityTypeMapping TypeName="POTrackerDBModel.VAUPurchaseOrderLine">
+        <MappingFragment StoreEntitySet="VAUPurchaseOrderLine">
+          <ScalarProperty Name="SpexStatus" ColumnName="SpexStatus" />
+          <ScalarProperty Name="Archived" ColumnName="Archived" />
+          <ScalarProperty Name="ValidPOL" ColumnName="ValidPOL" />
+          <ScalarProperty Name="Flag" ColumnName="Flag" />
+          <ScalarProperty Name="ArtworkStatus" ColumnName="ArtworkStatus" />
+          <ScalarProperty Name="ArtworkLink" ColumnName="ArtworkLink" />
+          <ScalarProperty Name="SpexLink" ColumnName="SpexLink" />
+          <ScalarProperty Name="pol_received_tax_inc_in_cost" ColumnName="pol_received_tax_inc_in_cost" />
+          <ScalarProperty Name="pol_non_stk_tax_code" ColumnName="pol_non_stk_tax_code" />
+          <ScalarProperty Name="pol_transit_tax_amt" ColumnName="pol_transit_tax_amt" />
+          <ScalarProperty Name="pol_in_transit_total" ColumnName="pol_in_transit_total" />
+          <ScalarProperty Name="pol_in_transit_qty" ColumnName="pol_in_transit_qty" />
+          <ScalarProperty Name="pol_user_only_num2" ColumnName="pol_user_only_num2" />
+          <ScalarProperty Name="pol_user_only_num1" ColumnName="pol_user_only_num1" />
+          <ScalarProperty Name="pol_user_only_alpha4_2" ColumnName="pol_user_only_alpha4_2" />
+          <ScalarProperty Name="pol_user_only_alpha4_1" ColumnName="pol_user_only_alpha4_1" />
+          <ScalarProperty Name="pol_user_only_date1" ColumnName="pol_user_only_date1" />
+          <ScalarProperty Name="pol_tax_rate_included_in_cost" ColumnName="pol_tax_rate_included_in_cost" />
+          <ScalarProperty Name="pol_spare_num" ColumnName="pol_spare_num" />
+          <ScalarProperty Name="o_pol_tax_exemptions" ColumnName="o_pol_tax_exemptions" />
+          <ScalarProperty Name="pol_link_to_seq_no" ColumnName="pol_link_to_seq_no" />
+          <ScalarProperty Name="pol_received_tax_amt" ColumnName="pol_received_tax_amt" />
+          <ScalarProperty Name="pol_tax_rate" ColumnName="pol_tax_rate" />
+          <ScalarProperty Name="o_pol_tax_rate_code" ColumnName="o_pol_tax_rate_code" />
+          <ScalarProperty Name="requisition_no" ColumnName="requisition_no" />
+          <ScalarProperty Name="po_line_time_stamp" ColumnName="po_line_time_stamp" />
+          <ScalarProperty Name="po_line_date_stamp" ColumnName="po_line_date_stamp" />
+          <ScalarProperty Name="pol_time_expected" ColumnName="pol_time_expected" />
+          <ScalarProperty Name="po_line_date_expected" ColumnName="po_line_date_expected" />
+          <ScalarProperty Name="pol_gl_accountcode" ColumnName="pol_gl_accountcode" />
+          <ScalarProperty Name="po_order_line_total" ColumnName="po_order_line_total" />
+          <ScalarProperty Name="po_received_total_amount" ColumnName="po_received_total_amount" />
+          <ScalarProperty Name="pol_previous_line_cost" ColumnName="pol_previous_line_cost" />
+          <ScalarProperty Name="po_backorder_qty" ColumnName="po_backorder_qty" />
+          <ScalarProperty Name="po_received_qty" ColumnName="po_received_qty" />
+          <ScalarProperty Name="po_order_qty" ColumnName="po_order_qty" />
+          <ScalarProperty Name="po_supplier_unit_conversion" ColumnName="po_supplier_unit_conversion" />
+          <ScalarProperty Name="po_supplier_unit_description" ColumnName="po_supplier_unit_description" />
+          <ScalarProperty Name="po_supplier_unit_of_measure" ColumnName="po_supplier_unit_of_measure" />
+          <ScalarProperty Name="pol_spare_no_1" ColumnName="pol_spare_no_1" />
+          <ScalarProperty Name="po_disc_rate" ColumnName="po_disc_rate" />
+          <ScalarProperty Name="pol_ordered_tax_amt" ColumnName="pol_ordered_tax_amt" />
+          <ScalarProperty Name="po_item_price" ColumnName="po_item_price" />
+          <ScalarProperty Name="po_line_description" ColumnName="po_line_description" />
+          <ScalarProperty Name="stock_group" ColumnName="stock_group" />
+          <ScalarProperty Name="po_supplier_stock_code" ColumnName="po_supplier_stock_code" />
+          <ScalarProperty Name="stock_code" ColumnName="stock_code" />
+          <ScalarProperty Name="po_price_override_flag" ColumnName="po_price_override_flag" />
+          <ScalarProperty Name="po_charge_type" ColumnName="po_charge_type" />
+          <ScalarProperty Name="po_line_type" ColumnName="po_line_type" />
+          <ScalarProperty Name="po_l_seq" ColumnName="po_l_seq" />
+          <ScalarProperty Name="po_backorder_flag" ColumnName="po_backorder_flag" />
+          <ScalarProperty Name="po_order_no" ColumnName="po_order_no" />
+          <ScalarProperty Name="PurchaseOrderLineId" ColumnName="PurchaseOrderLineId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="POApprovals">
+      <EntityTypeMapping TypeName="POTrackerDBModel.POApproval">
+        <MappingFragment StoreEntitySet="POApproval">
+          <ScalarProperty Name="CountryCode" ColumnName="CountryCode" />
+          <ScalarProperty Name="POSuffix" ColumnName="POSuffix" />
+          <ScalarProperty Name="PONum" ColumnName="PONum" />
+          <ScalarProperty Name="ApprovedOn" ColumnName="ApprovedOn" />
+          <ScalarProperty Name="ApprovedBy" ColumnName="ApprovedBy" />
+          <ScalarProperty Name="ApprovalId" ColumnName="ApprovalId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VAUPurchaseOrderHeaders">
+      <EntityTypeMapping TypeName="POTrackerDBModel.VAUPurchaseOrderHeader">
+        <MappingFragment StoreEntitySet="VAUPurchaseOrderHeader">
+          <ScalarProperty Name="SupplierFax" ColumnName="SupplierFax" />
+          <ScalarProperty Name="SupplierMobile" ColumnName="SupplierMobile" />
+          <ScalarProperty Name="SupplierPhone" ColumnName="SupplierPhone" />
+          <ScalarProperty Name="SupplierPhoneCountryCode" ColumnName="SupplierPhoneCountryCode" />
+          <ScalarProperty Name="SupplierPostCode" ColumnName="SupplierPostCode" />
+          <ScalarProperty Name="SupplierState" ColumnName="SupplierState" />
+          <ScalarProperty Name="SupplierSuburb" ColumnName="SupplierSuburb" />
+          <ScalarProperty Name="SupplierAddress2" ColumnName="SupplierAddress2" />
+          <ScalarProperty Name="SupplierAddress1" ColumnName="SupplierAddress1" />
+          <ScalarProperty Name="SupplierFullName" ColumnName="SupplierFullName" />
+          <ScalarProperty Name="DeliveryInstruction7" ColumnName="DeliveryInstruction7" />
+          <ScalarProperty Name="DeliveryInstruction6" ColumnName="DeliveryInstruction6" />
+          <ScalarProperty Name="DeliveryInstruction5" ColumnName="DeliveryInstruction5" />
+          <ScalarProperty Name="DeliveryInstruction4" ColumnName="DeliveryInstruction4" />
+          <ScalarProperty Name="DeliveryInstruction3" ColumnName="DeliveryInstruction3" />
+          <ScalarProperty Name="DeliveryInstruction2" ColumnName="DeliveryInstruction2" />
+          <ScalarProperty Name="DeliveryInstruction1" ColumnName="DeliveryInstruction1" />
+          <ScalarProperty Name="DeliveryCountryCode" ColumnName="DeliveryCountryCode" />
+          <ScalarProperty Name="DeliveryPostCode" ColumnName="DeliveryPostCode" />
+          <ScalarProperty Name="DeliveryAddress7" ColumnName="DeliveryAddress7" />
+          <ScalarProperty Name="DeliveryAddress6" ColumnName="DeliveryAddress6" />
+          <ScalarProperty Name="DeliveryAddress5" ColumnName="DeliveryAddress5" />
+          <ScalarProperty Name="DeliveryAddress4" ColumnName="DeliveryAddress4" />
+          <ScalarProperty Name="DeliveryAddress3" ColumnName="DeliveryAddress3" />
+          <ScalarProperty Name="DeliveryAddress2" ColumnName="DeliveryAddress2" />
+          <ScalarProperty Name="DeliveryAddress1" ColumnName="DeliveryAddress1" />
+          <ScalarProperty Name="cr_date_created" ColumnName="cr_date_created" />
+          <ScalarProperty Name="cr_curr_code" ColumnName="cr_curr_code" />
+          <ScalarProperty Name="cr_date_last_changed" ColumnName="cr_date_last_changed" />
+          <ScalarProperty Name="cr_default_gl_accountcode" ColumnName="cr_default_gl_accountcode" />
+          <ScalarProperty Name="cr_contact_name" ColumnName="cr_contact_name" />
+          <ScalarProperty Name="cr_clearing_flag" ColumnName="cr_clearing_flag" />
+          <ScalarProperty Name="cr_account_status" ColumnName="cr_account_status" />
+          <ScalarProperty Name="cr_chq_or_bankdraft" ColumnName="cr_chq_or_bankdraft" />
+          <ScalarProperty Name="cr_type" ColumnName="cr_type" />
+          <ScalarProperty Name="cr_auto_rq_flag" ColumnName="cr_auto_rq_flag" />
+          <ScalarProperty Name="cr_payment_selection" ColumnName="cr_payment_selection" />
+          <ScalarProperty Name="PaymentTermDesc" ColumnName="PaymentTermDesc" />
+          <ScalarProperty Name="cr_def_payment_terms" ColumnName="cr_def_payment_terms" />
+          <ScalarProperty Name="cr_purchase_ytd" ColumnName="cr_purchase_ytd" />
+          <ScalarProperty Name="cr_future_amt" ColumnName="cr_future_amt" />
+          <ScalarProperty Name="cr_balance" ColumnName="cr_balance" />
+          <ScalarProperty Name="cr_opening_bal" ColumnName="cr_opening_bal" />
+          <ScalarProperty Name="cr_shortname" ColumnName="cr_shortname" />
+          <ScalarProperty Name="cr_pay_to_code" ColumnName="cr_pay_to_code" />
+          <ScalarProperty Name="cre_accountcode" ColumnName="cre_accountcode" />
+          <ScalarProperty Name="Archived" ColumnName="Archived" />
+          <ScalarProperty Name="ValidPO" ColumnName="ValidPO" />
+          <ScalarProperty Name="Flag" ColumnName="Flag" />
+          <ScalarProperty Name="po_dif_flag" ColumnName="po_dif_flag" />
+          <ScalarProperty Name="po_total_line_qty" ColumnName="po_total_line_qty" />
+          <ScalarProperty Name="po_transit_tax_amt" ColumnName="po_transit_tax_amt" />
+          <ScalarProperty Name="po_transit_total" ColumnName="po_transit_total" />
+          <ScalarProperty Name="po_requisition_approval_user" ColumnName="po_requisition_approval_user" />
+          <ScalarProperty Name="po_requisition_entry_user_name" ColumnName="po_requisition_entry_user_name" />
+          <ScalarProperty Name="po_line_format" ColumnName="po_line_format" />
+          <ScalarProperty Name="po_next_claim_no" ColumnName="po_next_claim_no" />
+          <ScalarProperty Name="po_max_retention_claim_percent" ColumnName="po_max_retention_claim_percent" />
+          <ScalarProperty Name="po_max_retention_percent" ColumnName="po_max_retention_percent" />
+          <ScalarProperty Name="po_max_retention_amount" ColumnName="po_max_retention_amount" />
+          <ScalarProperty Name="o_po_tax_classification_code" ColumnName="o_po_tax_classification_code" />
+          <ScalarProperty Name="po_header_tax_rate" ColumnName="po_header_tax_rate" />
+          <ScalarProperty Name="po_control_user_id_no" ColumnName="po_control_user_id_no" />
+          <ScalarProperty Name="po_user_only_alpha20_1" ColumnName="po_user_only_alpha20_1" />
+          <ScalarProperty Name="po_qa_released" ColumnName="po_qa_released" />
+          <ScalarProperty Name="po_spare_code" ColumnName="po_spare_code" />
+          <ScalarProperty Name="po_spare_num" ColumnName="po_spare_num" />
+          <ScalarProperty Name="po_catalog_no" ColumnName="po_catalog_no" />
+          <ScalarProperty Name="po_spare_date" ColumnName="po_spare_date" />
+          <ScalarProperty Name="po_original_edi_run" ColumnName="po_original_edi_run" />
+          <ScalarProperty Name="po_total_volume" ColumnName="po_total_volume" />
+          <ScalarProperty Name="po_total_qty" ColumnName="po_total_qty" />
+          <ScalarProperty Name="po_total_weight" ColumnName="po_total_weight" />
+          <ScalarProperty Name="po_control_user_lock" ColumnName="po_control_user_lock" />
+          <ScalarProperty Name="po_control_lock" ColumnName="po_control_lock" />
+          <ScalarProperty Name="po_tax_group" ColumnName="po_tax_group" />
+          <ScalarProperty Name="po_misc_code" ColumnName="po_misc_code" />
+          <ScalarProperty Name="po_country_code" ColumnName="po_country_code" />
+          <ScalarProperty Name="po_receiver_user_id" ColumnName="po_receiver_user_id" />
+          <ScalarProperty Name="po_batch_ref" ColumnName="po_batch_ref" />
+          <ScalarProperty Name="po_confirmation_flag" ColumnName="po_confirmation_flag" />
+          <ScalarProperty Name="po_order_type" ColumnName="po_order_type" />
+          <ScalarProperty Name="po_reason_code" ColumnName="po_reason_code" />
+          <ScalarProperty Name="po_revision_no" ColumnName="po_revision_no" />
+          <ScalarProperty Name="po_drop_sales_order_no" ColumnName="po_drop_sales_order_no" />
+          <ScalarProperty Name="po_carrier_code" ColumnName="po_carrier_code" />
+          <ScalarProperty Name="po_time_stamp" ColumnName="po_time_stamp" />
+          <ScalarProperty Name="po_date_stamp" ColumnName="po_date_stamp" />
+          <ScalarProperty Name="po_user_name" ColumnName="po_user_name" />
+          <ScalarProperty Name="po_job_retention_amount" ColumnName="po_job_retention_amount" />
+          <ScalarProperty Name="o_po_quote_tax_exemption" ColumnName="o_po_quote_tax_exemption" />
+          <ScalarProperty Name="po_job_cost_centre" ColumnName="po_job_cost_centre" />
+          <ScalarProperty Name="po_job_no" ColumnName="po_job_no" />
+          <ScalarProperty Name="po_notes" ColumnName="po_notes" />
+          <ScalarProperty Name="po_costing_date" ColumnName="po_costing_date" />
+          <ScalarProperty Name="po_shipment_no" ColumnName="po_shipment_no" />
+          <ScalarProperty Name="po_lc_number" ColumnName="po_lc_number" />
+          <ScalarProperty Name="po_voyage_no" ColumnName="po_voyage_no" />
+          <ScalarProperty Name="po_entry_port" ColumnName="po_entry_port" />
+          <ScalarProperty Name="po_vessel_name" ColumnName="po_vessel_name" />
+          <ScalarProperty Name="po_charges_provision_amount" ColumnName="po_charges_provision_amount" />
+          <ScalarProperty Name="po_specials_provision_amount" ColumnName="po_specials_provision_amount" />
+          <ScalarProperty Name="po_normal_provision_amount" ColumnName="po_normal_provision_amount" />
+          <ScalarProperty Name="po_invoice_tax_amount" ColumnName="po_invoice_tax_amount" />
+          <ScalarProperty Name="po_invoice_amount" ColumnName="po_invoice_amount" />
+          <ScalarProperty Name="po_invoice_date" ColumnName="po_invoice_date" />
+          <ScalarProperty Name="po_invoice_details" ColumnName="po_invoice_details" />
+          <ScalarProperty Name="po_invoice_no" ColumnName="po_invoice_no" />
+          <ScalarProperty Name="po_received_tax_amt" ColumnName="po_received_tax_amt" />
+          <ScalarProperty Name="po_ordered_tax_amt" ColumnName="po_ordered_tax_amt" />
+          <ScalarProperty Name="po_charges_total" ColumnName="po_charges_total" />
+          <ScalarProperty Name="po_received_total" ColumnName="po_received_total" />
+          <ScalarProperty Name="po_order_total" ColumnName="po_order_total" />
+          <ScalarProperty Name="po_final_currency_rate" ColumnName="po_final_currency_rate" />
+          <ScalarProperty Name="po_initial_currency_rate" ColumnName="po_initial_currency_rate" />
+          <ScalarProperty Name="po_currency_code" ColumnName="po_currency_code" />
+          <ScalarProperty Name="po_receiving_whse" ColumnName="po_receiving_whse" />
+          <ScalarProperty Name="po_whse_code" ColumnName="po_whse_code" />
+          <ScalarProperty Name="po_inwards_order_suffix" ColumnName="po_inwards_order_suffix" />
+          <ScalarProperty Name="po_inwards_no" ColumnName="po_inwards_no" />
+          <ScalarProperty Name="po_order_terms" ColumnName="po_order_terms" />
+          <ScalarProperty Name="po_order_status" ColumnName="po_order_status" />
+          <ScalarProperty Name="po_received_date" ColumnName="po_received_date" />
+          <ScalarProperty Name="po_arrival_date" ColumnName="po_arrival_date" />
+          <ScalarProperty Name="po_action_date" ColumnName="po_action_date" />
+          <ScalarProperty Name="po_order_date" ColumnName="po_order_date" />
+          <ScalarProperty Name="po_backorder_flag" ColumnName="po_backorder_flag" />
+          <ScalarProperty Name="po_order_no" ColumnName="po_order_no" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VAUPurchaseOrderLineDetails">
+      <EntityTypeMapping TypeName="POTrackerDBModel.VAUPurchaseOrderLineDetail">
+        <MappingFragment StoreEntitySet="VAUPurchaseOrderLineDetails">
+          <ScalarProperty Name="RowNum" ColumnName="RowNum" />
+          <ScalarProperty Name="LineAmount" ColumnName="LineAmount" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="UnitPrice" ColumnName="UnitPrice" />
+          <ScalarProperty Name="ServiceChargeP" ColumnName="ServiceChargeP" />
+          <ScalarProperty Name="UOM" ColumnName="UOM" />
+          <ScalarProperty Name="Qty" ColumnName="Qty" />
+          <ScalarProperty Name="PortDate" ColumnName="PortDate" />
+          <ScalarProperty Name="ItemDesc" ColumnName="ItemDesc" />
+          <ScalarProperty Name="ItemCode" ColumnName="ItemCode" />
+          <ScalarProperty Name="po_l_seq" ColumnName="po_l_seq" />
+          <ScalarProperty Name="po_backorder_flag" ColumnName="po_backorder_flag" />
+          <ScalarProperty Name="po_order_no" ColumnName="po_order_no" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VQCPurchaseOrderDetails">
+      <EntityTypeMapping TypeName="POTrackerDBModel.VQCPurchaseOrderDetail">
+        <MappingFragment StoreEntitySet="VQCPurchaseOrderDetail">
+          <ScalarProperty Name="OUQty" ColumnName="OUQty" />
+          <ScalarProperty Name="OUGTIN" ColumnName="OUGTIN" />
+          <ScalarProperty Name="INQty" ColumnName="INQty" />
+          <ScalarProperty Name="INGTIN" ColumnName="INGTIN" />
+          <ScalarProperty Name="EAQty" ColumnName="EAQty" />
+          <ScalarProperty Name="EAGTIN" ColumnName="EAGTIN" />
+          <ScalarProperty Name="posd_description" ColumnName="posd_description" />
+          <ScalarProperty Name="po_order_status" ColumnName="po_order_status" />
+          <ScalarProperty Name="QtyOrdered" ColumnName="QtyOrdered" />
+          <ScalarProperty Name="ItemDesc" ColumnName="ItemDesc" />
+          <ScalarProperty Name="ItemCode" ColumnName="ItemCode" />
+          <ScalarProperty Name="SupplierName" ColumnName="SupplierName" />
+          <ScalarProperty Name="SupplierCode" ColumnName="SupplierCode" />
+          <ScalarProperty Name="POSuffix" ColumnName="POSuffix" />
+          <ScalarProperty Name="PONum" ColumnName="PONum" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VStockDetailsWithGTINALLs">
+      <EntityTypeMapping TypeName="POTrackerDBModel.VStockDetailsWithGTINALL">
+        <MappingFragment StoreEntitySet="VStockDetailsWithGTINALL">
+          <ScalarProperty Name="CountryCode" ColumnName="CountryCode" />
+          <ScalarProperty Name="StockCondition" ColumnName="StockCondition" />
+          <ScalarProperty Name="EAWeight" ColumnName="EAWeight" />
+          <ScalarProperty Name="EAHeight" ColumnName="EAHeight" />
+          <ScalarProperty Name="EAWidth" ColumnName="EAWidth" />
+          <ScalarProperty Name="EALength" ColumnName="EALength" />
+          <ScalarProperty Name="PLQty" ColumnName="PLQty" />
+          <ScalarProperty Name="OUQty" ColumnName="OUQty" />
+          <ScalarProperty Name="OUGTIN" ColumnName="OUGTIN" />
+          <ScalarProperty Name="INQty" ColumnName="INQty" />
+          <ScalarProperty Name="INGTIN" ColumnName="INGTIN" />
+          <ScalarProperty Name="EAQty" ColumnName="EAQty" />
+          <ScalarProperty Name="EAGTIN" ColumnName="EAGTIN" />
+          <ScalarProperty Name="StratemName" ColumnName="StratemName" />
+          <ScalarProperty Name="StratemCode" ColumnName="StratemCode" />
+          <ScalarProperty Name="PackDesc" ColumnName="PackDesc" />
+          <ScalarProperty Name="PackQty" ColumnName="PackQty" />
+          <ScalarProperty Name="ItemDescription" ColumnName="ItemDescription" />
+          <ScalarProperty Name="ItemCode" ColumnName="ItemCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VUKPurchaseOrderHeaders">
+      <EntityTypeMapping TypeName="POTrackerDBModel.VUKPurchaseOrderHeader">
+        <MappingFragment StoreEntitySet="VUKPurchaseOrderHeader">
+          <ScalarProperty Name="SupplierFax" ColumnName="SupplierFax" />
+          <ScalarProperty Name="SupplierMobile" ColumnName="SupplierMobile" />
+          <ScalarProperty Name="SupplierPhone" ColumnName="SupplierPhone" />
+          <ScalarProperty Name="SupplierPhoneCountryCode" ColumnName="SupplierPhoneCountryCode" />
+          <ScalarProperty Name="SupplierPostCode" ColumnName="SupplierPostCode" />
+          <ScalarProperty Name="SupplierState" ColumnName="SupplierState" />
+          <ScalarProperty Name="SupplierSuburb" ColumnName="SupplierSuburb" />
+          <ScalarProperty Name="SupplierAddress2" ColumnName="SupplierAddress2" />
+          <ScalarProperty Name="SupplierAddress1" ColumnName="SupplierAddress1" />
+          <ScalarProperty Name="SupplierFullName" ColumnName="SupplierFullName" />
+          <ScalarProperty Name="DeliveryInstruction7" ColumnName="DeliveryInstruction7" />
+          <ScalarProperty Name="DeliveryInstruction6" ColumnName="DeliveryInstruction6" />
+          <ScalarProperty Name="DeliveryInstruction5" ColumnName="DeliveryInstruction5" />
+          <ScalarProperty Name="DeliveryInstruction4" ColumnName="DeliveryInstruction4" />
+          <ScalarProperty Name="DeliveryInstruction3" ColumnName="DeliveryInstruction3" />
+          <ScalarProperty Name="DeliveryInstruction2" ColumnName="DeliveryInstruction2" />
+          <ScalarProperty Name="DeliveryInstruction1" ColumnName="DeliveryInstruction1" />
+          <ScalarProperty Name="DeliveryCountryCode" ColumnName="DeliveryCountryCode" />
+          <ScalarProperty Name="DeliveryPostCode" ColumnName="DeliveryPostCode" />
+          <ScalarProperty Name="DeliveryAddress7" ColumnName="DeliveryAddress7" />
+          <ScalarProperty Name="DeliveryAddress6" ColumnName="DeliveryAddress6" />
+          <ScalarProperty Name="DeliveryAddress5" ColumnName="DeliveryAddress5" />
+          <ScalarProperty Name="DeliveryAddress4" ColumnName="DeliveryAddress4" />
+          <ScalarProperty Name="DeliveryAddress3" ColumnName="DeliveryAddress3" />
+          <ScalarProperty Name="DeliveryAddress2" ColumnName="DeliveryAddress2" />
+          <ScalarProperty Name="DeliveryAddress1" ColumnName="DeliveryAddress1" />
+          <ScalarProperty Name="cr_date_created" ColumnName="cr_date_created" />
+          <ScalarProperty Name="cr_curr_code" ColumnName="cr_curr_code" />
+          <ScalarProperty Name="cr_date_last_changed" ColumnName="cr_date_last_changed" />
+          <ScalarProperty Name="cr_default_gl_accountcode" ColumnName="cr_default_gl_accountcode" />
+          <ScalarProperty Name="cr_contact_name" ColumnName="cr_contact_name" />
+          <ScalarProperty Name="cr_clearing_flag" ColumnName="cr_clearing_flag" />
+          <ScalarProperty Name="cr_account_status" ColumnName="cr_account_status" />
+          <ScalarProperty Name="cr_chq_or_bankdraft" ColumnName="cr_chq_or_bankdraft" />
+          <ScalarProperty Name="cr_type" ColumnName="cr_type" />
+          <ScalarProperty Name="cr_auto_rq_flag" ColumnName="cr_auto_rq_flag" />
+          <ScalarProperty Name="cr_payment_selection" ColumnName="cr_payment_selection" />
+          <ScalarProperty Name="PaymentTermDesc" ColumnName="PaymentTermDesc" />
+          <ScalarProperty Name="cr_def_payment_terms" ColumnName="cr_def_payment_terms" />
+          <ScalarProperty Name="cr_purchase_ytd" ColumnName="cr_purchase_ytd" />
+          <ScalarProperty Name="cr_future_amt" ColumnName="cr_future_amt" />
+          <ScalarProperty Name="cr_balance" ColumnName="cr_balance" />
+          <ScalarProperty Name="cr_opening_bal" ColumnName="cr_opening_bal" />
+          <ScalarProperty Name="cr_shortname" ColumnName="cr_shortname" />
+          <ScalarProperty Name="cr_pay_to_code" ColumnName="cr_pay_to_code" />
+          <ScalarProperty Name="cre_accountcode" ColumnName="cre_accountcode" />
+          <ScalarProperty Name="Archived" ColumnName="Archived" />
+          <ScalarProperty Name="ValidPO" ColumnName="ValidPO" />
+          <ScalarProperty Name="Flag" ColumnName="Flag" />
+          <ScalarProperty Name="po_dif_flag" ColumnName="po_dif_flag" />
+          <ScalarProperty Name="po_total_line_qty" ColumnName="po_total_line_qty" />
+          <ScalarProperty Name="po_transit_tax_amt" ColumnName="po_transit_tax_amt" />
+          <ScalarProperty Name="po_transit_total" ColumnName="po_transit_total" />
+          <ScalarProperty Name="po_requisition_approval_user" ColumnName="po_requisition_approval_user" />
+          <ScalarProperty Name="po_requisition_entry_user_name" ColumnName="po_requisition_entry_user_name" />
+          <ScalarProperty Name="po_line_format" ColumnName="po_line_format" />
+          <ScalarProperty Name="po_next_claim_no" ColumnName="po_next_claim_no" />
+          <ScalarProperty Name="po_max_retention_claim_percent" ColumnName="po_max_retention_claim_percent" />
+          <ScalarProperty Name="po_max_retention_percent" ColumnName="po_max_retention_percent" />
+          <ScalarProperty Name="po_max_retention_amount" ColumnName="po_max_retention_amount" />
+          <ScalarProperty Name="o_po_tax_classification_code" ColumnName="o_po_tax_classification_code" />
+          <ScalarProperty Name="po_header_tax_rate" ColumnName="po_header_tax_rate" />
+          <ScalarProperty Name="po_control_user_id_no" ColumnName="po_control_user_id_no" />
+          <ScalarProperty Name="po_user_only_alpha20_1" ColumnName="po_user_only_alpha20_1" />
+          <ScalarProperty Name="po_qa_released" ColumnName="po_qa_released" />
+          <ScalarProperty Name="po_spare_code" ColumnName="po_spare_code" />
+          <ScalarProperty Name="po_spare_num" ColumnName="po_spare_num" />
+          <ScalarProperty Name="po_catalog_no" ColumnName="po_catalog_no" />
+          <ScalarProperty Name="po_spare_date" ColumnName="po_spare_date" />
+          <ScalarProperty Name="po_original_edi_run" ColumnName="po_original_edi_run" />
+          <ScalarProperty Name="po_total_volume" ColumnName="po_total_volume" />
+          <ScalarProperty Name="po_total_qty" ColumnName="po_total_qty" />
+          <ScalarProperty Name="po_total_weight" ColumnName="po_total_weight" />
+          <ScalarProperty Name="po_control_user_lock" ColumnName="po_control_user_lock" />
+          <ScalarProperty Name="po_control_lock" ColumnName="po_control_lock" />
+          <ScalarProperty Name="po_tax_group" ColumnName="po_tax_group" />
+          <ScalarProperty Name="po_misc_code" ColumnName="po_misc_code" />
+          <ScalarProperty Name="po_country_code" ColumnName="po_country_code" />
+          <ScalarProperty Name="po_receiver_user_id" ColumnName="po_receiver_user_id" />
+          <ScalarProperty Name="po_batch_ref" ColumnName="po_batch_ref" />
+          <ScalarProperty Name="po_confirmation_flag" ColumnName="po_confirmation_flag" />
+          <ScalarProperty Name="po_order_type" ColumnName="po_order_type" />
+          <ScalarProperty Name="po_reason_code" ColumnName="po_reason_code" />
+          <ScalarProperty Name="po_revision_no" ColumnName="po_revision_no" />
+          <ScalarProperty Name="po_drop_sales_order_no" ColumnName="po_drop_sales_order_no" />
+          <ScalarProperty Name="po_carrier_code" ColumnName="po_carrier_code" />
+          <ScalarProperty Name="po_time_stamp" ColumnName="po_time_stamp" />
+          <ScalarProperty Name="po_date_stamp" ColumnName="po_date_stamp" />
+          <ScalarProperty Name="po_user_name" ColumnName="po_user_name" />
+          <ScalarProperty Name="po_job_retention_amount" ColumnName="po_job_retention_amount" />
+          <ScalarProperty Name="o_po_quote_tax_exemption" ColumnName="o_po_quote_tax_exemption" />
+          <ScalarProperty Name="po_job_cost_centre" ColumnName="po_job_cost_centre" />
+          <ScalarProperty Name="po_job_no" ColumnName="po_job_no" />
+          <ScalarProperty Name="po_notes" ColumnName="po_notes" />
+          <ScalarProperty Name="po_costing_date" ColumnName="po_costing_date" />
+          <ScalarProperty Name="po_shipment_no" ColumnName="po_shipment_no" />
+          <ScalarProperty Name="po_lc_number" ColumnName="po_lc_number" />
+          <ScalarProperty Name="po_voyage_no" ColumnName="po_voyage_no" />
+          <ScalarProperty Name="po_entry_port" ColumnName="po_entry_port" />
+          <ScalarProperty Name="po_vessel_name" ColumnName="po_vessel_name" />
+          <ScalarProperty Name="po_charges_provision_amount" ColumnName="po_charges_provision_amount" />
+          <ScalarProperty Name="po_specials_provision_amount" ColumnName="po_specials_provision_amount" />
+          <ScalarProperty Name="po_normal_provision_amount" ColumnName="po_normal_provision_amount" />
+          <ScalarProperty Name="po_invoice_tax_amount" ColumnName="po_invoice_tax_amount" />
+          <ScalarProperty Name="po_invoice_amount" ColumnName="po_invoice_amount" />
+          <ScalarProperty Name="po_invoice_date" ColumnName="po_invoice_date" />
+          <ScalarProperty Name="po_invoice_details" ColumnName="po_invoice_details" />
+          <ScalarProperty Name="po_invoice_no" ColumnName="po_invoice_no" />
+          <ScalarProperty Name="po_received_tax_amt" ColumnName="po_received_tax_amt" />
+          <ScalarProperty Name="po_ordered_tax_amt" ColumnName="po_ordered_tax_amt" />
+          <ScalarProperty Name="po_charges_total" ColumnName="po_charges_total" />
+          <ScalarProperty Name="po_received_total" ColumnName="po_received_total" />
+          <ScalarProperty Name="po_order_total" ColumnName="po_order_total" />
+          <ScalarProperty Name="po_final_currency_rate" ColumnName="po_final_currency_rate" />
+          <ScalarProperty Name="po_initial_currency_rate" ColumnName="po_initial_currency_rate" />
+          <ScalarProperty Name="po_currency_code" ColumnName="po_currency_code" />
+          <ScalarProperty Name="po_receiving_whse" ColumnName="po_receiving_whse" />
+          <ScalarProperty Name="po_whse_code" ColumnName="po_whse_code" />
+          <ScalarProperty Name="po_inwards_order_suffix" ColumnName="po_inwards_order_suffix" />
+          <ScalarProperty Name="po_inwards_no" ColumnName="po_inwards_no" />
+          <ScalarProperty Name="po_order_terms" ColumnName="po_order_terms" />
+          <ScalarProperty Name="po_order_status" ColumnName="po_order_status" />
+          <ScalarProperty Name="po_received_date" ColumnName="po_received_date" />
+          <ScalarProperty Name="po_arrival_date" ColumnName="po_arrival_date" />
+          <ScalarProperty Name="po_action_date" ColumnName="po_action_date" />
+          <ScalarProperty Name="po_order_date" ColumnName="po_order_date" />
+          <ScalarProperty Name="po_backorder_flag" ColumnName="po_backorder_flag" />
+          <ScalarProperty Name="po_order_no" ColumnName="po_order_no" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VUKPurchaseOrderLineDetails">
+      <EntityTypeMapping TypeName="POTrackerDBModel.VUKPurchaseOrderLineDetail">
+        <MappingFragment StoreEntitySet="VUKPurchaseOrderLineDetails">
+          <ScalarProperty Name="RowNum" ColumnName="RowNum" />
+          <ScalarProperty Name="LineAmount" ColumnName="LineAmount" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="UnitPrice" ColumnName="UnitPrice" />
+          <ScalarProperty Name="ServiceChargeP" ColumnName="ServiceChargeP" />
+          <ScalarProperty Name="UOM" ColumnName="UOM" />
+          <ScalarProperty Name="Qty" ColumnName="Qty" />
+          <ScalarProperty Name="PortDate" ColumnName="PortDate" />
+          <ScalarProperty Name="ItemDesc" ColumnName="ItemDesc" />
+          <ScalarProperty Name="ItemCode" ColumnName="ItemCode" />
+          <ScalarProperty Name="po_l_seq" ColumnName="po_l_seq" />
+          <ScalarProperty Name="po_backorder_flag" ColumnName="po_backorder_flag" />
+          <ScalarProperty Name="po_order_no" ColumnName="po_order_no" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VUKQCPurchaseOrderDetails">
+      <EntityTypeMapping TypeName="POTrackerDBModel.VUKQCPurchaseOrderDetail">
+        <MappingFragment StoreEntitySet="VUKQCPurchaseOrderDetail">
+          <ScalarProperty Name="OUQty" ColumnName="OUQty" />
+          <ScalarProperty Name="OUGTIN" ColumnName="OUGTIN" />
+          <ScalarProperty Name="INQty" ColumnName="INQty" />
+          <ScalarProperty Name="INGTIN" ColumnName="INGTIN" />
+          <ScalarProperty Name="EAQty" ColumnName="EAQty" />
+          <ScalarProperty Name="EAGTIN" ColumnName="EAGTIN" />
+          <ScalarProperty Name="posd_description" ColumnName="posd_description" />
+          <ScalarProperty Name="po_order_status" ColumnName="po_order_status" />
+          <ScalarProperty Name="QtyOrdered" ColumnName="QtyOrdered" />
+          <ScalarProperty Name="ItemDesc" ColumnName="ItemDesc" />
+          <ScalarProperty Name="ItemCode" ColumnName="ItemCode" />
+          <ScalarProperty Name="SupplierName" ColumnName="SupplierName" />
+          <ScalarProperty Name="SupplierCode" ColumnName="SupplierCode" />
+          <ScalarProperty Name="POSuffix" ColumnName="POSuffix" />
+          <ScalarProperty Name="PONum" ColumnName="PONum" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

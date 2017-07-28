@@ -1,0 +1,11 @@
+﻿@model IEnumerable<POTracker.Models.AspNetRoles>
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+@foreach(var item in Model)
+{
+    @Html.DisplayFor(model=> item.Name)
+}

@@ -1,0 +1,21 @@
+﻿@using GridMvc.Html
+@model POTracker.Models.ShowSupplier
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div id="journeyPlannerPanel" class="resultPane minimised contentPad grey-gradient">
+
+
+    @Html.Grid(Model.ShowSuppList).Columns(columns =>
+{
+    columns.Add(c => c.suppliercode).Titled("Edit").Filterable(false).Sanitized(false).Encoded(false).RenderValueAs(r => Html.ActionLink(r.suppliercode, "EditSupplier", new { code = r.suppliercode.Trim() }, null).ToHtmlString());
+
+    //    columns.Add(c => c.suppliercode).Titled("Supplier").Filterable(true);
+    columns.Add(c => c.suppliierName).Titled("Company Name").Filterable(true);
+    columns.Add(c => c.Regester).Titled("Register").Filterable(true);
+    columns.Add(c => c.country).Titled("Registred Country").Filterable(true);
+
+}).WithPaging(20).Sortable(true)
+    </div>
+
+  

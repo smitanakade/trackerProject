@@ -1,0 +1,8 @@
+﻿
+@model IEnumerable<POTracker.Models.AspNetRoles>
+
+
+@foreach (var item in Model)
+{
+    @Html.DisplayFor(model => item.Name)
+}

@@ -1,0 +1,103 @@
+﻿@model POTracker.Models.RegisterViewModel
+@{
+    ViewBag.Title = "Register";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+
+<h2>@ViewBag.Title.</h2>
+
+
+@using (Html.BeginForm("Register", "Account", FormMethod.Post, new { id = "Registration", @class = "form-horizontal", role = "form" }))
+{
+    @Html.AntiForgeryToken()
+    <h4>Create a new account.</h4>
+    <hr />
+    @Html.ValidationSummary()
+    <div class="form-group">
+        @Html.LabelFor(m => m.UserName, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(m => m.UserName, new { @class = "form-control" })
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.Password, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.ConfirmPassword, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.PasswordFor(m => m.ConfirmPassword, new { @class = "form-control" })
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.Email, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.Country, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.DropDownListFor(m => m.Country, new SelectList(Model.Select_Country, "Text", "Value", "Select Country"),"Select Country")
+        </div>
+    </div>
+    
+    <!--Select the Role Type for the User-->
+        <div class="form-group">
+            @Html.Label("Select User Role", new { @class = "col-md-2 control-label" })
+            <div class="col-md-10">
+                @Html.DropDownList("Name", "Select Role")
+                <div class="item-text">
+                    <div class="form-group">
+                        <div class="col-md-10">
+                            @Html.Label("Select Supplier")
+
+
+                            @Html.DropDownListFor(m => m.Selected, new SelectList(Model.SelectSupplier, "Name","Code"))
+                        </div>
+                    </div>
+                </div>
+                <div class="NO-item-text">
+
+                </div>
+            </div>
+        </div>
+                   
+                <!--Ends Here-->
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <input type="submit" class="btn btn-default" id="Register" value="Register" />
+                    </div>
+                </div>
+            }
+
+            @section Scripts {
+                @Scripts.Render("~/bundles/jqueryval")
+
+            <script type="text/javascript">
+                function test(){
+                    alert("Hello");
+                }
+
+                $(document).ready(function () {
+                    $(".item-text").hide();
+
+                    $("#Name").change(function () {
+                        var selectedValue = $("#Name").find(":selected").text();
+                        if (selectedValue == "Supplier") {
+                            $(".item-text").show();
+                            $(".No-item-text").hide();
+
+                        }
+                        else {
+                            $(".item-text").hide();
+                            $(".No-item-text").show();
+                        }
+
+                    })
+                })
+                </script>
+            }

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="037c81af014241d0b91013e833984ff3" Name="Diagram1" ZoomLevel="81">
+        <EntityTypeShape EntityType="POTrackerDBModel.AUCreMaster" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="POTrackerDBModel.AUNameAndAddressMaster" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="POTrackerDBModel.AUOrderTrackerComment" Width="1.5" PointX="4.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="POTrackerDBModel.AUPurchaseOrder" Width="1.5" PointX="4.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="POTrackerDBModel.AUPurchaseOrderDelivery" Width="1.5" PointX="0.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="POTrackerDBModel.AUPurchaseOrderDeliveryArchive" Width="1.5" PointX="8.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="POTrackerDBModel.AUPurchaseOrderNote" Width="1.5" PointX="12.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="POTrackerDBModel.AUPurchaseOrderNotesArchive" Width="1.5" PointX="0.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="POTrackerDBModel.AUStockMaster" Width="1.5" PointX="12.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="POTrackerDBModel.CacheRefreshSetting" Width="1.5" PointX="14.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="POTrackerDBModel.NZCreMaster" Width="1.5" PointX="14.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="POTrackerDBModel.NZNameAndAddressMaster" Width="1.5" PointX="14.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="POTrackerDBModel.NZOrderTrackerComment" Width="1.5" PointX="14.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="POTrackerDBModel.NZPurchaseOrder" Width="1.5" PointX="10.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="POTrackerDBModel.NZPurchaseOrderArchive" Width="1.5" PointX="16.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="POTrackerDBModel.NZPurchaseOrderDelivery" Width="1.5" PointX="0.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="POTrackerDBModel.NZPurchaseOrderDeliveryArchive" Width="1.5" PointX="12.75" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="POTrackerDBModel.NZPurchaseOrderNote" Width="1.5" PointX="18.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="POTrackerDBModel.NZPurchaseOrderNotesArchive" Width="1.5" PointX="14.75" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="POTrackerDBModel.NZStockMaster" Width="1.5" PointX="18.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="POTrackerDBModel.PurchaseOrderBORanking" Width="1.5" PointX="20.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="POTrackerDBModel.PurchaseOrderStatusDesc" Width="1.5" PointX="20.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="POTrackerDBModel.UKCreMaster" Width="1.5" PointX="20.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="POTrackerDBModel.UKNameAndAddressMaster" Width="1.5" PointX="20.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="POTrackerDBModel.UKOrderTrackerComment" Width="1.5" PointX="20.75" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="POTrackerDBModel.UKPurchaseOrder" Width="1.5" PointX="20.75" PointY="20.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="POTrackerDBModel.UKPurchaseOrderArchive" Width="1.5" PointX="2.75" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="POTrackerDBModel.UKPurchaseOrderDelivery" Width="1.5" PointX="22.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="POTrackerDBModel.UKPurchaseOrderDeliveryArchive" Width="1.5" PointX="22.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="POTrackerDBModel.UKPurchaseOrderNote" Width="1.5" PointX="24.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="POTrackerDBModel.UKPurchaseOrderNotesArchive" Width="1.5" PointX="24.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="POTrackerDBModel.UKStockMaster" Width="1.5" PointX="24.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="POTrackerDBModel.VProductSpecification" Width="1.5" PointX="17.375" PointY="27.75" />
+        <EntityTypeShape EntityType="POTrackerDBModel.aspnet_Membership" Width="1.5" PointX="27.375" PointY="12.75" />
+        <EntityTypeShape EntityType="POTrackerDBModel.aspnet_Paths" Width="1.5" PointX="27.375" PointY="18.75" />
+        <EntityTypeShape EntityType="POTrackerDBModel.aspnet_Users" Width="1.5" PointX="27.375" PointY="21.75" />
+        <EntityTypeShape EntityType="POTrackerDBModel.aspnet_UsersInRoles" Width="1.5" PointX="27.375" PointY="25.75" />
+        <EntityTypeShape EntityType="POTrackerDBModel.AspNetRoles" Width="1.5" PointX="27.375" PointY="28.75" />
+        <EntityTypeShape EntityType="POTrackerDBModel.AspNetUserClaims" Width="1.5" PointX="29.375" PointY="0.75" />
+        <EntityTypeShape EntityType="POTrackerDBModel.AspNetUserLogins" Width="1.5" PointX="29.375" PointY="3.75" />
+        <EntityTypeShape EntityType="POTrackerDBModel.AspNetUserRoles" Width="1.5" PointX="29.375" PointY="6.75" />
+        <EntityTypeShape EntityType="POTrackerDBModel.ManageSupplierLogin" Width="1.5" PointX="29.375" PointY="9.75" />
+        <EntityTypeShape EntityType="POTrackerDBModel.SupplierInspectionRelation" Width="1.5" PointX="29.375" PointY="12.75" />
+        <EntityTypeShape EntityType="POTrackerDBModel.aspnet_Applications" Width="1.5" PointX="29.375" PointY="15.75" />
+        <EntityTypeShape EntityType="POTrackerDBModel.AspNetUsers" Width="1.5" PointX="29.375" PointY="18.75" />
+        <EntityTypeShape EntityType="POTrackerDBModel.VSupplierByCountry" Width="1.5" PointX="29.375" PointY="23.75" />
+        <EntityTypeShape EntityType="POTrackerDBModel.VListOfAllSupplier" Width="1.5" PointX="29.375" PointY="26.75" />
+        <EntityTypeShape EntityType="POTrackerDBModel.AUPurchaseOrderArchive" Width="1.5" PointX="7.375" PointY="6.75" />
+        <EntityTypeShape EntityType="POTrackerDBModel.AUPurchaseOrderLine" Width="1.5" PointX="13.375" PointY="23.75" />
+        <EntityTypeShape EntityType="POTrackerDBModel.AUPurchaseOrderLineArchive" Width="1.5" PointX="23.375" PointY="19.75" />
+        <EntityTypeShape EntityType="POTrackerDBModel.NZPurchaseOrderLine" Width="1.5" PointX="5.375" PointY="24.75" />
+        <EntityTypeShape EntityType="POTrackerDBModel.NZPurchaseOrderLineArchive" Width="1.5" PointX="7.375" PointY="24.75" />
+        <EntityTypeShape EntityType="POTrackerDBModel.UKPurchaseOrderLine" Width="1.5" PointX="29.375" PointY="29.75" />
+        <EntityTypeShape EntityType="POTrackerDBModel.UKPurchaseOrderLineArchive" Width="1.5" PointX="31.375" PointY="0.75" />
+        <EntityTypeShape EntityType="POTrackerDBModel.VNZPurchaseOrderLine" Width="1.5" PointX="15.375" PointY="31.75" />
+        <EntityTypeShape EntityType="POTrackerDBModel.VUKPurchaseOrderLine" Width="1.5" PointX="17.375" PointY="31.75" />
+        <EntityTypeShape EntityType="POTrackerDBModel.VAUPurchaseOrderLine" Width="1.5" PointX="31.375" PointY="12.75" />
+        <EntityTypeShape EntityType="POTrackerDBModel.POApproval" Width="1.5" PointX="9.375" PointY="6.75" />
+        <EntityTypeShape EntityType="POTrackerDBModel.VAUPurchaseOrderHeader" Width="1.5" PointX="23.375" PointY="31.75" />
+        <EntityTypeShape EntityType="POTrackerDBModel.VAUPurchaseOrderLineDetail" Width="1.5" PointX="9.375" PointY="9.75" />
+        <EntityTypeShape EntityType="POTrackerDBModel.VQCPurchaseOrderDetail" Width="1.5" PointX="15.375" PointY="22.75" />
+        <EntityTypeShape EntityType="POTrackerDBModel.VStockDetailsWithGTINALL" Width="1.5" PointX="31.375" PointY="25.75" />
+        <EntityTypeShape EntityType="POTrackerDBModel.VUKPurchaseOrderHeader" Width="1.5" PointX="25.375" PointY="31.75" />
+        <EntityTypeShape EntityType="POTrackerDBModel.VUKPurchaseOrderLineDetail" Width="1.5" PointX="31.375" PointY="31.75" />
+        <EntityTypeShape EntityType="POTrackerDBModel.VUKQCPurchaseOrderDetail" Width="1.5" PointX="33.375" PointY="0.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

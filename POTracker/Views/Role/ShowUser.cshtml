@@ -1,0 +1,16 @@
+﻿@using GridMvc.Html
+
+@model POTracker.Models.ShowLoginUser
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+@Html.Grid(Model.UserList).Columns(columns =>
+{
+   columns.Add(c => c.UserId).Titled("Edit").Filterable(false).Sanitized(false).Encoded(false).RenderValueAs(r => Html.ActionLink("Edit", "ManageUser", new { id = r.UserId }, null).ToHtmlString());
+    columns.Add(c => c.UserName).Titled("UserName").Filterable(true);
+    columns.Add(c => c.Email).Titled("Email").Filterable(true);
+    columns.Add(c => c.PhoneNumber).Titled("PhoneNumber").Filterable(true);
+    columns.Add(c => c.UserInRole).Titled("User Role").Filterable(true);
+}).WithPaging(20).Sortable(true)

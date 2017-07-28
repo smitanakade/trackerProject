@@ -1,0 +1,94 @@
+﻿@model POTracker.Models.ShowSupplier
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@Html.ValidationSummary()
+
+@using (Html.BeginForm("AssignGroup", "SupplierManagment", FormMethod.Post, new { @id = "Country" }))
+{
+
+    <div style="margin:10px; margin-top:20px; margin-left:20px; ">
+        @Html.Label("Select Country: ")
+@Html.DropDownListFor(modelItem => Model.country, new SelectList(Model.CountryList, "Text", "Value", Model.country), Model.country)
+@*@Html.TextBoxFor(m => m.suppliercode, new { id = "SupplierCodeTxt" })*@
+
+
+        <input id="Go" type="submit" value="GO" class="btn btn-primary" />
+
+
+
+    </div>
+}
+    @using (Html.BeginForm("AssignInspector", "SupplierManagment", FormMethod.Post, new { @id = "inspector" }))
+    {
+
+        <input id="Test" type="button" value="Submit" class="btn btn-primary" />
+
+   @Html.Label("Select Inspection Team ")
+    @Html.DropDownListFor(modelItem =>Model.Inspector, new SelectList(Model.ListofInspectionTeam,"Value","Text","Select Inspection Team"),"Select Inspection Team")
+
+
+<table>
+    @if (Model.ShowSuppList != null )
+    {
+        for (var i = 0; i < Model.ShowSuppList.Count; i++)
+        {
+        <tr><td>
+    @Html.CheckBoxFor(modelItem => Model.ShowSuppList[i].isChecked, new { @id = "supplierRow", Value = Model.ShowSuppList[i].suppliercode })
+</td>
+            <td>
+                @Html.DisplayFor(modelItem => Model.ShowSuppList[i].suppliercode)
+                @Html.HiddenFor(modelItem => Model.ShowSuppList[i].suppliercode, new { @id = "supp" })
+            </td>
+        </tr>
+        }
+    }
+
+
+</table>
+
+    }
+
+@section scripts{
+    <script type="text/javascript">
+        $(document).ready(function () {
+            //$("#Go").click(function () {
+            //    var country = $("#country option:selected").text();
+            //    $.post("/SupplierManagment/AssignGroup", { cnty: country }, function () {
+            //        //        alert("reached");
+            //    });
+            //});
+
+            $("#Test").click(function () {
+                var Supp = [];
+                var country = $("#country option:selected").text();
+
+                $.each($("input[id='supplierRow']:checked"), function () {
+                    Supp.push($(this).val());
+                });
+                var inspector = $("#Inspector option:selected").text();
+                alert(Supp.join(", "));
+                $.post("/SupplierManagment/AssignInspector", { selected :Supp, Inspec:inspector,cnty:country}, function () {
+                });
+
+
+            });
+        });
+</script>
+
+        @*//    $("#Test").click(function () {
+        //    var favorite = [];
+        //    $.each($("input[id='supplierRow']:checked"), function () {
+        //        favorite.push($(this).val());
+        //    });
+        //    alert("My favourite sports are: " + favorite.join(", "));
+
+        //    $.get("/SupplierManagment/testcontroller", null, function () {
+        //        alert("reached");
+        //    });
+
+        
+
+        //});*@
+    
+}

@@ -1,0 +1,290 @@
+D:\Users\Henry.Xavier\Documents\Visual Studio 2015\Projects\POTracker\POTracker\bin\ApplicationInsights.config
+D:\Users\Henry.Xavier\Documents\Visual Studio 2015\Projects\POTracker\POTracker\bin\roslyn\csc.exe
+D:\Users\Henry.Xavier\Documents\Visual Studio 2015\Projects\POTracker\POTracker\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Users\Henry.Xavier\Documents\Visual Studio 2015\Projects\POTracker\POTracker\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Users\Henry.Xavier\Documents\Visual Studio 2015\Projects\POTracker\POTracker\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Users\Henry.Xavier\Documents\Visual Studio 2015\Projects\POTracker\POTracker\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Users\Henry.Xavier\Documents\Visual Studio 2015\Projects\POTracker\POTracker\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Users\Henry.Xavier\Documents\Visual Studio 2015\Projects\POTracker\POTracker\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Users\Henry.Xavier\Documents\Visual Studio 2015\Projects\POTracker\POTracker\bin\roslyn\System.Collections.Immutable.dll
+D:\Users\Henry.Xavier\Documents\Visual Studio 2015\Projects\POTracker\POTracker\bin\roslyn\System.Reflection.Metadata.dll
+D:\Users\Henry.Xavier\Documents\Visual Studio 2015\Projects\POTracker\POTracker\bin\roslyn\vbc.exe
+D:\Users\Henry.Xavier\Documents\Visual Studio 2015\Projects\POTracker\POTracker\bin\roslyn\VBCSCompiler.exe
+D:\Users\Henry.Xavier\Documents\Visual Studio 2015\Projects\POTracker\POTracker\bin\roslyn\VBCSCompiler.exe.config
+D:\Users\Henry.Xavier\Documents\Visual Studio 2015\Projects\POTracker\POTracker\bin\POTracker.dll.config
+D:\Users\Henry.Xavier\Documents\Visual Studio 2015\Projects\POTracker\POTracker\bin\POTracker.dll
+D:\Users\Henry.Xavier\Documents\Visual Studio 2015\Projects\POTracker\POTracker\bin\POTracker.pdb
+D:\Users\Henry.Xavier\Documents\Visual Studio 2015\Projects\POTracker\POTracker\bin\Antlr3.Runtime.dll
+D:\Users\Henry.Xavier\Documents\Visual Studio 2015\Projects\POTracker\POTracker\bin\EntityFramework.dll
+D:\Users\Henry.Xavier\Documents\Visual Studio 2015\Projects\POTracker\POTracker\bin\EntityFramework.SqlServer.dll
+D:\Users\Henry.Xavier\Documents\Visual Studio 2015\Projects\POTracker\POTracker\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Users\Henry.Xavier\Documents\Visual Studio 2015\Projects\POTracker\POTracker\bin\Microsoft.AI.DependencyCollector.dll
+D:\Users\Henry.Xavier\Documents\Visual Studio 2015\Projects\POTracker\POTracker\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Users\Henry.Xavier\Documents\Visual Studio 2015\Projects\POTracker\POTracker\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Users\Henry.Xavier\Documents\Visual Studio 2015\Projects\POTracker\POTracker\bin\Microsoft.AI.Web.dll
+D:\Users\Henry.Xavier\Documents\Visual Studio 2015\Projects\POTracker\POTracker\bin\Microsoft.AI.WindowsServer.dll
+D:\Users\Henry.Xavier\Documents\Visual Studio 2015\Projects\POTracker\POTracker\bin\Microsoft.ApplicationInsights.dll
+D:\Users\Henry.Xavier\Documents\Visual Studio 2015\Projects\POTracker\POTracker\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Users\Henry.Xavier\Documents\Visual Studio 2015\Projects\POTracker\POTracker\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Users\Henry.Xavier\Documents\Visual Studio 2015\Projects\POTracker\POTracker\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Users\Henry.Xavier\Documents\Visual Studio 2015\Projects\POTracker\POTracker\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Users\Henry.Xavier\Documents\Visual Studio 2015\Projects\POTracker\POTracker\bin\Microsoft.Owin.dll
+D:\Users\Henry.Xavier\Documents\Visual Studio 2015\Projects\POTracker\POTracker\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Users\Henry.Xavier\Documents\Visual Studio 2015\Projects\POTracker\POTracker\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Users\Henry.Xavier\Documents\Visual Studio 2015\Projects\POTracker\POTracker\bin\Microsoft.Owin.Security.dll
+D:\Users\Henry.Xavier\Documents\Visual Studio 2015\Projects\POTracker\POTracker\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Users\Henry.Xavier\Documents\Visual Studio 2015\Projects\POTracker\POTracker\bin\Microsoft.Owin.Security.Google.dll
+D:\Users\Henry.Xavier\Documents\Visual Studio 2015\Projects\POTracker\POTracker\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Users\Henry.Xavier\Documents\Visual Studio 2015\Projects\POTracker\POTracker\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Users\Henry.Xavier\Documents\Visual Studio 2015\Projects\POTracker\POTracker\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Users\Henry.Xavier\Documents\Visual Studio 2015\Projects\POTracker\POTracker\bin\Microsoft.ReportViewer.WebForms.dll
+D:\Users\Henry.Xavier\Documents\Visual Studio 2015\Projects\POTracker\POTracker\bin\Microsoft.Web.Infrastructure.dll
+D:\Users\Henry.Xavier\Documents\Visual Studio 2015\Projects\POTracker\POTracker\bin\Newtonsoft.Json.dll
+D:\Users\Henry.Xavier\Documents\Visual Studio 2015\Projects\POTracker\POTracker\bin\Owin.dll
+D:\Users\Henry.Xavier\Documents\Visual Studio 2015\Projects\POTracker\POTracker\bin\System.Web.Helpers.dll
+D:\Users\Henry.Xavier\Documents\Visual Studio 2015\Projects\POTracker\POTracker\bin\System.Web.Mvc.dll
+D:\Users\Henry.Xavier\Documents\Visual Studio 2015\Projects\POTracker\POTracker\bin\System.Web.Optimization.dll
+D:\Users\Henry.Xavier\Documents\Visual Studio 2015\Projects\POTracker\POTracker\bin\System.Web.Razor.dll
+D:\Users\Henry.Xavier\Documents\Visual Studio 2015\Projects\POTracker\POTracker\bin\System.Web.WebPages.Deployment.dll
+D:\Users\Henry.Xavier\Documents\Visual Studio 2015\Projects\POTracker\POTracker\bin\System.Web.WebPages.dll
+D:\Users\Henry.Xavier\Documents\Visual Studio 2015\Projects\POTracker\POTracker\bin\System.Web.WebPages.Razor.dll
+D:\Users\Henry.Xavier\Documents\Visual Studio 2015\Projects\POTracker\POTracker\bin\WebGrease.dll
+D:\Users\Henry.Xavier\Documents\Visual Studio 2015\Projects\POTracker\POTracker\bin\Microsoft.SqlServer.Types.dll
+D:\Users\Henry.Xavier\Documents\Visual Studio 2015\Projects\POTracker\POTracker\bin\Microsoft.AI.DependencyCollector.xml
+D:\Users\Henry.Xavier\Documents\Visual Studio 2015\Projects\POTracker\POTracker\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Users\Henry.Xavier\Documents\Visual Studio 2015\Projects\POTracker\POTracker\bin\Microsoft.AI.Web.xml
+D:\Users\Henry.Xavier\Documents\Visual Studio 2015\Projects\POTracker\POTracker\bin\Microsoft.AI.WindowsServer.xml
+D:\Users\Henry.Xavier\Documents\Visual Studio 2015\Projects\POTracker\POTracker\bin\Microsoft.ApplicationInsights.xml
+D:\Users\Henry.Xavier\Documents\Visual Studio 2015\Projects\POTracker\POTracker\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Users\Henry.Xavier\Documents\Visual Studio 2015\Projects\POTracker\POTracker\bin\System.Web.Helpers.xml
+D:\Users\Henry.Xavier\Documents\Visual Studio 2015\Projects\POTracker\POTracker\bin\System.Web.Mvc.xml
+D:\Users\Henry.Xavier\Documents\Visual Studio 2015\Projects\POTracker\POTracker\bin\System.Web.Optimization.xml
+D:\Users\Henry.Xavier\Documents\Visual Studio 2015\Projects\POTracker\POTracker\bin\System.Web.Razor.xml
+D:\Users\Henry.Xavier\Documents\Visual Studio 2015\Projects\POTracker\POTracker\bin\System.Web.WebPages.xml
+D:\Users\Henry.Xavier\Documents\Visual Studio 2015\Projects\POTracker\POTracker\bin\System.Web.WebPages.Deployment.xml
+D:\Users\Henry.Xavier\Documents\Visual Studio 2015\Projects\POTracker\POTracker\bin\System.Web.WebPages.Razor.xml
+D:\Users\Henry.Xavier\Documents\Visual Studio 2015\Projects\POTracker\POTracker\bin\Antlr3.Runtime.pdb
+D:\Users\Henry.Xavier\Documents\Visual Studio 2015\Projects\POTracker\POTracker\bin\Newtonsoft.Json.xml
+D:\Users\Henry.Xavier\Documents\Visual Studio 2015\Projects\POTracker\POTracker\bin\EntityFramework.xml
+D:\Users\Henry.Xavier\Documents\Visual Studio 2015\Projects\POTracker\POTracker\bin\EntityFramework.SqlServer.xml
+D:\Users\Henry.Xavier\Documents\Visual Studio 2015\Projects\POTracker\POTracker\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Users\Henry.Xavier\Documents\Visual Studio 2015\Projects\POTracker\POTracker\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Users\Henry.Xavier\Documents\Visual Studio 2015\Projects\POTracker\POTracker\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Users\Henry.Xavier\Documents\Visual Studio 2015\Projects\POTracker\POTracker\bin\Microsoft.Owin.xml
+D:\Users\Henry.Xavier\Documents\Visual Studio 2015\Projects\POTracker\POTracker\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Users\Henry.Xavier\Documents\Visual Studio 2015\Projects\POTracker\POTracker\bin\Microsoft.Owin.Security.xml
+D:\Users\Henry.Xavier\Documents\Visual Studio 2015\Projects\POTracker\POTracker\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Users\Henry.Xavier\Documents\Visual Studio 2015\Projects\POTracker\POTracker\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Users\Henry.Xavier\Documents\Visual Studio 2015\Projects\POTracker\POTracker\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Users\Henry.Xavier\Documents\Visual Studio 2015\Projects\POTracker\POTracker\bin\Microsoft.Owin.Security.Google.xml
+D:\Users\Henry.Xavier\Documents\Visual Studio 2015\Projects\POTracker\POTracker\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Users\Henry.Xavier\Documents\Visual Studio 2015\Projects\POTracker\POTracker\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Users\Henry.Xavier\Documents\Visual Studio 2015\Projects\POTracker\POTracker\bin\de\Microsoft.SqlServer.Types.resources.dll
+D:\Users\Henry.Xavier\Documents\Visual Studio 2015\Projects\POTracker\POTracker\bin\es\Microsoft.SqlServer.Types.resources.dll
+D:\Users\Henry.Xavier\Documents\Visual Studio 2015\Projects\POTracker\POTracker\bin\fr\Microsoft.SqlServer.Types.resources.dll
+D:\Users\Henry.Xavier\Documents\Visual Studio 2015\Projects\POTracker\POTracker\bin\it\Microsoft.SqlServer.Types.resources.dll
+D:\Users\Henry.Xavier\Documents\Visual Studio 2015\Projects\POTracker\POTracker\bin\ja\Microsoft.SqlServer.Types.resources.dll
+D:\Users\Henry.Xavier\Documents\Visual Studio 2015\Projects\POTracker\POTracker\bin\ko\Microsoft.SqlServer.Types.resources.dll
+D:\Users\Henry.Xavier\Documents\Visual Studio 2015\Projects\POTracker\POTracker\bin\pt\Microsoft.SqlServer.Types.resources.dll
+D:\Users\Henry.Xavier\Documents\Visual Studio 2015\Projects\POTracker\POTracker\bin\ru\Microsoft.SqlServer.Types.resources.dll
+D:\Users\Henry.Xavier\Documents\Visual Studio 2015\Projects\POTracker\POTracker\bin\zh-Hans\Microsoft.SqlServer.Types.resources.dll
+D:\Users\Henry.Xavier\Documents\Visual Studio 2015\Projects\POTracker\POTracker\bin\zh-Hant\Microsoft.SqlServer.Types.resources.dll
+D:\Users\Henry.Xavier\Documents\Visual Studio 2015\Projects\POTracker\POTracker\obj\Debug\POTracker.dll
+D:\Users\Henry.Xavier\Documents\Visual Studio 2015\Projects\POTracker\POTracker\obj\Debug\POTracker.pdb
+D:\Users\Henry.Xavier\Documents\Visual Studio 2015\Projects\POTracker\POTracker\bin\JQueryUIHelpers.dll
+D:\Users\Henry.Xavier\Documents\Visual Studio 2015\Projects\POTracker\POTracker\bin\JQueryUIHelpers.xml
+D:\Users\Henry.Xavier\Documents\Visual Studio 2015\Projects\POTracker\POTracker\bin\GridMvc.dll
+D:\Henry Workspace\TFS\POTracker\POTracker\bin\ApplicationInsights.config
+D:\Henry Workspace\TFS\POTracker\POTracker\bin\roslyn\csc.exe
+D:\Henry Workspace\TFS\POTracker\POTracker\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Henry Workspace\TFS\POTracker\POTracker\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Henry Workspace\TFS\POTracker\POTracker\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Henry Workspace\TFS\POTracker\POTracker\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Henry Workspace\TFS\POTracker\POTracker\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Henry Workspace\TFS\POTracker\POTracker\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Henry Workspace\TFS\POTracker\POTracker\bin\roslyn\System.Collections.Immutable.dll
+D:\Henry Workspace\TFS\POTracker\POTracker\bin\roslyn\System.Reflection.Metadata.dll
+D:\Henry Workspace\TFS\POTracker\POTracker\bin\roslyn\vbc.exe
+D:\Henry Workspace\TFS\POTracker\POTracker\bin\roslyn\VBCSCompiler.exe
+D:\Henry Workspace\TFS\POTracker\POTracker\bin\roslyn\VBCSCompiler.exe.config
+D:\Henry Workspace\TFS\POTracker\POTracker\bin\POTracker.dll.config
+D:\Henry Workspace\TFS\POTracker\POTracker\bin\POTracker.dll
+D:\Henry Workspace\TFS\POTracker\POTracker\bin\POTracker.pdb
+D:\Henry Workspace\TFS\POTracker\POTracker\bin\Antlr3.Runtime.dll
+D:\Henry Workspace\TFS\POTracker\POTracker\bin\EntityFramework.dll
+D:\Henry Workspace\TFS\POTracker\POTracker\bin\EntityFramework.SqlServer.dll
+D:\Henry Workspace\TFS\POTracker\POTracker\bin\GridMvc.dll
+D:\Henry Workspace\TFS\POTracker\POTracker\bin\JQueryUIHelpers.dll
+D:\Henry Workspace\TFS\POTracker\POTracker\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Henry Workspace\TFS\POTracker\POTracker\bin\Microsoft.AI.DependencyCollector.dll
+D:\Henry Workspace\TFS\POTracker\POTracker\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Henry Workspace\TFS\POTracker\POTracker\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Henry Workspace\TFS\POTracker\POTracker\bin\Microsoft.AI.Web.dll
+D:\Henry Workspace\TFS\POTracker\POTracker\bin\Microsoft.AI.WindowsServer.dll
+D:\Henry Workspace\TFS\POTracker\POTracker\bin\Microsoft.ApplicationInsights.dll
+D:\Henry Workspace\TFS\POTracker\POTracker\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Henry Workspace\TFS\POTracker\POTracker\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Henry Workspace\TFS\POTracker\POTracker\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Henry Workspace\TFS\POTracker\POTracker\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Henry Workspace\TFS\POTracker\POTracker\bin\Microsoft.Owin.dll
+D:\Henry Workspace\TFS\POTracker\POTracker\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Henry Workspace\TFS\POTracker\POTracker\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Henry Workspace\TFS\POTracker\POTracker\bin\Microsoft.Owin.Security.dll
+D:\Henry Workspace\TFS\POTracker\POTracker\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Henry Workspace\TFS\POTracker\POTracker\bin\Microsoft.Owin.Security.Google.dll
+D:\Henry Workspace\TFS\POTracker\POTracker\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Henry Workspace\TFS\POTracker\POTracker\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Henry Workspace\TFS\POTracker\POTracker\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Henry Workspace\TFS\POTracker\POTracker\bin\Microsoft.ReportViewer.WebForms.dll
+D:\Henry Workspace\TFS\POTracker\POTracker\bin\Microsoft.Web.Infrastructure.dll
+D:\Henry Workspace\TFS\POTracker\POTracker\bin\Newtonsoft.Json.dll
+D:\Henry Workspace\TFS\POTracker\POTracker\bin\Owin.dll
+D:\Henry Workspace\TFS\POTracker\POTracker\bin\System.Web.Helpers.dll
+D:\Henry Workspace\TFS\POTracker\POTracker\bin\System.Web.Mvc.dll
+D:\Henry Workspace\TFS\POTracker\POTracker\bin\System.Web.Optimization.dll
+D:\Henry Workspace\TFS\POTracker\POTracker\bin\System.Web.Razor.dll
+D:\Henry Workspace\TFS\POTracker\POTracker\bin\System.Web.WebPages.Deployment.dll
+D:\Henry Workspace\TFS\POTracker\POTracker\bin\System.Web.WebPages.dll
+D:\Henry Workspace\TFS\POTracker\POTracker\bin\System.Web.WebPages.Razor.dll
+D:\Henry Workspace\TFS\POTracker\POTracker\bin\WebGrease.dll
+D:\Henry Workspace\TFS\POTracker\POTracker\bin\Microsoft.SqlServer.Types.dll
+D:\Henry Workspace\TFS\POTracker\POTracker\bin\JQueryUIHelpers.xml
+D:\Henry Workspace\TFS\POTracker\POTracker\bin\Microsoft.AI.DependencyCollector.xml
+D:\Henry Workspace\TFS\POTracker\POTracker\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Henry Workspace\TFS\POTracker\POTracker\bin\Microsoft.AI.Web.xml
+D:\Henry Workspace\TFS\POTracker\POTracker\bin\Microsoft.AI.WindowsServer.xml
+D:\Henry Workspace\TFS\POTracker\POTracker\bin\Microsoft.ApplicationInsights.xml
+D:\Henry Workspace\TFS\POTracker\POTracker\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Henry Workspace\TFS\POTracker\POTracker\bin\System.Web.Helpers.xml
+D:\Henry Workspace\TFS\POTracker\POTracker\bin\System.Web.Mvc.xml
+D:\Henry Workspace\TFS\POTracker\POTracker\bin\System.Web.Optimization.xml
+D:\Henry Workspace\TFS\POTracker\POTracker\bin\System.Web.Razor.xml
+D:\Henry Workspace\TFS\POTracker\POTracker\bin\System.Web.WebPages.xml
+D:\Henry Workspace\TFS\POTracker\POTracker\bin\System.Web.WebPages.Deployment.xml
+D:\Henry Workspace\TFS\POTracker\POTracker\bin\System.Web.WebPages.Razor.xml
+D:\Henry Workspace\TFS\POTracker\POTracker\bin\Antlr3.Runtime.pdb
+D:\Henry Workspace\TFS\POTracker\POTracker\bin\Newtonsoft.Json.xml
+D:\Henry Workspace\TFS\POTracker\POTracker\bin\EntityFramework.xml
+D:\Henry Workspace\TFS\POTracker\POTracker\bin\EntityFramework.SqlServer.xml
+D:\Henry Workspace\TFS\POTracker\POTracker\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Henry Workspace\TFS\POTracker\POTracker\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Henry Workspace\TFS\POTracker\POTracker\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Henry Workspace\TFS\POTracker\POTracker\bin\Microsoft.Owin.xml
+D:\Henry Workspace\TFS\POTracker\POTracker\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Henry Workspace\TFS\POTracker\POTracker\bin\Microsoft.Owin.Security.xml
+D:\Henry Workspace\TFS\POTracker\POTracker\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Henry Workspace\TFS\POTracker\POTracker\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Henry Workspace\TFS\POTracker\POTracker\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Henry Workspace\TFS\POTracker\POTracker\bin\Microsoft.Owin.Security.Google.xml
+D:\Henry Workspace\TFS\POTracker\POTracker\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Henry Workspace\TFS\POTracker\POTracker\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Henry Workspace\TFS\POTracker\POTracker\bin\de\Microsoft.SqlServer.Types.resources.dll
+D:\Henry Workspace\TFS\POTracker\POTracker\bin\es\Microsoft.SqlServer.Types.resources.dll
+D:\Henry Workspace\TFS\POTracker\POTracker\bin\fr\Microsoft.SqlServer.Types.resources.dll
+D:\Henry Workspace\TFS\POTracker\POTracker\bin\it\Microsoft.SqlServer.Types.resources.dll
+D:\Henry Workspace\TFS\POTracker\POTracker\bin\ja\Microsoft.SqlServer.Types.resources.dll
+D:\Henry Workspace\TFS\POTracker\POTracker\bin\ko\Microsoft.SqlServer.Types.resources.dll
+D:\Henry Workspace\TFS\POTracker\POTracker\bin\pt\Microsoft.SqlServer.Types.resources.dll
+D:\Henry Workspace\TFS\POTracker\POTracker\bin\ru\Microsoft.SqlServer.Types.resources.dll
+D:\Henry Workspace\TFS\POTracker\POTracker\bin\zh-Hans\Microsoft.SqlServer.Types.resources.dll
+D:\Henry Workspace\TFS\POTracker\POTracker\bin\zh-Hant\Microsoft.SqlServer.Types.resources.dll
+D:\Henry Workspace\TFS\POTracker\POTracker\obj\Debug\POTracker.dll
+D:\Henry Workspace\TFS\POTracker\POTracker\obj\Debug\POTracker.pdb
+D:\Henry Workspace\TFS\POTracker\POTracker\obj\Debug\POTracker.csprojResolveAssemblyReference.cache
+D:\arlec\tfs\POTrackerNew\POTracker\bin\ApplicationInsights.config
+D:\arlec\tfs\POTrackerNew\POTracker\bin\roslyn\csc.exe
+D:\arlec\tfs\POTrackerNew\POTracker\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\arlec\tfs\POTrackerNew\POTracker\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\arlec\tfs\POTrackerNew\POTracker\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\arlec\tfs\POTrackerNew\POTracker\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\arlec\tfs\POTrackerNew\POTracker\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\arlec\tfs\POTrackerNew\POTracker\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\arlec\tfs\POTrackerNew\POTracker\bin\roslyn\System.Collections.Immutable.dll
+D:\arlec\tfs\POTrackerNew\POTracker\bin\roslyn\System.Reflection.Metadata.dll
+D:\arlec\tfs\POTrackerNew\POTracker\bin\roslyn\vbc.exe
+D:\arlec\tfs\POTrackerNew\POTracker\bin\roslyn\VBCSCompiler.exe
+D:\arlec\tfs\POTrackerNew\POTracker\bin\roslyn\VBCSCompiler.exe.config
+D:\arlec\tfs\POTrackerNew\POTracker\bin\POTracker.dll.config
+D:\arlec\tfs\POTrackerNew\POTracker\bin\POTracker.dll
+D:\arlec\tfs\POTrackerNew\POTracker\bin\POTracker.pdb
+D:\arlec\tfs\POTrackerNew\POTracker\bin\Antlr3.Runtime.dll
+D:\arlec\tfs\POTrackerNew\POTracker\bin\EntityFramework.dll
+D:\arlec\tfs\POTrackerNew\POTracker\bin\EntityFramework.SqlServer.dll
+D:\arlec\tfs\POTrackerNew\POTracker\bin\GridMvc.dll
+D:\arlec\tfs\POTrackerNew\POTracker\bin\JQueryUIHelpers.dll
+D:\arlec\tfs\POTrackerNew\POTracker\bin\Microsoft.AI.Agent.Intercept.dll
+D:\arlec\tfs\POTrackerNew\POTracker\bin\Microsoft.AI.DependencyCollector.dll
+D:\arlec\tfs\POTrackerNew\POTracker\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\arlec\tfs\POTrackerNew\POTracker\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\arlec\tfs\POTrackerNew\POTracker\bin\Microsoft.AI.Web.dll
+D:\arlec\tfs\POTrackerNew\POTracker\bin\Microsoft.AI.WindowsServer.dll
+D:\arlec\tfs\POTrackerNew\POTracker\bin\Microsoft.ApplicationInsights.dll
+D:\arlec\tfs\POTrackerNew\POTracker\bin\Microsoft.AspNet.Identity.Core.dll
+D:\arlec\tfs\POTrackerNew\POTracker\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\arlec\tfs\POTrackerNew\POTracker\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\arlec\tfs\POTrackerNew\POTracker\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\arlec\tfs\POTrackerNew\POTracker\bin\Microsoft.Owin.dll
+D:\arlec\tfs\POTrackerNew\POTracker\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\arlec\tfs\POTrackerNew\POTracker\bin\Microsoft.Owin.Security.Cookies.dll
+D:\arlec\tfs\POTrackerNew\POTracker\bin\Microsoft.Owin.Security.dll
+D:\arlec\tfs\POTrackerNew\POTracker\bin\Microsoft.Owin.Security.Facebook.dll
+D:\arlec\tfs\POTrackerNew\POTracker\bin\Microsoft.Owin.Security.Google.dll
+D:\arlec\tfs\POTrackerNew\POTracker\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\arlec\tfs\POTrackerNew\POTracker\bin\Microsoft.Owin.Security.OAuth.dll
+D:\arlec\tfs\POTrackerNew\POTracker\bin\Microsoft.Owin.Security.Twitter.dll
+D:\arlec\tfs\POTrackerNew\POTracker\bin\Microsoft.ReportViewer.WebForms.dll
+D:\arlec\tfs\POTrackerNew\POTracker\bin\Microsoft.Web.Infrastructure.dll
+D:\arlec\tfs\POTrackerNew\POTracker\bin\Newtonsoft.Json.dll
+D:\arlec\tfs\POTrackerNew\POTracker\bin\Owin.dll
+D:\arlec\tfs\POTrackerNew\POTracker\bin\System.Web.Helpers.dll
+D:\arlec\tfs\POTrackerNew\POTracker\bin\System.Web.Mvc.dll
+D:\arlec\tfs\POTrackerNew\POTracker\bin\System.Web.Optimization.dll
+D:\arlec\tfs\POTrackerNew\POTracker\bin\System.Web.Razor.dll
+D:\arlec\tfs\POTrackerNew\POTracker\bin\System.Web.WebPages.Deployment.dll
+D:\arlec\tfs\POTrackerNew\POTracker\bin\System.Web.WebPages.dll
+D:\arlec\tfs\POTrackerNew\POTracker\bin\System.Web.WebPages.Razor.dll
+D:\arlec\tfs\POTrackerNew\POTracker\bin\WebGrease.dll
+D:\arlec\tfs\POTrackerNew\POTracker\bin\Microsoft.SqlServer.Types.dll
+D:\arlec\tfs\POTrackerNew\POTracker\bin\JQueryUIHelpers.xml
+D:\arlec\tfs\POTrackerNew\POTracker\bin\Microsoft.AI.DependencyCollector.xml
+D:\arlec\tfs\POTrackerNew\POTracker\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\arlec\tfs\POTrackerNew\POTracker\bin\Microsoft.AI.Web.xml
+D:\arlec\tfs\POTrackerNew\POTracker\bin\Microsoft.AI.WindowsServer.xml
+D:\arlec\tfs\POTrackerNew\POTracker\bin\Microsoft.ApplicationInsights.xml
+D:\arlec\tfs\POTrackerNew\POTracker\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\arlec\tfs\POTrackerNew\POTracker\bin\System.Web.Helpers.xml
+D:\arlec\tfs\POTrackerNew\POTracker\bin\System.Web.Mvc.xml
+D:\arlec\tfs\POTrackerNew\POTracker\bin\System.Web.Optimization.xml
+D:\arlec\tfs\POTrackerNew\POTracker\bin\System.Web.Razor.xml
+D:\arlec\tfs\POTrackerNew\POTracker\bin\System.Web.WebPages.xml
+D:\arlec\tfs\POTrackerNew\POTracker\bin\System.Web.WebPages.Deployment.xml
+D:\arlec\tfs\POTrackerNew\POTracker\bin\System.Web.WebPages.Razor.xml
+D:\arlec\tfs\POTrackerNew\POTracker\bin\Antlr3.Runtime.pdb
+D:\arlec\tfs\POTrackerNew\POTracker\bin\Newtonsoft.Json.xml
+D:\arlec\tfs\POTrackerNew\POTracker\bin\EntityFramework.xml
+D:\arlec\tfs\POTrackerNew\POTracker\bin\EntityFramework.SqlServer.xml
+D:\arlec\tfs\POTrackerNew\POTracker\bin\Microsoft.AspNet.Identity.Core.xml
+D:\arlec\tfs\POTrackerNew\POTracker\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\arlec\tfs\POTrackerNew\POTracker\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\arlec\tfs\POTrackerNew\POTracker\bin\Microsoft.Owin.xml
+D:\arlec\tfs\POTrackerNew\POTracker\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\arlec\tfs\POTrackerNew\POTracker\bin\Microsoft.Owin.Security.xml
+D:\arlec\tfs\POTrackerNew\POTracker\bin\Microsoft.Owin.Security.Facebook.xml
+D:\arlec\tfs\POTrackerNew\POTracker\bin\Microsoft.Owin.Security.Cookies.xml
+D:\arlec\tfs\POTrackerNew\POTracker\bin\Microsoft.Owin.Security.OAuth.xml
+D:\arlec\tfs\POTrackerNew\POTracker\bin\Microsoft.Owin.Security.Google.xml
+D:\arlec\tfs\POTrackerNew\POTracker\bin\Microsoft.Owin.Security.Twitter.xml
+D:\arlec\tfs\POTrackerNew\POTracker\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\arlec\tfs\POTrackerNew\POTracker\bin\de\Microsoft.SqlServer.Types.resources.dll
+D:\arlec\tfs\POTrackerNew\POTracker\bin\es\Microsoft.SqlServer.Types.resources.dll
+D:\arlec\tfs\POTrackerNew\POTracker\bin\fr\Microsoft.SqlServer.Types.resources.dll
+D:\arlec\tfs\POTrackerNew\POTracker\bin\it\Microsoft.SqlServer.Types.resources.dll
+D:\arlec\tfs\POTrackerNew\POTracker\bin\ja\Microsoft.SqlServer.Types.resources.dll
+D:\arlec\tfs\POTrackerNew\POTracker\bin\ko\Microsoft.SqlServer.Types.resources.dll
+D:\arlec\tfs\POTrackerNew\POTracker\bin\pt\Microsoft.SqlServer.Types.resources.dll
+D:\arlec\tfs\POTrackerNew\POTracker\bin\ru\Microsoft.SqlServer.Types.resources.dll
+D:\arlec\tfs\POTrackerNew\POTracker\bin\zh-Hans\Microsoft.SqlServer.Types.resources.dll
+D:\arlec\tfs\POTrackerNew\POTracker\bin\zh-Hant\Microsoft.SqlServer.Types.resources.dll
+D:\arlec\tfs\POTrackerNew\POTracker\obj\Debug\POTracker.dll
+D:\arlec\tfs\POTrackerNew\POTracker\obj\Debug\POTracker.pdb
+D:\arlec\tfs\POTrackerNew\POTracker\obj\Debug\POTracker.csprojResolveAssemblyReference.cache

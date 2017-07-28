@@ -1,0 +1,32 @@
+﻿@model Microsoft.AspNet.Identity.EntityFramework.IdentityRole
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<h2>Create</h2>
+<style type="text/css">
+    #tbrole, .c {
+        border: double;
+    }
+</style>
+@if (TempData["Error"] != null)
+{
+    <div class="success">
+        <p><strong>Error:</strong> @TempData["Error"].ToString()</p>
+    </div>
+}
+
+@using (Html.BeginForm())
+{
+    <table id="tbrole">
+        <tr>
+            <td class="c">Enter Role Name To be Created:</td>
+            <td class="c">
+                @Html.EditorFor(m => m.Name)
+            </td>
+        </tr>
+    </table>
+    <input type="submit" value="Create Role" />
+}

@@ -1,0 +1,238 @@
+﻿@model IEnumerable<POTracker.Models.AUPurchaseOrder>
+<div id="container">
+    <div id="boxContainer">
+        <div id="box2">
+
+            Whse <br />Code
+        </div>
+@if (!User.IsInRole("Sales"))
+{
+        <div id="box">
+            @Html.DisplayName("PDF")
+            
+        </div>
+}
+
+        <div id="box">
+            @Html.DisplayName("PO No")
+        </div>
+
+        <div id="box">
+            Supplier<br /> Name
+        </div>
+
+        <div id="box">
+            Order<br /> Date
+        </div>
+
+        <div id="box">
+            @Html.DisplayName("Notes Old PO No")
+        </div>
+
+        <div id="box1">
+            @*@Html.DisplayName("Order Brief Info")*@
+                <div style="display: table-cell;min-width: 73px;height:70px;border-right-color: rgba(241, 81, 9, 0.88); border-right-width: 1px; border-right-style: solid;"><span style="line-height:35px;">Stratum</span></div>
+                <div style="display: table-cell;min-width: 140px;height:70px;border-right-color: rgba(241, 81, 9, 0.88); border-right-width: 1px; border-right-style: solid;"><span style="line-height:35px;">Product Code</span></div>
+                <div style="display: table-cell;min-width: 40px;height:70px;border-right-color: rgba(241, 81, 9, 0.88); border-right-width: 1px; border-right-style: solid;"><span style="line-height:35px;">Flag</span></div>
+                <div style="display: table-cell;min-width: 70px;height:70px;border-right-color: rgba(241, 81, 9, 0.88); border-right-width: 1px; border-right-style: solid;"><span style="line-height:35px;">OS Qty</span></div>
+                <div style="display: table-cell;width: 70px;height:70px;border-right-color: rgba(241, 81, 9, 0.88); border-right-width: 1px; border-right-style: solid;"><span style="line-height:20px;">Action Date</span></div>
+                <div style="display: table-cell;min-width: 70px;height:70px;border-right-color: rgba(241, 81, 9, 0.88); border-right-width: 1px; border-right-style: solid;"><span style="line-height:35px;">Spex</span></div>
+                <div style="display: table-cell;min-width: 70px;height:70px;border-right-color: rgba(241, 81, 9, 0.88); border-right-width: 1px; border-right-style: solid;"><span style="line-height:35px;">Artwork</span></div>
+                <div style="display: table-cell;width: 70px;height:70px;border-right-color: rgba(241, 81, 9, 0.88); border-right-width: 1px; border-right-style: solid;"><span style="line-height:20px;">Supplier Status</span></div>
+        </div>
+
+        <div id="box3">
+            @Html.DisplayName("Comments")
+        </div>
+
+        
+        </div>
+       <div id="rowContainer">
+            @foreach (var item in Model)
+            {
+                <div id="mainRow">
+                    <div id="row">
+                            <div id="left">
+
+                                @Html.DisplayFor(modelItem => item.po_whse_code)
+
+                        </div>
+@if (!User.IsInRole("Sales"))
+{
+                        <div id="left">
+                            @if (User.IsInRole("Supplier"))
+                            {
+                                if (item.Approval != null)
+                                {
+                                    <a href='@VirtualPathUtility.ToAbsolute("~/Reports/ViewReport.aspx?po=" + item.po_order_no + "&bosuffix=" + item.po_backorder_flag, HttpContext.Current.Request.ApplicationPath)' target="_blank"> <img src="~/images/PDFIcon.png" /></a>
+                                }
+                            }
+                            else
+                            {
+                                <a href='@VirtualPathUtility.ToAbsolute("~/Reports/ViewReport.aspx?po=" + item.po_order_no + "&bosuffix=" + item.po_backorder_flag, HttpContext.Current.Request.ApplicationPath)' target="_blank"> <img src="~/images/PDFIcon.png" /></a>
+                            }
+                           
+                        </div>
+}
+
+                        <div id="left">
+                            @Html.DisplayFor(modelItem => item.po_order_no)
+                            @if (User.IsInRole("PurchasingAdmin"))
+                            {
+                                if (item.Approval == null)
+                                {
+                                    <button id="@item.po_order_no@item.po_backorder_flag" type="button" class="btn btn-primary-red Approve" style="width:99px;background-color: #555555;color:white;" po="@item.po_order_no" posuffix="@item.po_backorder_flag">Approve</button>
+                                }
+                                else
+                                {
+                                    <button id="@item.po_order_no@item.po_backorder_flag" type="button" class="btn btn-primary-red Approved" style="color:white;background-color: #555555;"  disabled="disabled">Approved</button>
+                                }
+                            }
+                        </div>
+
+                        <div id="left">
+                            @Html.DisplayFor(modelItem => item.cre_accountcode)
+                        </div>
+
+                        <div id="left">
+                            @Html.DisplayFor(modelItem => item.OrderDate)
+                        </div>
+
+                        <div id="left">
+                            @Html.DisplayFor(modelItem => item.po_notes)
+                        </div>
+
+                        <div id="middle" >
+                            @*@Html.Partial("_AU_Order_Brief_Info", item.OrderLines)*@
+                            <div class="Table">
+
+                                <div class="product">
+
+                                    @{
+                                    foreach (var orderLine in item.OrderLines)
+                                    {
+                                <div class="Row">
+                                    <div class="Cell">@Html.DisplayFor(m => orderLine.stock_group)</div>
+                                    <div style="display: table-cell;border: solid 1px;border-width: thin;min-width: 140px;">@Html.DisplayFor(m => orderLine.stock_code)</div>
+                                    <div style="display: table-cell;border: solid 1px ;min-width: 40px;">@Html.DisplayFor(m => orderLine.po_backorder_flag)	</div>
+                                    <div class="Cell">@Html.DisplayFor(m => orderLine.po_order_qty)</div>
+                                    <div class="Cell">	@Html.DisplayFor(m => orderLine.ActionDate)</div>
+                                    <div class="Cell">
+                                        @{
+                                                if (orderLine.SpexStatus == "Active")
+                                                {
+                                            <a href='@VirtualPathUtility.ToAbsolute("~/Reports/ViewSpecifications.aspx?p="+orderLine.stock_code.Trim()+"&s="+item.cre_accountcode.Trim(),HttpContext.Current.Request.ApplicationPath)' target="_blank"> Spex Link </a>
+                                            }
+                                            else
+                                            {
+                                            <b>No Spex</b>
+                                                }
+                                        }
+                                    </div>
+                                    <div class="Cell">
+                                    @{
+                                        var ArtworkProducts = Session["ArtworkProducts"] as List<string>;
+                                        if (ArtworkProducts != null && ArtworkProducts.Count > 0 && ArtworkProducts.Contains(orderLine.stock_code.Trim()))
+                                        {
+                                            <a href='@VirtualPathUtility.ToAbsolute("~/Reports/ViewArtwork.aspx?p="+orderLine.stock_code.Trim(),HttpContext.Current.Request.ApplicationPath)' target="_blank"> Artwork Link</a>
+                                        }
+                                        else
+                                        {
+                                            <b>No Artwork</b>
+                                        }
+
+                                    }
+	                                </div>
+                                    <div class="Cell"> @*@Html.DisplayFor(m => orderLine.SupplierStatus)*@N</div>
+
+
+                                </div>
+
+                                                }
+
+                                    }
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="middle" data-toggle="collapse"style="" >
+                            <div style="width: 100%;background-color: #36B024;color: #fff;height: 30px;padding: 5px;"> <a href="#" data-target="#@item.po_order_no" class="test" style="cursor:pointer; width:470px; font-weight:bold;color:#fff;">Click Here</a></div>
+                           <div class="box">
+                             
+                            <div  id="@item.po_order_no"  class="test3"  >
+                                <div class="Table" style="position:relative;width:100%; padding-bottom:200px;">
+                                    @*<div class="Heading_comment">
+                                        <div class="Cell"> User Name</div>
+                                        <div class="Cell"> Note</div>
+                                        <div class="Cell"> Date </div>                                        
+                                        <div class="Cell">Delete</div>
+
+                                    </div>*@
+                                    @{
+                                        var currentUser = System.Web.HttpContext.Current.User.Identity.Name;
+                                        if (item.OrderComments.Count() > 0)
+                                        {
+                                            foreach (var comment in item.OrderComments)
+                                            {
+
+                                <div class="Row">
+                                    <div class="Cell" style="vertical-align:top"> @Html.DisplayFor(m => comment.UserName)</div>
+                                    <div class="Cell"> @Html.TextAreaFor(m => comment.Comment, new { @readonly = "readonly", @cols = 30, @rows = 5,@style="width:100%" })</div>
+                                    <div class="Cell" style="vertical-align:top"> @Html.DisplayFor(m => comment.CommentDate)   </div>
+                                    @*<div class="Cell"  id="@Html.DisplayFor(m=>comment.commentId)">  @Html.ActionLink("Delete", "null", "null", new { id= comment.commentId }, htmlAttributes: new { @id = comment.commentId, @class = "DeleteId" })</div>*@
+                                   @if (currentUser == comment.UserName)
+                                   {
+                                    <div class="delete" style="width: 10px; vertical-align: top; display: table-cell;" id="@item.po_order_no"><a href="#" class="deleteID" id="@comment.CommentsId" title="Delete"><img src="../images/delete.png" height="18" width="18" /></a></div>
+                                   }
+                                </div>
+
+                                            }
+                                        }else
+                                        {
+                                            @Html.Label("No Comments. Please Add New Comment!!")
+
+                                        }
+                                        <div class="Row"><div ><a href="#" id="@item.po_order_no" class="comment" title="Add Comment"  OnClientClick="commentsPopup(this);return false;" ><img src="../images/CommentAdd.png" height="32" width="32" /></a></div></div>
+                                    }
+                                </div>
+                            </div>
+                               </div>
+                        </div>
+                    </div>
+                    </div>
+
+
+                    }
+                </div>
+    <div style="width:100%; border:1px solid;"></div>
+
+    </div>
+
+@section scripts{
+    <script type="text/javascript">
+
+
+        $(document).ready(function () {
+          
+            });
+                //$('.accordion-toggle').click(function () {
+                //    if ($(this).attr('aria-expanded') == "true") {
+                //        $(this).children().css('background-color', '#FFF');
+
+                //    } else {
+                //        $(this).children().css('background-color', '#DDD');
+                //    }
+                //    SetTDWidth();
+                //});
+                //$('.test').click(function () {
+                //    var data = $(this).data("target");
+                //    alert(data);
+                //});
+            });
+
+            function SetTDWidth() {
+                alert('Col1:' + $('#col1').width());
+                alert('Col2:' + $('#col2').width());
+            }
+    </script>
+}
